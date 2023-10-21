@@ -1,0 +1,629 @@
+[
+  {
+    "model": "portal.clientorg",
+    "pk": "e80a1f60-bbf6-4460-b9e7-d3800cb19d64",
+    "fields": {
+      "name": "Published Project Org",
+      "about": "",
+      "website_link": "",
+      "type": "OTH",
+      "reps": ["b5ee5fa9-0d31-4506-90ac-012de209ec62"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "ec91e33d-30c9-4847-8a1a-67dc171af8b2",
+    "fields": {
+      "name": "One Published Project and One Not Org",
+      "about": "",
+      "website_link": "",
+      "type": "OTH",
+      "reps": ["45958409-e0fc-47db-bba7-d1cf487b626b"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "372b2e02-957b-4952-844d-ea9d8f06164f",
+    "fields": {
+      "name": "No Published Projects Org",
+      "about": "",
+      "website_link": "",
+      "type": "OTH",
+      "reps": ["5f8aa24d-5326-4d94-887c-fa09cf77db3e"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "74996217-d8a5-424e-a5ab-c96594b25463",
+    "fields": {
+      "name": "No Projects Org",
+      "about": "",
+      "website_link": "",
+      "type": "OTH",
+      "reps": ["1c411b42-5bdc-464e-8864-76270536cb36"]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "3606e866-2614-4383-b031-69f70a737603",
+    "fields": {
+      "ta": "d75f5e72-831c-4617-93a8-007341f3379d",
+      "client_rep": "b5ee5fa9-0d31-4506-90ac-012de209ec62",
+      "client_org": "e80a1f60-bbf6-4460-b9e7-d3800cb19d64",
+      "name": "Single Published Project",
+      "summary": "",
+      "video": "",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": true,
+      "year": 2021,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": ["bac0aef6-c685-4be9-84d9-fdc7c62a3705"],
+      "tags": []
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "41f2d462-52bf-4161-8c0f-31d5ed63324c",
+    "fields": {
+      "ta": "e072c801-6759-4dea-b23d-47efdcd38c61",
+      "client_rep": "45958409-e0fc-47db-bba7-d1cf487b626b",
+      "client_org": "ec91e33d-30c9-4847-8a1a-67dc171af8b2",
+      "name": "Pair Published Project",
+      "summary": "",
+      "video": "",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": true,
+      "year": 2021,
+      "term": "W",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": ["a4609cc6-27d5-43b9-ac3a-ea9230caab39"],
+      "tags": []
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "edf77dc7-e2b1-47c9-8b88-d4ebb0af11f0",
+    "fields": {
+      "ta": "66cd9486-01b8-4ce6-aad1-07ce8b63e0ca",
+      "client_rep": "45958409-e0fc-47db-bba7-d1cf487b626b",
+      "client_org": "ec91e33d-30c9-4847-8a1a-67dc171af8b2",
+      "name": "Pair Unpublished Project",
+      "summary": "",
+      "video": "",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": false,
+      "year": 2020,
+      "term": "SP",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": [
+        "bac0aef6-c685-4be9-84d9-fdc7c62a3705",
+        "8e89c832-baf7-47a9-b12c-e61aad851724"
+      ],
+      "tags": []
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "32cd00e4-442d-479a-9cdd-d69ddc942add",
+    "fields": {
+      "ta": "a8e3ea40-6569-4f37-8221-9cca7e26ea7e",
+      "client_rep": "5f8aa24d-5326-4d94-887c-fa09cf77db3e",
+      "client_org": "372b2e02-957b-4952-844d-ea9d8f06164f",
+      "name": "Unpublished Project",
+      "summary": "",
+      "video": "",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": false,
+      "year": 2019,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": ["8e89c832-baf7-47a9-b12c-e61aad851724"],
+      "tags": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "b7a0b0df-078c-4866-ac17-577b5432c353",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "admin@example.com",
+      "name": "admin",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "b7a0b0df-078c-4866-ac17-577b5432c353",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "admin@example.com",
+      "name": "admin",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "bac0aef6-c685-4be9-84d9-fdc7c62a3705",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "student1@example.com",
+      "name": "student1",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "a4609cc6-27d5-43b9-ac3a-ea9230caab39",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "student2@example.com",
+      "name": "student2",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "8e89c832-baf7-47a9-b12c-e61aad851724",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "student3@example.com",
+      "name": "student3",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "6e7577db-978f-4e5f-8e00-c0124e4383d2",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "noprojects@example.com",
+      "name": "no projects",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "d75f5e72-831c-4617-93a8-007341f3379d",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "TA1@example.com",
+      "name": "TA1",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "e072c801-6759-4dea-b23d-47efdcd38c61",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "TA2@example.com",
+      "name": "TA2",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "66cd9486-01b8-4ce6-aad1-07ce8b63e0ca",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "TA3@example.com",
+      "name": "TA3",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "a8e3ea40-6569-4f37-8221-9cca7e26ea7e",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "TA4@example.com",
+      "name": "TA4",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "b5ee5fa9-0d31-4506-90ac-012de209ec62",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "rep1@example.com",
+      "name": "rep1",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "45958409-e0fc-47db-bba7-d1cf487b626b",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "rep2@example.com",
+      "name": "rep2",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "5f8aa24d-5326-4d94-887c-fa09cf77db3e",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "rep3@example.com",
+      "name": "rep3",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "1c411b42-5bdc-464e-8864-76270536cb36",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "rep4@example.com",
+      "name": "rep4",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "b7a0b0df-078c-4866-ac17-577b5432c353",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "admin@example.com",
+      "name": "admin",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.clientorg",
+    "pk": "3e521e77-10a7-4c01-a830-3932274b9ce4",
+    "fields": {
+      "name": "User Student Org",
+      "about": "",
+      "website_link": "",
+      "type": "OTH",
+      "reps": ["e9cd789c-39e7-4c91-9587-57f00324ec7b"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "f3a08ff2-ca7b-471a-8374-30867d91ec49",
+    "fields": {
+      "name": "User TA Org",
+      "about": "",
+      "website_link": "",
+      "type": "OTH",
+      "reps": ["e9cd789c-39e7-4c91-9587-57f00324ec7b"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "e7b164bd-f702-48ef-97d3-47eea858f40d",
+    "fields": {
+      "name": "User Rep Org",
+      "about": "",
+      "website_link": "",
+      "type": "OTH",
+      "reps": ["9b3bbac2-abaf-4e78-8b7e-e8e331767ccb"]
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "9b3bbac2-abaf-4e78-8b7e-e8e331767ccb",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "multiuser@example.com",
+      "name": "Multi User",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "e9cd789c-39e7-4c91-9587-57f00324ec7b",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "extrauser@example.com",
+      "name": "Extra User",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "0d2e3b19-d346-43be-b810-8094ecc4660d",
+    "fields": {
+      "ta": "9b3bbac2-abaf-4e78-8b7e-e8e331767ccb",
+      "client_rep": "e9cd789c-39e7-4c91-9587-57f00324ec7b",
+      "client_org": "f3a08ff2-ca7b-471a-8374-30867d91ec49",
+      "name": "User is TA project",
+      "summary": "",
+      "video": "",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": false,
+      "year": 2020,
+      "term": "SP",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": ["e9cd789c-39e7-4c91-9587-57f00324ec7b"],
+      "tags": []
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "9ffea7c2-1eb4-48d8-8fcb-4800b7fa4b02",
+    "fields": {
+      "ta": "e9cd789c-39e7-4c91-9587-57f00324ec7b",
+      "client_rep": "e9cd789c-39e7-4c91-9587-57f00324ec7b",
+      "client_org": "3e521e77-10a7-4c01-a830-3932274b9ce4",
+      "name": "User is Student project",
+      "summary": "",
+      "video": "",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": false,
+      "year": 2020,
+      "term": "SP",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": ["9b3bbac2-abaf-4e78-8b7e-e8e331767ccb"],
+      "tags": []
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "ea678786-9cbc-4a1f-b699-360cbcd6423e",
+    "fields": {
+      "ta": "e9cd789c-39e7-4c91-9587-57f00324ec7b",
+      "client_rep": "9b3bbac2-abaf-4e78-8b7e-e8e331767ccb",
+      "client_org": "e7b164bd-f702-48ef-97d3-47eea858f40d",
+      "name": "User is Rep project",
+      "summary": "",
+      "video": "",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": false,
+      "year": 2020,
+      "term": "SP",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": ["e9cd789c-39e7-4c91-9587-57f00324ec7b"],
+      "tags": []
+    }
+  }
+]

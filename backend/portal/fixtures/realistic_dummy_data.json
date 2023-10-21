@@ -1,0 +1,2598 @@
+[
+  {
+    "model": "portal.clientorg",
+    "pk": "066cd945-90bb-4ba0-8ffa-10f6d4cb2af1",
+    "fields": {
+      "name": "CCACH",
+      "about": "The Council of Canadians of African and Caribbean Heritage (CCACH) exists to undertake and support activities to enhance the social, economic and educational life of the African and Caribbean heritage communities.",
+      "image": "",
+      "website_link": "http://ccach.org/",
+      "type": "NP",
+      "testimonial": "",
+      "reps": ["720492d1-fe5f-4d06-9d42-1a4615161e43"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "288d2e4d-07b8-4966-af3e-3f27dd86c560",
+    "fields": {
+      "name": "Canadian Soccer League",
+      "about": "The Canadian Soccer League (CSL) is long-standing and is one of two professional soccer leagues in Canada. It is a continuation of earlier forerunner leagues, the National Soccer League (NSL), the Canadian National Soccer League (CNSL) and the Canadian Professional Soccer League (CPSL), going back more than 80 years.\r\n\r\nThe Canadian Premier League is the most recent entry into professional soccer in Canada with seven teams that kicked off its inaugural season on April 27, 2019.\r\n\r\nProfessional soccer in Canada also consists of three clubs in membership with Major League Soccer (MLS), the top tier league of 24 teams founded in 1993 and based in the United States. The Canadian clubs are Montreal Impact, Toronto FC and the Vancouver Whitecaps.",
+      "image": "client_orgs/org_image/csl.png",
+      "website_link": "https://canadiansoccerleague.ca/",
+      "type": "OTH",
+      "testimonial": "",
+      "reps": ["c1818c34-0751-420c-a9d6-e96634b8a351"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "3b38f559-1204-4f94-a6f9-b54e2c16aec0",
+    "fields": {
+      "name": "Blab and Bake",
+      "about": "Talk and Bake is a 100% volunteer-run non-profit organization located in Edmonton, Alberta, that recognizes that food is not only a nutritious substance, but it also connects us with each other, ourselves, and the world around us. \r\n\r\nOur aim is to create social spaces for participants to get to know each through creating meals and dining together. We are a non-partisan organization and our programming is open to all no matter identity or skill level.\r\n\r\nRecognizing that food is a gateway to building bridges in our community, we started ‘Talk and Bake’ to help alleviate barriers people have to finding culturally relevant and nutritious foods. Some of our programming includes running grocery busses, cooking socials, developing community cookbooks resources on food safety and preparation.",
+      "image": "",
+      "website_link": "https://conversecook.com/",
+      "type": "CSL",
+      "testimonial": "",
+      "reps": ["46b61e11-27d8-4441-a86e-750a5dcc484b"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "3ee84ffc-5283-4ee8-a3de-f11a24fc0293",
+    "fields": {
+      "name": "Edmonton Immigrant Services",
+      "about": "Edmonton Immigrant Services Association (EISA) was established by five individuals on December 16, 1976, under the Societies Act as a non-profit society. EISA is a direct result of an awareness that immigrants and refugees to Edmonton and the area did not meet all their needs. EISA’s founders recognized the newcomers’ unexpected life realities significantly affected their lives and their integration into Canadian society. The services were to be provided to immigrants and refugees in Edmonton and the area, regardless of age, gender, religion, nationality, or ethnic origin.",
+      "image": "client_orgs/org_image/eisa.png",
+      "website_link": "https://www.eisa-edmonton.org/",
+      "type": "NP",
+      "testimonial": "Great service, efficient communication and a really easy way to get a project started with lots of help and support to get the right deal.",
+      "reps": ["fd7be1ee-e1e4-4ab8-abaf-1fff9ee5931e"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "7c24417b-2161-4fc1-b482-bf688002a9d3",
+    "fields": {
+      "name": "Luminance Learning LLC",
+      "about": "We train people to build trust, affinity and credibility with their internal and external clients.",
+      "image": "client_orgs/org_image/luminance.jpeg",
+      "website_link": "https://luminancelearning.com/",
+      "type": "SP",
+      "testimonial": "",
+      "reps": ["28bce537-5917-4d1f-9136-8bd4bccf0e2b"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "91c3793c-2d1e-4ac0-9886-8e6a57f1d05a",
+    "fields": {
+      "name": "University of Alberta",
+      "about": "The University of Alberta in Edmonton is one of the top teaching and research universities in Canada, with an international reputation for excellence across the humanities, sciences, creative arts, business, engineering and health sciences.",
+      "image": "client_orgs/org_image/logo_ualberta.png",
+      "website_link": "https://www.ualberta.ca",
+      "type": "AC",
+      "testimonial": "",
+      "reps": [
+        "9cf68ca1-c376-440f-a4cc-70df7989d685",
+        "bdabe3de-326a-4b97-8047-324c1ea3ec6f",
+        "7a337203-c132-4b78-96c2-6c7bbd13117c"
+      ]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "9e7e6840-ba07-4694-9e7f-fe269011c3c0",
+    "fields": {
+      "name": "City of Edmonton",
+      "about": "",
+      "image": "client_orgs/org_image/coe.png",
+      "website_link": "https://www.edmonton.ca/",
+      "type": "OTH",
+      "testimonial": "The CMPUT401 students represent among the highest levels of customer service I have experienced. Information was accurate, responses to queries were turned around very fast. Answers were clear and where necessary detailed enough for us to make informed decisions quickly, minimising the end to end time to process complex transactions among a number of parties.",
+      "reps": ["c719565b-448f-4ab7-b4f1-732e83f14938"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "ae81004e-36d9-49f2-aa83-492f4df3e2b0",
+    "fields": {
+      "name": "Avonmore Neighbourhood Union",
+      "about": "Avonmore strives to provide a variety of programming for our community league members. We’re always open to new ideas and volunteers.",
+      "image": "client_orgs/org_image/avonmore.jpeg",
+      "website_link": "https://avonmore.org/",
+      "type": "CSL",
+      "testimonial": "",
+      "reps": ["d7c18162-8bbc-495d-93a5-25ae0463de0a"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "c7c41f32-bd02-466b-87ee-f2308139823b",
+    "fields": {
+      "name": "Table Scraps Foundation",
+      "about": "The Table Scraps Foundation is one of Canada’s largest, tech-enabled food rescue charities. We reshape how our communities fight poverty, reduce food waste, and save our environment.",
+      "image": "client_orgs/org_image/leftovers.jpeg",
+      "website_link": "https://rescuefood.ca/",
+      "type": "CSL",
+      "testimonial": "",
+      "reps": ["7b0b1c75-0d7e-4e17-9711-0f83f4dee46c"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "c918d8c8-3e73-43a6-8c37-f8b9dbad47f8",
+    "fields": {
+      "name": "Speechly",
+      "about": "Speechly is the Fast, Accurate, and Simple Voice Interface API for Web, Mobile and E-commerce.",
+      "image": "client_orgs/org_image/speechly.png",
+      "website_link": "https://www.speechly.com/",
+      "type": "SP",
+      "testimonial": "",
+      "reps": ["e0ac146e-ca6d-4d02-a2a3-719cb59ef13f"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "efca910d-dc1f-4988-be21-2f88fde85026",
+    "fields": {
+      "name": "Canadian Mental Health Association",
+      "about": "24-hour information and referral line connecting you to social, health, and government services.",
+      "image": "client_orgs/org_image/canadian_mental.png",
+      "website_link": "https://edmonton.cmha.ca/",
+      "type": "OTH",
+      "testimonial": "",
+      "reps": ["d76d165c-0192-4307-a42a-8c76be4a9e7e"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "f43c2477-5639-4616-8311-4b8a94dcf23d",
+    "fields": {
+      "name": "Mechanical Turk Technologies",
+      "about": "Mechanical Turk (MTurk) is a crowdsourcing marketplace that makes it easier for individuals and businesses to outsource their processes and jobs to a distributed workforce who can perform these tasks virtually. This could include anything from conducting simple data validation and research to more subjective tasks like survey participation, content moderation, and more. MTurk enables companies to harness the collective intelligence, skills, and insights from a global workforce to streamline business processes, augment data collection and analysis, and accelerate machine learning development.",
+      "image": "client_orgs/org_image/amazon.jpeg",
+      "website_link": "https://www.mturk.com/",
+      "type": "SP",
+      "testimonial": "We were provided excellent customer service. All responses were prompt and professional. Clearly, the upfront statement on our policy stated it was limited which told us that our preliminary research was not well thought out.",
+      "reps": ["6534dfc7-89d7-440c-bf14-4ec03747c413"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "fc5cd682-1a6f-4980-8c4e-99d1cff7e1a9",
+    "fields": {
+      "name": "Migrante Canada",
+      "about": "Migrante Canada is a chapter of Philippine based Migrante International, a global alliance of over 200 member organizations in 23 countries. Migrante Canada was founded in October 2010 and has 13 chapters and member organizations across Canada. We are based in Vancouver, Calgary, Red Deer, Edmonton, Fort McMurray, Winnipeg, Toronto, Barry, Ottawa, Montreal, Sherbrooke and Quebec City.",
+      "image": "client_orgs/org_image/migrante.png",
+      "website_link": "https://www.migrante.ca/",
+      "type": "NP",
+      "testimonial": "",
+      "reps": ["0366bb61-6ca7-4545-86b4-d23100d7b74f"]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "0d61a145-6471-4fc8-be20-9382e78b8e34",
+    "fields": {
+      "ta": "4c143158-71e9-4db9-8d9b-4e304340f335",
+      "client_rep": "0366bb61-6ca7-4545-86b4-d23100d7b74f",
+      "client_org": "fc5cd682-1a6f-4980-8c4e-99d1cff7e1a9",
+      "name": "Migrante Alberta App",
+      "summary": "A mobile app that would allow our clients (mostly, undocumented immigrants) to have access to communicate with us and each other and access the resources they need.",
+      "video": "",
+      "type": "MA",
+      "tagline": "",
+      "is_published": true,
+      "year": 2021,
+      "term": "F",
+      "screenshot": "projects/screenshot/mobile_screenshot.png",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://image.slidesharecdn.com/storyboardingandwireframetools-111213145228-phpapp02/95/storyboarding-and-wireframe-tools-review-5-728.jpg?cb=1323797046",
+      "students": [
+        "43ac78d8-6b7c-4d9d-92bc-2e4b165c840a",
+        "4bf6b960-746e-4ded-8737-55fabe229806",
+        "716ee4fd-dd69-4be4-bb97-dcf7730c957f"
+      ],
+      "tags": [2, 20, 21, 22]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "192fbfa5-980d-4cdd-b352-77f9bc9f9c4f",
+    "fields": {
+      "ta": "2df66c51-6375-4f90-aaad-85c080e26b5c",
+      "client_rep": "c719565b-448f-4ab7-b4f1-732e83f14938",
+      "client_org": "9e7e6840-ba07-4694-9e7f-fe269011c3c0",
+      "name": "YEG AR",
+      "summary": "EG AR helps people design city tour experiences to enjoy and experience Edmonton\r\nSign up today to create your own tours.",
+      "video": "https://youtu.be/FbZqCHbUnZ8",
+      "type": "MA",
+      "tagline": "City of Edmonton's YEG-AR project",
+      "is_published": true,
+      "year": 2020,
+      "term": "F",
+      "screenshot": "projects/screenshot/mobile_screenshot_veKasSo.png",
+      "presentation": "",
+      "review": "Great customer service. Even when there was a problem the students continued helping us and fixed the issue. Very patient workers and quick, easy and painless process.",
+      "website_url": "https://yeg-ar.geocoligo.com/",
+      "source_code_url": "https://github.com/YEG-AR/YEGAR",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://i.stack.imgur.com/uOM56.jpg",
+      "students": [
+        "56304351-70e9-43e2-965b-78d8f0cf3264",
+        "ac9ffde8-7404-47d0-8776-d36d2b0f0a95",
+        "d1e2bb25-aaeb-45e9-82de-2e686a3265f0"
+      ],
+      "tags": [8, 7]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "2927a046-6a53-4829-839c-336960b52e32",
+    "fields": {
+      "ta": "7bc58ea9-93c6-4420-b2ac-79f6ff2daac9",
+      "client_rep": "46b61e11-27d8-4441-a86e-750a5dcc484b",
+      "client_org": "3b38f559-1204-4f94-a6f9-b54e2c16aec0",
+      "name": "Blab and Bake App",
+      "summary": "An app for 'Talk and Bake' volunteers to make grocery shopping easier.",
+      "video": "",
+      "type": "MA",
+      "tagline": "Food is a gateway to building bridges",
+      "is_published": false,
+      "year": 2021,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://i.stack.imgur.com/uOM56.jpg",
+      "students": [
+        "2a5b57eb-200c-492e-a7b1-b343dfb6d9a5",
+        "5da2d197-f0df-468d-80a5-b396ff91aa8a",
+        "7d2b529f-8fc7-4495-a8aa-a41b4f2d0970",
+        "87f670a0-6af3-4975-a793-3109df7fe30f",
+        "de3dead0-0df9-47b0-9962-fadd0e930e8f"
+      ],
+      "tags": [14, 15]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "3de7bf89-3ad3-4bcd-9473-378c43d0148e",
+    "fields": {
+      "ta": "0e75c781-f9e3-4207-8674-bfeb22ab6b4e",
+      "client_rep": "9cf68ca1-c376-440f-a4cc-70df7989d685",
+      "client_org": "91c3793c-2d1e-4ac0-9886-8e6a57f1d05a",
+      "name": "ISSSAccolades",
+      "summary": "ISSSAccolades is a brand-new initiative by ISSS that allows students to collect points that they can later redeem for prizes.\r\n\r\nThe Interdepartmental Science Students’ Society is an inclusive and transparent science faculty association existing to offer useful services, to connect its diverse membership, and to advocate so that science students may enjoy an enriching and valuable undergraduate experience.",
+      "video": "",
+      "type": "WA",
+      "tagline": "",
+      "is_published": false,
+      "year": 2021,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "https://isss.ca/isss-rewards/",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://i.stack.imgur.com/uOM56.jpg",
+      "students": [
+        "279ac918-f487-4776-9870-71d8604aae38",
+        "2e9e6164-cafa-4d91-b550-e4c3bbb7215a",
+        "69196e14-6789-40d7-905c-9763074dcfa1"
+      ],
+      "tags": [1, 9, 15]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "5301dcbd-11e2-443f-a48b-2c91a5c5da09",
+    "fields": {
+      "ta": "c3faf9b2-c20f-4634-b61d-5ff7235472e8",
+      "client_rep": "bdabe3de-326a-4b97-8047-324c1ea3ec6f",
+      "client_org": "91c3793c-2d1e-4ac0-9886-8e6a57f1d05a",
+      "name": "Vibrant Minds Memory Game",
+      "summary": "By popular demand, an all new memory game experience.",
+      "video": "https://youtu.be/6srhpYbhnT0",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": true,
+      "year": 2020,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "I really appreciate all the efforts. From customer service department they put on solving my issue. I was pleasantly surprised. Great work!",
+      "website_url": "https://vibrant-minds.org/",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "",
+      "students": [
+        "1a22a4cb-c3da-480d-9f31-914dbf185444",
+        "2e41aed8-628f-48f1-a091-574b2e2877ef",
+        "9acd99fd-3f82-4290-bd52-9f595e48c52b",
+        "cee9fd0c-5850-4466-9a40-8b4ac0974c2f"
+      ],
+      "tags": [5, 6]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "55135bb4-814d-4e73-9a08-f5cf529eaa1b",
+    "fields": {
+      "ta": "25fb95e9-4cfa-4b59-9c26-12007d99cd46",
+      "client_rep": "fd7be1ee-e1e4-4ab8-abaf-1fff9ee5931e",
+      "client_org": "3ee84ffc-5283-4ee8-a3de-f11a24fc0293",
+      "name": "Immigrant Sexual Health App",
+      "summary": "An app to help immigrants with sexual health and resources.",
+      "video": "https://youtu.be/PEMk5GOI6bg",
+      "type": "MA",
+      "tagline": "",
+      "is_published": true,
+      "year": 2021,
+      "term": "SM",
+      "screenshot": "projects/screenshot/mobile_screenshot_dG7Taka.png",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://image.slidesharecdn.com/storyboardingandwireframetools-111213145228-phpapp02/95/storyboarding-and-wireframe-tools-review-5-728.jpg?cb=1323797046",
+      "students": [
+        "27d69e4b-23ff-49bd-817f-c3cbfbacf379",
+        "cbfd27b9-356b-40f4-8f1f-8e2f69194c49"
+      ],
+      "tags": [2, 20, 22]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "69abea94-f38d-409f-8e58-6b3136ac1556",
+    "fields": {
+      "ta": "0e75c781-f9e3-4207-8674-bfeb22ab6b4e",
+      "client_rep": "7b0b1c75-0d7e-4e17-9711-0f83f4dee46c",
+      "client_org": "c7c41f32-bd02-466b-87ee-f2308139823b",
+      "name": "Recovery Meal App",
+      "summary": "A self-contained gamification module for the Recovery Meal App (a tech-enabled solution to combat food waste).",
+      "video": "",
+      "type": "MA",
+      "tagline": "",
+      "is_published": false,
+      "year": 2021,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://image.slidesharecdn.com/storyboardingandwireframetools-111213145228-phpapp02/95/storyboarding-and-wireframe-tools-review-5-728.jpg?cb=1323797046",
+      "students": [
+        "036725aa-0506-4f26-9496-bd228a29dc51",
+        "115c3f2d-d071-47de-a78b-581ea2f34597",
+        "2981f45f-a6bd-4070-8309-feca8969f914",
+        "f19cb72b-c20e-4873-979b-52a5519fd034"
+      ],
+      "tags": [2, 5, 9, 16, 17, 18]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "7f8eb3f8-8aaf-4c12-918c-5043f07b9a0b",
+    "fields": {
+      "ta": "2df66c51-6375-4f90-aaad-85c080e26b5c",
+      "client_rep": "c1818c34-0751-420c-a9d6-e96634b8a351",
+      "client_org": "288d2e4d-07b8-4966-af3e-3f27dd86c560",
+      "name": "MWM",
+      "summary": "Keep track of scores and results in real time!",
+      "video": "https://youtu.be/MTT4-xXXO4A",
+      "type": "WA",
+      "tagline": "Measure What Matters",
+      "is_published": true,
+      "year": 2020,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "Great customer service very knowledgeable and helpful. Policy was specific to my needs.",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://i.stack.imgur.com/uOM56.jpg",
+      "students": [
+        "0de83899-0a1d-4a34-8e22-7c4334fea826",
+        "505b4685-3af1-42cf-a668-04cdf6bd985c",
+        "7bc58ea9-93c6-4420-b2ac-79f6ff2daac9",
+        "85c88634-64a4-4144-81f2-c5e997dc7dd6"
+      ],
+      "tags": [3, 4]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "8a2f5259-0454-49c2-93eb-6bd3a1a5a9d7",
+    "fields": {
+      "ta": "c3faf9b2-c20f-4634-b61d-5ff7235472e8",
+      "client_rep": "d76d165c-0192-4307-a42a-8c76be4a9e7e",
+      "client_org": "efca910d-dc1f-4988-be21-2f88fde85026",
+      "name": "eva",
+      "summary": "A virtual 211 assisstant.",
+      "video": "https://youtu.be/bAbknGeZD1Y",
+      "type": "MA",
+      "tagline": "Edmonton’s 211 Resource Bot",
+      "is_published": true,
+      "year": 2020,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "A great app that does what we want.",
+      "website_url": "https://www.apple.com/ca/app-store/",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://image.slidesharecdn.com/storyboardingandwireframetools-111213145228-phpapp02/95/storyboarding-and-wireframe-tools-review-5-728.jpg?cb=1323797046",
+      "students": [
+        "5dc9f9f5-ee6f-4fc7-9e0b-f468155bf97b",
+        "67461799-e142-4fba-8f28-3c456c0c464d",
+        "90477853-1dd5-4143-8067-b3d7ca4caf14",
+        "e1e87e0e-2f1d-40a7-9d64-911fa4f9086d",
+        "e592caa1-50e4-42cb-8e8e-9de0f7a5143f"
+      ],
+      "tags": [1, 2]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "8e3502ca-c8a2-4d60-9318-261da6efff3b",
+    "fields": {
+      "ta": "7bc58ea9-93c6-4420-b2ac-79f6ff2daac9",
+      "client_rep": "d7c18162-8bbc-495d-93a5-25ae0463de0a",
+      "client_org": "ae81004e-36d9-49f2-aa83-492f4df3e2b0",
+      "name": "Neighbourhood Union Booking App",
+      "summary": "An app for booking our ice skating rink and our hall.\r\n\r\nThe hall bookings are year-round and there are fees that vary with day, time of day and whether the renter is a member of our league or not.  \r\n\r\nThe rink bookings are weekends (Friday and Saturday evening mostly) at this time although that might extend to all evenings.  There is a fee for these bookings as well.",
+      "video": "",
+      "type": "WA",
+      "tagline": "",
+      "is_published": false,
+      "year": 2021,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://i.stack.imgur.com/uOM56.jpg",
+      "students": [
+        "328b1559-2438-442d-9c98-81e0ad6405ac",
+        "5cb059d2-91a0-4b6a-8ef8-00b34b76364d",
+        "e06ded4b-3de6-4ab5-bdc5-f6c875962f01"
+      ],
+      "tags": [1, 9, 15]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "9cae4b1e-460d-42a1-ace5-0c951122239a",
+    "fields": {
+      "ta": "dc2cb895-c380-49ca-9cae-81a80cf8e4a7",
+      "client_rep": "720492d1-fe5f-4d06-9d42-1a4615161e43",
+      "client_org": "066cd945-90bb-4ba0-8ffa-10f6d4cb2af1",
+      "name": "CCACH App",
+      "summary": "An innovative approach to community development.",
+      "video": "https://youtu.be/jKqKF1LXjP4",
+      "type": "WA",
+      "tagline": "Council of Canadians of African and Caribbean Heritage",
+      "is_published": true,
+      "year": 2021,
+      "term": "W",
+      "screenshot": "projects/screenshot/webapp_screenshot.png",
+      "presentation": "",
+      "review": "The attention to detail provided was impressive and customer service skills are excellent. A fine ambassador for the university.",
+      "website_url": "http://ccach.org/",
+      "source_code_url": "",
+      "logo_url": "https://pbs.twimg.com/profile_images/762680944918536193/ESzWZPa0_400x400.jpg",
+      "logo_image": "",
+      "storyboard": "",
+      "students": [
+        "66bf3e1e-7f8a-4ea1-849b-5acdf61eb4d3",
+        "ae1d1690-e8df-4021-b605-9c9f6930a976",
+        "eca14245-0a13-4f10-998c-b90398818f9d"
+      ],
+      "tags": []
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "a804e772-80bf-47d3-8d2f-504118096a49",
+    "fields": {
+      "ta": "c557dd3f-b04d-4f8c-a84e-14bff827c567",
+      "client_rep": "e0ac146e-ca6d-4d02-a2a3-719cb59ef13f",
+      "client_org": "c918d8c8-3e73-43a6-8c37-f8b9dbad47f8",
+      "name": "Speechly Technology",
+      "summary": "If you are looking for a user-friendly voice technology for web with a low barrier to entry and easy integration, Speechly is your choice.",
+      "video": "https://youtu.be/X-Fi5646mDQ",
+      "type": "WA",
+      "tagline": "Don't Type. Just Speak.",
+      "is_published": true,
+      "year": 2021,
+      "term": "W",
+      "screenshot": "projects/screenshot/webapp_screenshot_H5MRwnU.png",
+      "presentation": "",
+      "review": "Great service, efficient communication with lots of help and support to get the right deal.",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://i.stack.imgur.com/uOM56.jpg",
+      "students": [
+        "0e75c781-f9e3-4207-8674-bfeb22ab6b4e",
+        "3084f58c-7b34-41cc-b1d8-381b6a7f383a",
+        "37fc5aac-57be-4eb1-b983-6bbbe98f35af",
+        "3e2bac8c-0ca7-48c2-9a35-8f91c75bd113",
+        "6771e092-d966-4218-b72d-0f182a99c0d7"
+      ],
+      "tags": [14]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "ac4c3144-ac3b-402c-9525-e2334aad2583",
+    "fields": {
+      "ta": "25fb95e9-4cfa-4b59-9c26-12007d99cd46",
+      "client_rep": "28bce537-5917-4d1f-9136-8bd4bccf0e2b",
+      "client_org": "7c24417b-2161-4fc1-b482-bf688002a9d3",
+      "name": "Team Illuminator",
+      "summary": "With the Team Illuminator, users can:\r\n\r\n1. Take a self-assessment and determine their preferences for interacting with others at work.\r\n2. Increase empathy, understand what drives people’s workplace values and behaviors.\r\n3. Compare their values to teammates, and determine optimal collaboration strategies\r\n\r\nProvides practical tips to apply the learning to a user’s teams. We can also train an HR business partner or coach a leader to facilitate a team discussion. Our excellent facilitators can run a team session for you and coach the leader and/or team members individually as needed.We also provide virtual and face to face training programs based on our assessment model.",
+      "video": "https://youtu.be/Fy-C--EpQxQ",
+      "type": "WA",
+      "tagline": "They all want team success. They just have different ways of getting there.",
+      "is_published": true,
+      "year": 2021,
+      "term": "W",
+      "screenshot": "projects/screenshot/webapp_screenshot_uFk12VF.png",
+      "presentation": "",
+      "review": "A fantastic organization! Great customer support from beginning to end of the process. The team are really informed and go the extra mile at every stage. I would recommend them unreservedly.",
+      "website_url": "https://luminancelearning.com/team-illuminator/",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://i.stack.imgur.com/uOM56.jpg",
+      "students": [
+        "1422ee67-4731-4227-8ec7-cb41cc0a0758",
+        "79fd23b8-aec2-46ee-87e9-e40279c149f0",
+        "9e57f8ea-0d5d-459c-b076-beccc823faf6",
+        "ccbe52e1-8e65-4b65-9930-fa553eba5bc4"
+      ],
+      "tags": [9, 12, 13]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "c652a5f0-e358-4ef4-924f-dbf51883d230",
+    "fields": {
+      "ta": "349af7db-8e62-401e-9b26-270699903fdf",
+      "client_rep": "6534dfc7-89d7-440c-bf14-4ec03747c413",
+      "client_org": "f43c2477-5639-4616-8311-4b8a94dcf23d",
+      "name": "Mechanical Turk Experiments",
+      "summary": "Login at ease with or MTRUK app! Experiment filters to group data. Manage and create experiments and experiment.",
+      "video": "https://youtu.be/iZqB2K0Ba4M",
+      "type": "MA",
+      "tagline": "We're not amazon!",
+      "is_published": true,
+      "year": 2021,
+      "term": "SP",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "https://www.mturk.com/",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://i.stack.imgur.com/uOM56.jpg",
+      "students": [
+        "99556dd2-2863-4aa7-8728-f68f1e450e26",
+        "bb1360b8-b942-4ddd-92e2-776029921b86",
+        "e544c0c8-b7b7-4ef8-9b12-03a5a31e6d7d"
+      ],
+      "tags": []
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "ed84b231-8252-4bca-8cc8-ff8efa7bf892",
+    "fields": {
+      "ta": "3b097e05-15bc-4fd4-a9ff-f429cbbc2a2f",
+      "client_rep": "7a337203-c132-4b78-96c2-6c7bbd13117c",
+      "client_org": "91c3793c-2d1e-4ac0-9886-8e6a57f1d05a",
+      "name": "Phonetic Markup",
+      "summary": "Phonetic Markup was designed around the Benjamin Franklin Method of annotating text. It has a variety of tools available to allow you to annotate, markup, and highlight different parts of a text in an interactive and visually distinctive way. We hope this app helps you with improving your accent and finding success in your language endeavours.",
+      "video": "https://youtu.be/4aBXp0GFSSQ",
+      "type": "OTH",
+      "tagline": "The Benjamin Franklin Method",
+      "is_published": true,
+      "year": 2021,
+      "term": "W",
+      "screenshot": "projects/screenshot/webapp_screenshot_5qHD1v7.png",
+      "presentation": "",
+      "review": "The team represents among the highest levels of customer service I have experienced. Information was accurate, responses to queries were turned around very fast. Answers were clear and where necessary detailed enough for us to make informed decisions quickly, minimizing the end to end time to process complex transactions among a number of parties.",
+      "website_url": "https://ualberta-cmput401.github.io/phonetic-markup/",
+      "source_code_url": "",
+      "logo_url": "",
+      "logo_image": "",
+      "storyboard": "https://i.stack.imgur.com/uOM56.jpg",
+      "students": [
+        "5e4483ac-43f8-4e56-b363-7554138c6756",
+        "6da5f295-db21-4839-ac64-eb77009748c8",
+        "95229979-f151-453a-939e-33f690d43a51",
+        "a7e29dc9-c5f4-4fd9-a67f-8d0284877ece"
+      ],
+      "tags": [19]
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 1,
+    "fields": {
+      "value": "Django"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 2,
+    "fields": {
+      "value": "React Native"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 3,
+    "fields": {
+      "value": "Sport"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 4,
+    "fields": {
+      "value": "Soccer"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 5,
+    "fields": {
+      "value": "Game"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 6,
+    "fields": {
+      "value": "Memory"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 7,
+    "fields": {
+      "value": "AR"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 8,
+    "fields": {
+      "value": "Augmented Reality"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 9,
+    "fields": {
+      "value": "React"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 10,
+    "fields": {
+      "value": "Django Rest Framework"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 11,
+    "fields": {
+      "value": "REST API"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 12,
+    "fields": {
+      "value": "Team"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 13,
+    "fields": {
+      "value": "Survey"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 14,
+    "fields": {
+      "value": "Nutrition"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 15,
+    "fields": {
+      "value": "Linux"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 16,
+    "fields": {
+      "value": "PHP"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 17,
+    "fields": {
+      "value": "Apache"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 18,
+    "fields": {
+      "value": "MySQL"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 19,
+    "fields": {
+      "value": "Education"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 20,
+    "fields": {
+      "value": "Flutter"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 21,
+    "fields": {
+      "value": "IOS"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 22,
+    "fields": {
+      "value": "Android"
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "6771e092-d966-4218-b72d-0f182a99c0d7",
+    "fields": {
+      "password": "0f182a99c0d7",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:50:42Z",
+      "email": "github@github.com",
+      "name": "Github",
+      "bio": "I show off the github profile icon!",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "github",
+      "github_user_id": 9919,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "0366bb61-6ca7-4545-86b4-d23100d7b74f",
+    "fields": {
+      "password": "y45nEvk9PG6qXa5l",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:50:42Z",
+      "email": "victor.ahmad@email.com",
+      "name": "Victor Ahmad",
+      "bio": "Client rep for Migrante Canada.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "036725aa-0506-4f26-9496-bd228a29dc51",
+    "fields": {
+      "password": "4j8rP36tUhxcfHXR",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:28:29Z",
+      "email": "rosalie.chase@email.com",
+      "name": "Rosalie Chase",
+      "bio": "I am a 3rd year General Computer Science student with a minor in Biology at the University of Alberta. I will be graduating in Winter 2023.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "0de83899-0a1d-4a34-8e22-7c4334fea826",
+    "fields": {
+      "password": "337P34aahwKKBzQ2",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:52:53Z",
+      "email": "cieran.quintero@email.com",
+      "name": "Cieran Quintero",
+      "bio": "I am a 3rd year Comp Sci Honours student at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "0e75c781-f9e3-4207-8674-bfeb22ab6b4e",
+    "fields": {
+      "password": "k3gSvGQj6EgGvzbE",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:45:05Z",
+      "email": "bert.perry@email.com",
+      "name": "Bert Perry",
+      "bio": "Was a 401 student in Winter 2021 working on Speechly Technologies.\r\nNow I'm a Grad student working as a TA for CMPUT 401 Fall 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "https://ca.linkedin.com/",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "115c3f2d-d071-47de-a78b-581ea2f34597",
+    "fields": {
+      "password": "xRSh4wCQvckf4H25",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:28:51Z",
+      "email": "shayla.quintana@email.com",
+      "name": "Shayla Quintana",
+      "bio": "I am a 3rd year General Computer Science student at the University of Alberta. I will be graduating in Winter 2023.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "1422ee67-4731-4227-8ec7-cb41cc0a0758",
+    "fields": {
+      "password": "5RhrrsDkfxS6Hrp7",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:49:14Z",
+      "email": "luna.glenn@email.com",
+      "name": "Luna Glenn",
+      "bio": "I am a 3rd year Comp Sci Specialization student at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "1a22a4cb-c3da-480d-9f31-914dbf185444",
+    "fields": {
+      "password": "dE2Rd2ukeYFsE5tc",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:00:29Z",
+      "email": "alicja.connor@email.com",
+      "name": "Alicja Connor",
+      "bio": "",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "25fb95e9-4cfa-4b59-9c26-12007d99cd46",
+    "fields": {
+      "password": "8yWCaAqTyKxbxQJU",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:45:36Z",
+      "email": "nettie.swan@email.com",
+      "name": "Nettie Swan",
+      "bio": "Grad student working for Dr. Tanner in the faculty of Science. \r\nWorked as a TA for CMPUT 401 Summer 2021.\r\nWorking as a TA for CMPUT 401 Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "https://ca.linkedin.com/",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "279ac918-f487-4776-9870-71d8604aae38",
+    "fields": {
+      "password": "hE8j45KkshgneJky",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:37:32Z",
+      "email": "wiktor.barnett@email.com",
+      "name": "Wiktor Barnett",
+      "bio": "I am a 3rd year Comp Sci Specialization student at the University of Alberta. I will be graduating in Winter 2023.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "27d69e4b-23ff-49bd-817f-c3cbfbacf379",
+    "fields": {
+      "password": "ZElrxCa8FFeL6Aqt",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T16:36:10Z",
+      "email": "marion.senior@email.com",
+      "name": "Marion Senior",
+      "bio": "3rd year comp sci student graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "28bce537-5917-4d1f-9136-8bd4bccf0e2b",
+    "fields": {
+      "password": "NP9ZF7GwRnheuJLe",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:40:20Z",
+      "email": "rachelle.mansell@email.com",
+      "name": "Rachelle Mansell",
+      "bio": "Client representative for Luminance Learning.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "2981f45f-a6bd-4070-8309-feca8969f914",
+    "fields": {
+      "password": "hLFXDJdDaJG2QurB",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:29:11Z",
+      "email": "gianluca.miranda@email.com",
+      "name": "Gianluca Miranda",
+      "bio": "I am a 3rd year Comp Sci Software Practice student at the University of Alberta. I will be graduating in Winter 2023.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "2a5b57eb-200c-492e-a7b1-b343dfb6d9a5",
+    "fields": {
+      "password": "qS9UVbkrqmCk9thf",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:06:08Z",
+      "email": "eadie.walker@email.com",
+      "name": "Eadie Walker",
+      "bio": "I am a 3rd year Comp Sci Honours student at the University of Alberta. I will be graduating in Winter 2023.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "2df66c51-6375-4f90-aaad-85c080e26b5c",
+    "fields": {
+      "password": "FpMbTKA3LfCVJE8K",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:52:21Z",
+      "email": "fatima.mccaffrey@email.com",
+      "name": "Fatima McCaffrey",
+      "bio": "Grad student working for Dr. Bond in the faculty of Science. \r\nWorking as a TA for CMPUT 401 Fall 2020.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "2e41aed8-628f-48f1-a091-574b2e2877ef",
+    "fields": {
+      "password": "a3K4RKNaSrSLuH5f",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:01:31Z",
+      "email": "kacie.stott@email.com",
+      "name": "Kacie Stott",
+      "bio": "I am a 3rd year General Computer Science student with a minor in Biology at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "2e9e6164-cafa-4d91-b550-e4c3bbb7215a",
+    "fields": {
+      "password": "nPE9up7rmDY9WhzF",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:36:51Z",
+      "email": "ezmae.nguyen@email.com",
+      "name": "Ezmae Nguyen",
+      "bio": "",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "3084f58c-7b34-41cc-b1d8-381b6a7f383a",
+    "fields": {
+      "password": "Z5278ZApVRUtsvB2",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:44:16Z",
+      "email": "alessia.irvine@email.com",
+      "name": "Alessia Irvine",
+      "bio": "I am a 3rd year Comp Sci Specialization student at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "328b1559-2438-442d-9c98-81e0ad6405ac",
+    "fields": {
+      "password": "mff76yFngwMmckKP",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:16:44Z",
+      "email": "morgan.bauer@email.com",
+      "name": "Morgan Bauer",
+      "bio": "",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "349af7db-8e62-401e-9b26-270699903fdf",
+    "fields": {
+      "password": "SgvippgCHXicmRZN",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T16:08:19Z",
+      "email": "rebekah.gardner@email.com",
+      "name": "Rebekah Gardner",
+      "bio": "TA for Spring 2021, working on Mechanical Turks Experiments.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "https://ca.linkedin.com/",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "37fc5aac-57be-4eb1-b983-6bbbe98f35af",
+    "fields": {
+      "password": "2yrBS43ygyXXLQ5Y",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:44:42Z",
+      "email": "emil.crossley@email.com",
+      "name": "Emil Crossley",
+      "bio": "I am a 3rd year General Computer Science student with a minor in Biology at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "3b097e05-15bc-4fd4-a9ff-f429cbbc2a2f",
+    "fields": {
+      "password": "mB8Wb2GaMyv9BZXm",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:27:29Z",
+      "email": "esme.christie@email.com",
+      "name": "Esme-Rose Christie",
+      "bio": "Grad student working for Dr. Yoder in the faculty of Science. \r\nWorking as a TA for CMPUT 401 Winter 2021.",
+      "image": "",
+      "website_link": "https://ca.linkedin.com/",
+      "linkedin_link": "https://ca.linkedin.com/",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "3e2bac8c-0ca7-48c2-9a35-8f91c75bd113",
+    "fields": {
+      "password": "NhPTa7FfUc2Uaykc",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:43:56Z",
+      "email": "jazmine.morris@email.com",
+      "name": "Jazmine Morris",
+      "bio": "I am a 3rd year General Computer Science student at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "43ac78d8-6b7c-4d9d-92bc-2e4b165c840a",
+    "fields": {
+      "password": "rWBil1AD8GOI5sgl",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:56:04Z",
+      "email": "ted.lester@email.com",
+      "name": "Ted Lester",
+      "bio": "4th year comp sci student graduating in Winter 2022.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "46b61e11-27d8-4441-a86e-750a5dcc484b",
+    "fields": {
+      "password": "eDz3Z8ubhbzFzBYL",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:01:19Z",
+      "email": "bryce.khan@email.com",
+      "name": "Bryce Khan",
+      "bio": "Client representative for Blab and Bake.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "4bf6b960-746e-4ded-8737-55fabe229806",
+    "fields": {
+      "password": "vDLy2S07Qqh7QUec",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:55:42Z",
+      "email": "maximus.shaffer@email.com",
+      "name": "Maximus Shaffer",
+      "bio": "3rd year comp sci student graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "4c143158-71e9-4db9-8d9b-4e304340f335",
+    "fields": {
+      "password": "1v3Vx5cD5kKlpxNN",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:55:11Z",
+      "email": "allan.cooke@email.com",
+      "name": "Allan Cooke",
+      "bio": "CMPUT 401 TA for Fall 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "https://ca.linkedin.com/",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "505b4685-3af1-42cf-a668-04cdf6bd985c",
+    "fields": {
+      "password": "khUyUSk7zb4Aqjgt",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:31:24Z",
+      "email": "malik.serrano@email.com",
+      "name": "Malik Serrano",
+      "bio": "I am a 4th year General Computer Science student with a minor in Biology at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "56304351-70e9-43e2-965b-78d8f0cf3264",
+    "fields": {
+      "password": "RbH9JTv5D7vqpFL3",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:16:05Z",
+      "email": "lamar.christian@email.com",
+      "name": "Lamar Christian",
+      "bio": "I am a 4th year Comp Sci Specialization student at the University of Alberta. I will be graduating in Summer 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "5cb059d2-91a0-4b6a-8ef8-00b34b76364d",
+    "fields": {
+      "password": "VeryqVfU3qFRv8Bk",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:17:25Z",
+      "email": "sadiyah.yu@email.com",
+      "name": "Sadiyah Yu",
+      "bio": "",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "5da2d197-f0df-468d-80a5-b396ff91aa8a",
+    "fields": {
+      "password": "yRHBgxYRjZW6VvEP",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:05:43Z",
+      "email": "daniela.yoder@email.com",
+      "name": "Daniela Roder",
+      "bio": "",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "5dc9f9f5-ee6f-4fc7-9e0b-f468155bf97b",
+    "fields": {
+      "password": "F53bBnYuEpzEGRhV",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:31:47Z",
+      "email": "tara.guest@email.com",
+      "name": "Tara Guest",
+      "bio": "I am a 3rd year General Computer Science student with a minor in Biology at the University of Alberta. I will be graduating in Spring 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "5e4483ac-43f8-4e56-b363-7554138c6756",
+    "fields": {
+      "password": "9G9NtN5kJPfnYE6e",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:29:02Z",
+      "email": "alec.munro@email.com",
+      "name": "Alec Munro",
+      "bio": "",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "6534dfc7-89d7-440c-bf14-4ec03747c413",
+    "fields": {
+      "password": "HAuUMScJOKXZGN1f",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:30:55Z",
+      "email": "wojciech.wicks@email.com",
+      "name": "Wojciech Wicks",
+      "bio": "Client rep for Mechanical Turks Technologies",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "66bf3e1e-7f8a-4ea1-849b-5acdf61eb4d3",
+    "fields": {
+      "password": "5HYC7yDgv4EPb5b2",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:11:15Z",
+      "email": "matthias.robin@email.com",
+      "name": "Matthias Robin",
+      "bio": "I am a 4th year Comp Sci Honours student at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "67461799-e142-4fba-8f28-3c456c0c464d",
+    "fields": {
+      "password": "XkjxMwStmbNK6Wjy",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:30:52Z",
+      "email": "aneesha.cantu@email.com",
+      "name": "Aneesha Cantu",
+      "bio": "",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "69196e14-6789-40d7-905c-9763074dcfa1",
+    "fields": {
+      "password": "RX3HTWU4j7a3njg6",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:37:11Z",
+      "email": "essa.daniels@email.com",
+      "name": "Essa Daniels",
+      "bio": "",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "6da5f295-db21-4839-ac64-eb77009748c8",
+    "fields": {
+      "password": "9nP99LbhBpHdDaPz",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:28:43Z",
+      "email": "akaash.bellamy@email.com",
+      "name": "Akaash Bellamy",
+      "bio": "",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "716ee4fd-dd69-4be4-bb97-dcf7730c957f",
+    "fields": {
+      "password": "qkpVDxOGy615Jhog",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:56:25Z",
+      "email": "najma.perez@email.com",
+      "name": "Najima Perez",
+      "bio": "3rd year comp sci student graduating in Spring 2023.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "720492d1-fe5f-4d06-9d42-1a4615161e43",
+    "fields": {
+      "password": "gm3UURuMpfSe9UJ9",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:02:56Z",
+      "email": "kien.downes@email.com",
+      "name": "Kien Downes",
+      "bio": "Client representative for the CCACH.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "79fd23b8-aec2-46ee-87e9-e40279c149f0",
+    "fields": {
+      "password": "xQ9ftAXpY4DSfRzV",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:50:13Z",
+      "email": "emma.parker@email.com",
+      "name": "Emma Parker",
+      "bio": "",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "7a337203-c132-4b78-96c2-6c7bbd13117c",
+    "fields": {
+      "password": "46bP2HtAZWhTYv6e",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:27:04Z",
+      "email": "judith.farley@email.com",
+      "name": "Judith Farley",
+      "bio": "Client representative for the University of Alberta.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "7b0b1c75-0d7e-4e17-9711-0f83f4dee46c",
+    "fields": {
+      "password": "P9PCmK3f9vsJmnXR",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:25:44Z",
+      "email": "ebrahim.edmonds@email.com",
+      "name": "Ebrahim Edmonds",
+      "bio": "Client representative for the Table Scraps Foundation.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "7bc58ea9-93c6-4420-b2ac-79f6ff2daac9",
+    "fields": {
+      "password": "W9pq4L7RRR8wwZZX",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:53:46Z",
+      "email": "seth.butt@email.com",
+      "name": "Seth Butt",
+      "bio": "401 student in Fall 2020 working on the Measure What Matters project.\r\nNow a TA for CMPUT 401 for Fall 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "7d2b529f-8fc7-4495-a8aa-a41b4f2d0970",
+    "fields": {
+      "password": "hA9gHWs4fbMakAHr",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:06:27Z",
+      "email": "mylee.spence@email.com",
+      "name": "Mylee Spence",
+      "bio": "I am a 4th year Comp Sci Honours student at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "85c88634-64a4-4144-81f2-c5e997dc7dd6",
+    "fields": {
+      "password": "5nPQ8z9GKXr8z3EN",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:53:28Z",
+      "email": "keri.sutton@email.com",
+      "name": "Keri Sutton",
+      "bio": "",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "87f670a0-6af3-4975-a793-3109df7fe30f",
+    "fields": {
+      "password": "KARx3wfxx58VyZXR",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:06:49Z",
+      "email": "callen.crane@email.com",
+      "name": "Callen Crane",
+      "bio": "I am a 4th year Comp Sci Software Practice student at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "90477853-1dd5-4143-8067-b3d7ca4caf14",
+    "fields": {
+      "password": "Qs5jdekJYF8Tm9DZ",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:30:22Z",
+      "email": "connagh.churchill@email.com",
+      "name": "Connagh Churchill",
+      "bio": "I am a 3rd year General Computer Science student at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "95229979-f151-453a-939e-33f690d43a51",
+    "fields": {
+      "password": "YYKgbUkpC5n3cXxQ",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:28:16Z",
+      "email": "frankie.vaughan@email.com",
+      "name": "Frankie Vaughan",
+      "bio": "I am a 4th year Comp Sci Software Practice student at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "99556dd2-2863-4aa7-8728-f68f1e450e26",
+    "fields": {
+      "password": "xyggs10kSZCjLO3S",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T16:09:04Z",
+      "email": "mali.reid@email.com",
+      "name": "Mali Reid",
+      "bio": "3rd year comp sci student graduating in Winter 2022.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "9acd99fd-3f82-4290-bd52-9f595e48c52b",
+    "fields": {
+      "password": "bPtUq3PVgBcjzW7J",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:00:11Z",
+      "email": "elle.prentice@email.com",
+      "name": "Elle Prentice",
+      "bio": "I am a 4th year Comp Sci Honours student at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "9cf68ca1-c376-440f-a4cc-70df7989d685",
+    "fields": {
+      "password": "3djfHeKq6Hnakrjr",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:30:58Z",
+      "email": "antonio.lawson@email.com",
+      "name": "Antonio Lawson",
+      "bio": "Client representative for the University of Alberta.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "9e57f8ea-0d5d-459c-b076-beccc823faf6",
+    "fields": {
+      "password": "2n6zq8h2FVJUhMqq",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:49:55Z",
+      "email": "fintan.tang@email.com",
+      "name": "Fintan Tang",
+      "bio": "",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "a7e29dc9-c5f4-4fd9-a67f-8d0284877ece",
+    "fields": {
+      "password": "tg7E7HUXZukcH98Z",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:29:21Z",
+      "email": "kimora.finch@email.com",
+      "name": "Kimora Finch",
+      "bio": "I am a 4th year General Computer Science student at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "ac9ffde8-7404-47d0-8776-d36d2b0f0a95",
+    "fields": {
+      "password": "peSza36f7qWXTNWS",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:16:24Z",
+      "email": "zoya.morin@email.com",
+      "name": "Zoya Morin",
+      "bio": "I am a 3rd year General Computer Science student at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "ae1d1690-e8df-4021-b605-9c9f6930a976",
+    "fields": {
+      "password": "JUKX7qY2m3e5sMAj",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:10:21Z",
+      "email": "kynan.weber@email.com",
+      "name": "Kynan Weber",
+      "bio": "I am a 4th year Comp Sci Software Practice student at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "bb1360b8-b942-4ddd-92e2-776029921b86",
+    "fields": {
+      "password": "Sr6GNzoAJ4Kf0JW8",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T16:08:45Z",
+      "email": "dale.barrow@email.com",
+      "name": "Dale Barrow",
+      "bio": "3rd year comp sci student graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "bdabe3de-326a-4b97-8047-324c1ea3ec6f",
+    "fields": {
+      "password": "k6wv9NJyxWXkCaR8",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:01:52Z",
+      "email": "terrell.escobar@email.com",
+      "name": "Terrell Escobar",
+      "bio": "Client representative for the University of Alberta.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "c1818c34-0751-420c-a9d6-e96634b8a351",
+    "fields": {
+      "password": "yD89578MBDpNxGzp",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:46:55Z",
+      "email": "mathew.walmsley@email.com",
+      "name": "Mathew Walmsley",
+      "bio": "Client representative for the Canadian Soccer League.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "c3faf9b2-c20f-4634-b61d-5ff7235472e8",
+    "fields": {
+      "password": "k3Gyt9gxAWBgGLeE",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:12:13Z",
+      "email": "allison.fisher@email.com",
+      "name": "Allison Fisher",
+      "bio": "Grad student working for Dr. Tanner in the faculty of Science. \r\nWorking as a TA for CMPUT 401 Fall 2020.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "https://ca.linkedin.com/",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "c557dd3f-b04d-4f8c-a84e-14bff827c567",
+    "fields": {
+      "password": "2M6J6kYUArXQm9gS",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:43:37Z",
+      "email": "calum.fletcher@email.com",
+      "name": "Calum Fletcher",
+      "bio": "Grad student working for Dr. Bond in the faculty of Science. \r\nWorking as a TA for CMPUT 401 Winter 2021.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "https://ca.linkedin.com/",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "c719565b-448f-4ab7-b4f1-732e83f14938",
+    "fields": {
+      "password": "b2QmzP6fUY5ykQnj",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:10:42Z",
+      "email": "cinar.james@email.com",
+      "name": "Cinar James",
+      "bio": "Client representative for the City of Edmonton.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "cbfd27b9-356b-40f4-8f1f-8e2f69194c49",
+    "fields": {
+      "password": "MMjJtC5C0KcQne4R",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T16:35:48Z",
+      "email": "lyra.hopkins@email.com",
+      "name": "Lyra Hopkins",
+      "bio": "4th year compi sci student graduating Summer 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "https://ca.linkedin.com/",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "ccbe52e1-8e65-4b65-9930-fa553eba5bc4",
+    "fields": {
+      "password": "2chdjUPWJwe7Twjv",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:49:36Z",
+      "email": "ceri.nairn@email.com",
+      "name": "Ceri Nairn",
+      "bio": "I am a 3rd year General Computer Science student with a minor in Biology at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "cee9fd0c-5850-4466-9a40-8b4ac0974c2f",
+    "fields": {
+      "password": "RbsLmutF2YZgS9kn",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:01:10Z",
+      "email": "fay.barrera@email.com",
+      "name": "Fay Barrera",
+      "bio": "I am a 4th year Comp Sci Specialization student at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "d1e2bb25-aaeb-45e9-82de-2e686a3265f0",
+    "fields": {
+      "password": "c8YdVnuXEFTzeQqZ",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T21:16:47Z",
+      "email": "anees.esquivel@email.com",
+      "name": "Anees Esquivel",
+      "bio": "I am a 4th year Comp Sci Honours student at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "d76d165c-0192-4307-a42a-8c76be4a9e7e",
+    "fields": {
+      "password": "U2fLdHay6AMsQhNb",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:12:44Z",
+      "email": "verity.brandt@email.com",
+      "name": "Verity Brandt",
+      "bio": "Client rep for the Canadian Mental Health Association.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "d7c18162-8bbc-495d-93a5-25ae0463de0a",
+    "fields": {
+      "password": "k6aBcN4KLCC54ssU",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:11:39Z",
+      "email": "cavan.metcalfe@email.com",
+      "name": "Cavan Metcalfe",
+      "bio": "Client representative for the Avonmore Neighbourhood Union.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "dc2cb895-c380-49ca-9cae-81a80cf8e4a7",
+    "fields": {
+      "password": "UqCcEJJ6Lq2Z2SxN",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:10:00Z",
+      "email": "justine.vance@email.com",
+      "name": "Justine Vance",
+      "bio": "Grad student working for Dr. Yoder in the faculty of Science. \r\nWorking as a TA for CMPUT 401 Winter 2021.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "https://ca.linkedin.com/",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "de3dead0-0df9-47b0-9962-fadd0e930e8f",
+    "fields": {
+      "password": "H9BWv8dEa6kGMap6",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:05:21Z",
+      "email": "ananya.quinn@email.com",
+      "name": "Ananya Quinn",
+      "bio": "I am a 4th year Comp Sci Specialization student at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "e06ded4b-3de6-4ab5-bdc5-f6c875962f01",
+    "fields": {
+      "password": "6agMtCt8v2X5bMfr",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:17:05Z",
+      "email": "nikolas.greig@email.com",
+      "name": "Nikolas Greig",
+      "bio": "I am a 4th year General Computer Science student at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "e0ac146e-ca6d-4d02-a2a3-719cb59ef13f",
+    "fields": {
+      "password": "aQVN4fzaP6JFcsvv",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:42:47Z",
+      "email": "ciaran.ali@email.com",
+      "name": "Ciaran Ali",
+      "bio": "Client representative for Speechly.",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "e1e87e0e-2f1d-40a7-9d64-911fa4f9086d",
+    "fields": {
+      "password": "jJ8PSfXwyGU3RvBx",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:32:24Z",
+      "email": "ashley.kline@email.com",
+      "name": "Ashley Kline",
+      "bio": "I am a 3rd year General Computer Science student at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "e544c0c8-b7b7-4ef8-9b12-03a5a31e6d7d",
+    "fields": {
+      "password": "PpUCyBDqSpttKJD9",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T16:09:25Z",
+      "email": "fateh.mellor@email.com",
+      "name": "Fateh Mellor",
+      "bio": "3rd year comp sci student graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "e592caa1-50e4-42cb-8e8e-9de0f7a5143f",
+    "fields": {
+      "password": "qFgwaKxQB9GN5Z8G",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T17:13:16Z",
+      "email": "juliet.wells@email.com",
+      "name": "Juliet Wells",
+      "bio": "I am a 4th year General Computer Science student with a minor in Biology at the University of Alberta. I will be graduating in Winter 2021.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "eca14245-0a13-4f10-998c-b90398818f9d",
+    "fields": {
+      "password": "38URxYqy7nxb4S2u",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T22:10:44Z",
+      "email": "keeva.senior@email.com",
+      "name": "Keeva Senior",
+      "bio": "I am a 3rd year Computer Science Specialization student. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "f19cb72b-c20e-4873-979b-52a5519fd034",
+    "fields": {
+      "password": "jtbN5Yx1y9oQunYo",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-29T23:29:31Z",
+      "email": "menna.hutchings@email.com",
+      "name": "Menna Hutchings",
+      "bio": "I am a 3rd year General Computer Science student with a minor in Biology at the University of Alberta. I will be graduating in Winter 2022.",
+      "image": "",
+      "website_link": "https://github.com/",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "fd7be1ee-e1e4-4ab8-abaf-1fff9ee5931e",
+    "fields": {
+      "password": "u9jy182xYGbsNceG",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:37:20Z",
+      "email": "howard.kramer@email.com",
+      "name": "Howard Kramer",
+      "bio": "Client rep for Edmonton Immagrants Association",
+      "image": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "activation_key": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

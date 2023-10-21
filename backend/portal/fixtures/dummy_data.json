@@ -1,0 +1,541 @@
+[
+  {
+    "model": "portal.user",
+    "pk": "38b72438-7e7e-4306-a919-a93bd2d97f69",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:39:28Z",
+      "email": "student1@school.com",
+      "name": "Student One",
+      "bio": "He is a student",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "39c01983-bc1e-4d4a-b811-1973146002e7",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:30:55Z",
+      "email": "third@ta.com",
+      "name": "TA 3rd",
+      "bio": "this is the third TA. who is always late to meetings. but always early to deliver.",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "4032f0b7-d7bf-464d-9b4d-6a4bc2bff604",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:15:31Z",
+      "email": "test@2.com",
+      "name": "Marcy",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": [7, 42, 43, 44, 38, 39, 40]
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "7c767f7a-e6c2-46d8-a02d-8be0027c55ea",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:34:08Z",
+      "email": "rep@two.com",
+      "name": "Rep Twon",
+      "bio": "this is the second rep",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "80044859-e658-4214-a225-2c34718aba88",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:44:32Z",
+      "email": "some@email.com",
+      "name": "Worker",
+      "bio": "he is working at the moment",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "8cac5f40-87dc-446c-a95d-13cc04450c7f",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:23:32Z",
+      "email": "user@whoview.com",
+      "name": "User that sees",
+      "bio": "There is not a lot that I can see about this guy",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": [44, 17]
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "a353b9df-93b2-4c1b-a6d6-d223f06fd64f",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:12:41Z",
+      "email": "test@1.com",
+      "name": "Jack Tester",
+      "bio": "Some bio about this user",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "a9277829-1f58-44af-b270-0af0ce34554a",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$pJvpN77mN28kmnw15CF6PE$twvPUjFbhaBIhNq49TThgyWhXUDE43dsDuIjRTOpL2M=",
+      "last_login": "2021-10-01T21:11:40.337Z",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:10:48.435Z",
+      "email": "andyessilfie@gmail.com",
+      "name": "",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "b2f69ccf-ba4e-478d-b0a6-6bc865565b81",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:16:46Z",
+      "email": "test@13.com",
+      "name": "Junior",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "b3cc26c2-7177-4c27-b96d-a1dad38c650a",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:26:36Z",
+      "email": "first@ta.com",
+      "name": "TA one",
+      "bio": "this is the first TA",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "c867ea84-9926-4f0b-9440-8c6912b73eef",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:35:32Z",
+      "email": "rep@three.com",
+      "name": "Rep Three",
+      "bio": "he reps the basketball business",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "c92c7497-159c-4208-b712-9782fbcf7467",
+    "fields": {
+      "password": "user that sleeps",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:43:41Z",
+      "email": "Sleeper@domain.com",
+      "name": "Sleeper",
+      "bio": "He does not like to sleep at all. Was not expecting that was you?",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "e53fabab-b661-49d5-a893-7746f35597dc",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:30:17Z",
+      "email": "second@ta.com",
+      "name": "Second TA",
+      "bio": "this should be the second TA. I second this motion",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "e60a7383-1d1e-4966-8223-bb1a854841fc",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:40:09Z",
+      "email": "student2@school.com",
+      "name": "Student Two",
+      "bio": "She is a student",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "fa4b6d18-d98e-479a-aac0-4817d7b6fca5",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-01T21:32:07Z",
+      "email": "rep@one.com",
+      "name": "Rep One",
+      "bio": "First rep",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "2bb1db1f-52ec-43af-afe7-ddd0f0d2efbb",
+    "fields": {
+      "name": "UBC",
+      "about": "It is not a bank",
+      "website_link": "",
+      "type": "AC",
+      "reps": ["7c767f7a-e6c2-46d8-a02d-8be0027c55ea"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "b80db63d-ef0c-4339-9c56-e3464b01b609",
+    "fields": {
+      "name": "UofA",
+      "about": "IT is a school",
+      "website_link": "",
+      "type": "SP",
+      "reps": ["fa4b6d18-d98e-479a-aac0-4817d7b6fca5"]
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "ebb05174-ba36-4959-82be-08929847b708",
+    "fields": {
+      "name": "BB",
+      "about": "this is the basketball business",
+      "website_link": "",
+      "type": "CSL",
+      "reps": ["c867ea84-9926-4f0b-9440-8c6912b73eef"]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "550d5d10-fdc4-49bc-a3cc-899f6cdf7707",
+    "fields": {
+      "ta": "39c01983-bc1e-4d4a-b811-1973146002e7",
+      "client_rep": "c867ea84-9926-4f0b-9440-8c6912b73eef",
+      "client_org": "ebb05174-ba36-4959-82be-08929847b708",
+      "name": "Big Baller",
+      "summary": "We teach how to shoot the basketball. We do not condone violence. Can you shoot it",
+      "video": "",
+      "type": "MA",
+      "tagline": "",
+      "is_published": false,
+      "year": 2022,
+      "term": "SP",
+      "screenshot": "",
+      "presentation": "",
+      "review": "Actions overs words",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": [
+        "e60a7383-1d1e-4966-8223-bb1a854841fc",
+        "38b72438-7e7e-4306-a919-a93bd2d97f69"
+      ],
+      "tags": [8, 6, 7]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "a7b448f8-fc86-46fa-95be-eb726fa19c1b",
+    "fields": {
+      "ta": "e53fabab-b661-49d5-a893-7746f35597dc",
+      "client_rep": "7c767f7a-e6c2-46d8-a02d-8be0027c55ea",
+      "client_org": "2bb1db1f-52ec-43af-afe7-ddd0f0d2efbb",
+      "name": "Cooker",
+      "summary": "This project inspires to teach students how to cook for their own sake. Can you dig it",
+      "video": "",
+      "type": "WA",
+      "tagline": "",
+      "is_published": true,
+      "year": 2020,
+      "term": "W",
+      "screenshot": "",
+      "presentation": "",
+      "review": "cooking is awesome",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": [
+        "c92c7497-159c-4208-b712-9782fbcf7467",
+        "80044859-e658-4214-a225-2c34718aba88",
+        "8cac5f40-87dc-446c-a95d-13cc04450c7f"
+      ],
+      "tags": [2, 3, 4]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "b945f511-73c2-427e-9168-42cada4286f0",
+    "fields": {
+      "ta": "b3cc26c2-7177-4c27-b96d-a1dad38c650a",
+      "client_rep": "fa4b6d18-d98e-479a-aac0-4817d7b6fca5",
+      "client_org": "b80db63d-ef0c-4339-9c56-e3464b01b609",
+      "name": "Project One",
+      "summary": "This is the project of all project. Can you dig it",
+      "video": "",
+      "type": "MA",
+      "tagline": "this is the tagline",
+      "is_published": false,
+      "year": 2021,
+      "term": "F",
+      "screenshot": "",
+      "presentation": "",
+      "review": "this is the review for the project. it is coming along great",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": [
+        "4032f0b7-d7bf-464d-9b4d-6a4bc2bff604",
+        "b2f69ccf-ba4e-478d-b0a6-6bc865565b81"
+      ],
+      "tags": [3, 5]
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 1,
+    "fields": {
+      "value": "Python"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 2,
+    "fields": {
+      "value": "JavaScript"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 3,
+    "fields": {
+      "value": "ReactJS"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 4,
+    "fields": {
+      "value": "DjangoRestFrameWork"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 5,
+    "fields": {
+      "value": "Django"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 6,
+    "fields": {
+      "value": "Basetball"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 7,
+    "fields": {
+      "value": "PHP"
+    }
+  },
+  {
+    "model": "portal.tag",
+    "pk": 8,
+    "fields": {
+      "value": "XCode"
+    }
+  },
+  {
+    "model": "portal.proposal",
+    "pk": "1d9e7c8b-c30c-49c9-92a4-9f6d5f9acfc5",
+    "fields": {
+      "rep_name": "Rep One",
+      "email": "rep@one.com",
+      "project_info": "this is the info for rep one",
+      "date": "2021-10-01"
+    }
+  },
+  {
+    "model": "portal.proposal",
+    "pk": "baba1507-fc70-4c3f-addf-ffd247f6455c",
+    "fields": {
+      "rep_name": "rep three",
+      "email": "rep@three.com",
+      "project_info": "We would like you to build an app for us, that searches nearby restaurant that is about to dispose of their food. We would get them and give the food to the homeless",
+      "date": "2020-06-19"
+    }
+  },
+  {
+    "model": "portal.proposal",
+    "pk": "fe8c60b6-8a00-4453-aeb6-a0497483f5e4",
+    "fields": {
+      "rep_name": "rep two",
+      "email": "rep@two.com",
+      "project_info": "this is the information the rep two presented",
+      "date": "2021-09-24"
+    }
+  },
+  {
+    "model": "portal.mailinglist",
+    "pk": "icynezz@gmail.com",
+    "fields": {}
+  },
+  {
+    "model": "portal.mailinglist",
+    "pk": "mailinglist1@domain.com",
+    "fields": {}
+  },
+  {
+    "model": "portal.mailinglist",
+    "pk": "one@emailworks.com",
+    "fields": {}
+  },
+  {
+    "model": "portal.mailinglist",
+    "pk": "shouldwe@useproperemail.com",
+    "fields": {}
+  }
+]

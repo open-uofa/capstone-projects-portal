@@ -1,0 +1,125 @@
+[
+  {
+    "model": "portal.user",
+    "pk": "713962b2-b5d0-4811-934b-5c2b4da2abcd",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "ta@example.com",
+      "name": "TA",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "741d7cd9-55ff-451b-90a3-ad27225aa56b",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "student@example.com",
+      "name": "Student",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "portal.user",
+    "pk": "dbfe48b1-5762-4b17-8560-b0d7e73d8bd9",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "rep@example.com",
+      "name": "Rep",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "2b1f5466-9d6c-486c-8b49-e29690a35abe",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+      "last_login": null,
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "admin@example.com",
+      "name": "Admin",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.clientorg",
+    "pk": "e80a1f60-bbf6-4460-b9e7-d3800cb19d64",
+    "fields": {
+      "name": "Published Client Org",
+      "about": "",
+      "website_link": "",
+      "type": "OTH",
+      "reps": ["dbfe48b1-5762-4b17-8560-b0d7e73d8bd9"]
+    }
+  },
+
+  {
+    "model": "portal.project",
+    "pk": "41f2d462-52bf-4161-8c0f-31d5ed63324c",
+    "fields": {
+      "ta": "713962b2-b5d0-4811-934b-5c2b4da2abcd",
+      "client_rep": "dbfe48b1-5762-4b17-8560-b0d7e73d8bd9",
+      "client_org": "e80a1f60-bbf6-4460-b9e7-d3800cb19d64",
+      "name": "Published Project",
+      "summary": "",
+      "video": "",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": true,
+      "year": 2021,
+      "term": "W",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "students": ["741d7cd9-55ff-451b-90a3-ad27225aa56b"],
+      "tags": []
+    }
+  }
+]

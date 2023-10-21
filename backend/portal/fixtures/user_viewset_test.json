@@ -1,0 +1,65 @@
+[
+  {
+    "model": "portal.user",
+    "pk": "2daa98fb-ddc8-4ec4-80cb-8c141b5ea8fd",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "admin@example.com",
+      "name": "Admin",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "caf5c326-9275-45f7-9b97-8cba2bdf425c",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "edituser@example.com",
+      "name": "Edit User",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "702cc082-e726-4d84-b311-2e0ad5d4ca0e",
+    "fields": {
+      "password": "password",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-10-06T23:23:20Z",
+      "email": "anotheruser@example.com",
+      "name": "Another User",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

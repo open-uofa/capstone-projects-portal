@@ -1,0 +1,376 @@
+[
+    {
+        "model": "portal.project",
+        "pk": "3606e866-2614-4383-b031-69f70a737603",
+        "fields": {
+            "ta": "ce78059b-45fe-40ef-a65b-6d6cb5ca6417",
+            "client_rep": "e958905d-aec4-4e68-94b1-b5b5ba352f69",
+            "client_org": "e0b72d39-9843-4b45-8cdf-741db9ce159f",
+            "name": "Another Unpublished Project",
+            "summary": "",
+            "video": "",
+            "type": "OTH",
+            "tagline": "",
+            "is_published": false,
+            "display_on_home_page": false,
+            "year": 2021,
+            "term": "F",
+            "screenshot": "",
+            "presentation": "",
+            "review": "",
+            "website_url": "",
+            "source_code_url": "",
+            "logo_url": "",
+            "students": [
+                "2b65801b-346d-400f-bf3a-9ec4b7635d59",
+                "7333b2fb-efa0-4062-a193-9e813796257b"
+            ],
+            "tags": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "portal.project",
+        "pk": "67f1a493-c4f1-4def-81d2-08bceb1e7347",
+        "fields": {
+            "ta": "298d72d5-8610-4f06-adab-1ff176df486d",
+            "client_rep": "e958905d-aec4-4e68-94b1-b5b5ba352f69",
+            "client_org": "e0b72d39-9843-4b45-8cdf-741db9ce159f",
+            "name": "Yet Another Unpublished Project",
+            "summary": "",
+            "video": "",
+            "type": "OTH",
+            "tagline": "",
+            "is_published": false,
+            "display_on_home_page": false,
+            "year": 2021,
+            "term": "F",
+            "screenshot": "",
+            "presentation": "",
+            "review": "",
+            "website_url": "",
+            "source_code_url": "",
+            "logo_url": "",
+            "students": [
+                "2b65801b-346d-400f-bf3a-9ec4b7635d59",
+                "7e10fc7c-d245-4bb5-9f4a-b84560eb6aa6"
+            ],
+            "tags": []
+        }
+    },
+    {
+        "model": "portal.project",
+        "pk": "818ca049-0e2c-4051-8c20-7793469e1298",
+        "fields": {
+            "ta": "ce78059b-45fe-40ef-a65b-6d6cb5ca6417",
+            "client_rep": "2b65801b-346d-400f-bf3a-9ec4b7635d59",
+            "client_org": "e0b72d39-9843-4b45-8cdf-741db9ce159f",
+            "name": "Unpublished Project",
+            "summary": "",
+            "video": "",
+            "type": "OTH",
+            "tagline": "",
+            "is_published": false,
+            "display_on_home_page": true,
+            "year": 2021,
+            "term": "F",
+            "screenshot": "",
+            "presentation": "",
+            "review": "",
+            "website_url": "",
+            "source_code_url": "",
+            "logo_url": "",
+            "students": [
+                "7e10fc7c-d245-4bb5-9f4a-b84560eb6aa6",
+                "7333b2fb-efa0-4062-a193-9e813796257b"
+            ],
+            "tags": []
+        }
+    },
+    {
+        "model": "portal.project",
+        "pk": "a540b66c-430d-435d-9ac1-b89a2d28f37f",
+        "fields": {
+            "ta": "2b65801b-346d-400f-bf3a-9ec4b7635d59",
+            "client_rep": "e958905d-aec4-4e68-94b1-b5b5ba352f69",
+            "client_org": "e0b72d39-9843-4b45-8cdf-741db9ce159f",
+            "name": "Another Published Project",
+            "summary": "",
+            "video": "",
+            "type": "OTH",
+            "tagline": "",
+            "is_published": true,
+            "display_on_home_page": true,
+            "year": 2021,
+            "term": "F",
+            "screenshot": "",
+            "presentation": "",
+            "review": "",
+            "website_url": "",
+            "source_code_url": "",
+            "logo_url": "",
+            "students": [
+                "298d72d5-8610-4f06-adab-1ff176df486d"
+            ],
+            "tags": []
+        }
+    },
+    {
+        "model": "portal.project",
+        "pk": "c467e9ba-3893-4698-948f-b3a2a63f7a7e",
+        "fields": {
+            "ta": "ce78059b-45fe-40ef-a65b-6d6cb5ca6417",
+            "client_rep": "e958905d-aec4-4e68-94b1-b5b5ba352f69",
+            "client_org": "e0b72d39-9843-4b45-8cdf-741db9ce159f",
+            "name": "Published Project",
+            "summary": "",
+            "video": "",
+            "type": "OTH",
+            "tagline": "",
+            "is_published": true,
+            "display_on_home_page": false,
+            "year": 2021,
+            "term": "F",
+            "screenshot": "",
+            "presentation": "",
+            "review": "",
+            "website_url": "",
+            "source_code_url": "",
+            "logo_url": "",
+            "students": [
+                "2b65801b-346d-400f-bf3a-9ec4b7635d59"
+            ],
+            "tags": []
+        }
+    },
+    {
+        "model": "portal.project",
+        "pk": "ef570865-ece8-43a8-a468-7b52e1b41950",
+        "fields": {
+            "ta": "ce78059b-45fe-40ef-a65b-6d6cb5ca6417",
+            "client_rep": "e958905d-aec4-4e68-94b1-b5b5ba352f69",
+            "client_org": "e0b72d39-9843-4b45-8cdf-741db9ce159f",
+            "name": "Yet Another Published Project",
+            "summary": "",
+            "video": "",
+            "type": "OTH",
+            "tagline": "",
+            "is_published": true,
+            "display_on_home_page": false,
+            "year": 2021,
+            "term": "F",
+            "screenshot": "",
+            "presentation": "",
+            "review": "",
+            "website_url": "",
+            "source_code_url": "",
+            "logo_url": "",
+            "students": [
+                "7e10fc7c-d245-4bb5-9f4a-b84560eb6aa6"
+            ],
+            "tags": []
+        }
+    },
+    {
+        "model": "portal.user",
+        "pk": "298d72d5-8610-4f06-adab-1ff176df486d",
+        "fields": {
+            "password": "pbkdf2_sha256$260000$tKNVMdDA6uPrFUQBM7Jhzr$Yy/EQa5DYtcE24E7RIyBblcNbY3nodni09mTDGBzoL8=",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-10-06T23:23:20Z",
+            "email": "testuser1@example.com",
+            "name": "testuser1",
+            "bio": "",
+            "website_link": "",
+            "linkedin_link": "",
+            "github_username": "",
+            "github_user_id": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "portal.user",
+        "pk": "2b65801b-346d-400f-bf3a-9ec4b7635d59",
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Q6fvgxhzT1FZAdRRvgN0D6$bFO+s5UFb3Z5Cff2Tmrp/OddlKaAtRFPIeHI45/KMAw=",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-10-06T23:07:37Z",
+            "email": "testuser0@example.com",
+            "name": "testuser0",
+            "bio": "",
+            "website_link": "",
+            "linkedin_link": "",
+            "github_username": "",
+            "github_user_id": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "portal.user",
+        "pk": "7333b2fb-efa0-4062-a193-9e813796257b",
+        "fields": {
+            "password": "pbkdf2_sha256$260000$rzGQy5VcCGrRYvsfeZUiYC$ukCZOr3srE4iiUhgLj0xu1I3WKyXtfb9vRKVxridcXg=",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-10-06T23:04:37Z",
+            "email": "everybody@example.com",
+            "name": "Everybody",
+            "bio": "",
+            "website_link": "",
+            "linkedin_link": "",
+            "github_username": "",
+            "github_user_id": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "portal.user",
+        "pk": "7e10fc7c-d245-4bb5-9f4a-b84560eb6aa6",
+        "fields": {
+            "password": "pbkdf2_sha256$260000$39Q3t73KxOItft8OtW9al0$CmF5YSrrhGxsd4hGmzTFXkyrqH7/9BZBzQtqEGkSgIg=",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-10-06T23:02:16Z",
+            "email": "student@example.com",
+            "name": "Student",
+            "bio": "",
+            "website_link": "",
+            "linkedin_link": "",
+            "github_username": "",
+            "github_user_id": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "portal.user",
+        "pk": "98669b94-088b-4a86-bc48-bab46d3199db",
+        "fields": {
+            "password": "pbkdf2_sha256$260000$UI27z1P9BOV5XiRL77n3kz$nqD/IK+297FXpd1a5FSoKDMXr4/LJtl1cCyujR6D2Dk=",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-10-06T23:03:09Z",
+            "email": "nobody@example.com",
+            "name": "Nobody",
+            "bio": "",
+            "website_link": "",
+            "linkedin_link": "",
+            "github_username": "",
+            "github_user_id": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "portal.user",
+        "pk": "ce78059b-45fe-40ef-a65b-6d6cb5ca6417",
+        "fields": {
+            "password": "pbkdf2_sha256$260000$G4mFPG9HcjgHAxRSKBmkRn$lBPDCuElGqO+/qSMSIvx7zSEhtjHI9IwAIa6JIk9xR4=",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-10-06T23:01:38Z",
+            "email": "ta@example.com",
+            "name": "TA",
+            "bio": "",
+            "website_link": "",
+            "linkedin_link": "",
+            "github_username": "",
+            "github_user_id": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "portal.user",
+        "pk": "de3f8966-05e0-4928-85d2-44481e80f664",
+        "fields": {
+            "password": "pbkdf2_sha256$260000$36BfRd8KDlU9uHVd3UhlDY$SrmrlEVRLkbltYoHBbjKdKXjfNWuE8zIQ9wmmyf6A5E=",
+            "last_login": "2021-10-07T06:19:00.473Z",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-10-06T22:59:25Z",
+            "email": "admin@example.com",
+            "name": "Admin",
+            "bio": "",
+            "website_link": "",
+            "linkedin_link": "",
+            "github_username": "",
+            "github_user_id": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "portal.user",
+        "pk": "e958905d-aec4-4e68-94b1-b5b5ba352f69",
+        "fields": {
+            "password": "pbkdf2_sha256$260000$9owlnbwy8aN2c9OJggaCXe$PZPPYnRBtVHigkZAp4bZxzqcLbVG5UMyAtEURmQZAr4=",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-10-06T23:02:36Z",
+            "email": "rep@example.com",
+            "name": "Rep",
+            "bio": "",
+            "website_link": "",
+            "linkedin_link": "",
+            "github_username": "",
+            "github_user_id": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "portal.clientorg",
+        "pk": "e0b72d39-9843-4b45-8cdf-741db9ce159f",
+        "fields": {
+            "name": "Organization",
+            "about": "",
+            "website_link": "",
+            "type": "OTH",
+            "reps": []
+        }
+    },
+    {
+        "model": "portal.tag",
+        "pk": 1,
+        "fields": {
+            "value": "Django"
+        }
+    },
+    {
+        "model": "portal.tag",
+        "pk": 2,
+        "fields": {
+            "value": "Python"
+        }
+    },
+    {
+        "model": "portal.tag",
+        "pk": 3,
+        "fields": {
+            "value": "Testing"
+        }
+    }
+]

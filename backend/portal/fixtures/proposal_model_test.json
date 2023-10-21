@@ -1,0 +1,32 @@
+[
+  {
+    "model": "portal.proposal",
+    "pk": "1d9e7c8b-c30c-49c9-92a4-9f6d5f9acfc5",
+    "fields": {
+      "rep_name": "Rep One",
+      "email": "rep@one.com",
+      "project_info": "this is the info for rep one",
+      "date": "2021-10-01"
+    }
+  },
+  {
+    "model": "portal.proposal",
+    "pk": "baba1507-fc70-4c3f-addf-ffd247f6455c",
+    "fields": {
+      "rep_name": "rep three",
+      "email": "rep@three.com",
+      "project_info": "We would like you to build an app for us, that searches nearby restaurant that is about to dispose of their food. We would get them and give the food to the homeless",
+      "date": "2020-06-19"
+    }
+  },
+  {
+    "model": "portal.proposal",
+    "pk": "fe8c60b6-8a00-4453-aeb6-a0497483f5e4",
+    "fields": {
+      "rep_name": "rep two",
+      "email": "rep@two.com",
+      "project_info": "this is the information the rep two presented",
+      "date": "2021-09-24"
+    }
+  }
+]

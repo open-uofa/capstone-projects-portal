@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "devDependencies": {
+    "husky": "^4.3.8",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "precommit": "npm --prefix frontend run lint-staged && pipenv run pre-commit run",
+    "prepare": "npx husky install",
+    "reset-database": "cd backend && python scripts/setup_db.py --reset && python manage.py makemigrations && python manage.py migrate && python manage.py loaddata portal/fixtures/realistic_dummy_data.json",
+    "install-all-dependencies": "pipenv install --dev && npm install && npx husky install && cd frontend && npm install",
+    "check-types": "cd frontend && npx tsc --pretty --noEmit",
+    "check-format": "cd frontend && npx prettier --check .",
+    "check-lint": "cd frontend && npx eslint . --ext ts --ext tsx --ext js --max-warnings 0",
+    "format-prettier": "cd frontend && npx prettier --write .",
+    "format-pipenv": "pipenv run pre-commit run --all-files",
+    "check-frontend": "npm run check-format && npm run check-lint && npm run check-types",
+    "check-backend": "pipenv run black --check --diff --color backend/ && pipenv run flake8 --show-source backend/",
+    "check-all": "npm run check-frontend && npm run check-backend && npm --prefix frontend run build",
+    "check-format-all": "npm run check-format && npm run check-lint && npm run check-types && npm run format-prettier && npm run format-pipenv && npm --prefix frontend run build",
+    "test-frontend": "npm --prefix frontend run test",
+    "test-backend": "cd backend && pipenv run python manage.py test",
+    "test-all": "npm run test-frontend && npm run test-backend",
+    "start-frontend": "npm --prefix frontend run start",
+    "start-backend": "cd backend && pipenv run python manage.py runserver",
+    "start-servers": "npm-run-all --parallel start-frontend start-backend"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.0.1"
+  }
+}

@@ -1,0 +1,34 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+
+    location /djangostatic/ {
+        root /home/ubuntu/cmput401-portal/backend;
+    }
+
+    location /media/ {
+        root /home/ubuntu/cmput401-portal/backend/build;
+    }
+
+    location /api/ {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn.sock;
+    }
+
+    location /admin/ {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn.sock;
+    }
+
+    location /static/ {
+        root /home/ubuntu/cmput401-portal/frontend/build;
+    }
+
+    location / {
+        root   /home/ubuntu/cmput401-portal/frontend/build;
+        index  index.html;
+        try_files $uri $uri/ /index.html;
+    }
+}

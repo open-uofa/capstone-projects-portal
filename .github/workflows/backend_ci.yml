@@ -1,0 +1,102 @@
+name: Backend CI
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+
+jobs:
+  black:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: psf/black@stable
+        with:
+          options: "--check --diff --color"
+          src: "./backend"
+          version: "21.9b0"
+
+  flake8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Install pipenv
+        run: python -m pip install --upgrade pipenv wheel
+
+      - id: cache-pipenv
+        uses: actions/cache@v2
+        with:
+          path: ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+
+      - name: Install dependencies
+        if: steps.cache-pipenv.outputs.cache-hit != 'true'
+        run: pipenv install --deploy --dev
+
+      - name: Run flake8
+        run: pipenv run flake8 --show-source backend/
+
+  test-backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+
+    services:
+      postgres:
+        # Docker Hub image
+        image: postgres
+        env:
+          POSTGRES_PASSWORD: x
+        ports:
+          - 5432:5432
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      PORTAL_DB_DATABASE: ${{ secrets.PORTAL_DB_DATABASE }}
+      PORTAL_DB_USER: ${{ secrets.PORTAL_DB_USER }}
+      PORTAL_DB_PASSWORD: ${{ secrets.PORTAL_DB_PASSWORD }}
+      PG_CONNECT_PASSWORD: x
+      PORTAL_DB_HOST: localhost
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Install pipenv
+        run: python -m pip install --upgrade pipenv wheel
+
+      - id: cache-pipenv
+        uses: actions/cache@v2
+        with:
+          path: ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+
+      - name: Install dependencies
+        if: steps.cache-pipenv.outputs.cache-hit != 'true'
+        run: pipenv install --deploy --dev
+
+      - name: Setup database
+        env:
+          PORTAL_DB_PORT: ${{ job.services.postgres.ports[5432] }}
+        run: pipenv run python scripts/setup_db.py
+
+      - name: Execute the tests
+        env:
+          DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+          DJANGO_DEBUG: False
+          PORTAL_DB_PORT: ${{ job.services.postgres.ports[5432] }}
+        run: pipenv run python manage.py test

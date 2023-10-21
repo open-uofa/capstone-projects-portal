@@ -1,0 +1,28 @@
+# https://www.mkdocs.org/user-guide/configuration/
+site_name: CMPUT 401 Projects Portal Documentation
+site_url: https://ualberta-cmput401.github.io/cmput401-portal/
+repo_url: https://github.com/UAlberta-CMPUT401/cmput401-portal
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+nav:
+  - user-guide.md
+markdown_extensions:
+  - mdx_truly_sane_lists

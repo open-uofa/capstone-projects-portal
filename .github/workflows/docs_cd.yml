@@ -1,0 +1,28 @@
+name: Docs CD
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Set Up MkDocs
+        run: |
+          pip install --upgrade pip && pip install mkdocs mkdocs-gen-files mkdocs-material mdx-truly-sane-lists
+          git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Publish docs
+        run: mkdocs gh-deploy

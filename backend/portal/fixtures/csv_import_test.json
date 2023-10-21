@@ -1,0 +1,215 @@
+[
+  {
+    "model": "portal.clientorg",
+    "pk": "dbb0c603-ef51-472f-a88d-c34e0580e40e",
+    "fields": {
+      "name": "CMPUT 401",
+      "about": "",
+      "website_link": "",
+      "type": "OTH",
+      "testimonial": "",
+      "reps": ["997c06c4-2d56-49a2-9fd1-efea502abef2"]
+    }
+  },
+  {
+    "model": "portal.project",
+    "pk": "918c9f6f-e2ec-4698-bc2b-1e895a1c838c",
+    "fields": {
+      "ta": "8117669f-b153-4b57-bd16-a61d42d043cf",
+      "client_rep": "997c06c4-2d56-49a2-9fd1-efea502abef2",
+      "client_org": "dbb0c603-ef51-472f-a88d-c34e0580e40e",
+      "name": "CMPUT 401 Project Portal",
+      "summary": "",
+      "video": "",
+      "type": "OTH",
+      "tagline": "",
+      "is_published": false,
+      "year": 2021,
+      "term": "Fall",
+      "screenshot": "",
+      "presentation": "",
+      "review": "",
+      "website_url": "",
+      "source_code_url": "",
+      "logo_url": "",
+      "storyboard": "",
+      "students": [
+        "656098e6-990b-41e2-9c01-5686798f5bc0",
+        "3211170a-6a21-4aeb-9d4d-cf54dbffc1ea",
+        "b397a932-4141-4fa5-865d-95a77e200970",
+        "10d5efa9-0f37-4fab-88f3-ed036ab2442e",
+        "7a17cb69-5742-4ccb-acbd-1a9726ff606d",
+        "b511b62d-a8ad-4b00-a171-f55bf4b29036"
+      ],
+      "tags": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "10d5efa9-0f37-4fab-88f3-ed036ab2442e",
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:22:29.844Z",
+      "email": "nahmed2@ualberta.ca",
+      "name": "Natasha Osmani",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "osmani2",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "3211170a-6a21-4aeb-9d4d-cf54dbffc1ea",
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:22:29.814Z",
+      "email": "aakindel@ualberta.ca",
+      "name": "Ayo Akindele",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "aakindel",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "656098e6-990b-41e2-9c01-5686798f5bc0",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$B5Jxx65PEqD1K2iZY3bGrf$31q0KMCTTY+tsRYBn/LcJl1ypAcSOG32l857R/N0R6U=",
+      "last_login": "2021-10-25T03:42:21.647Z",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-10-25T03:40:30.809Z",
+      "email": "wfenton@ualberta.ca",
+      "name": "",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "7a17cb69-5742-4ccb-acbd-1a9726ff606d",
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:22:29.859Z",
+      "email": "crasta@ualberta.ca",
+      "name": "Alisha Crasta",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "alisha03",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "8117669f-b153-4b57-bd16-a61d42d043cf",
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:22:29.892Z",
+      "email": "mohayemin@ualberta.ca",
+      "name": "Mohayeminul Islam",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "997c06c4-2d56-49a2-9fd1-efea502abef2",
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:22:29.903Z",
+      "email": "ildar@ualberta.ca",
+      "name": "Ildar Akhmetov",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "b397a932-4141-4fa5-865d-95a77e200970",
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:22:29.833Z",
+      "email": "mclean1@ualberta.ca",
+      "name": "Kyle McLean",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "kylemclean",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "portal.user",
+    "pk": "b511b62d-a8ad-4b00-a171-f55bf4b29036",
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-11-01T15:22:29.880Z",
+      "email": "essilfie@ualberta.ca",
+      "name": "Andrews Essilfie",
+      "bio": "",
+      "website_link": "",
+      "linkedin_link": "",
+      "github_username": "essilfie",
+      "github_user_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

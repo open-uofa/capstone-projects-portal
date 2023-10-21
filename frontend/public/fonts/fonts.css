@@ -1,0 +1,29 @@
+/* Din Web Fonts */
+
+@font-face {
+    font-family: "DIN Regular";
+    src: url("./dinpro.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN Bold";
+    src: url("./dinpro-bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN Medium";
+    src: url("./dinpro-medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN Light";
+    src: url("./dinpro-light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

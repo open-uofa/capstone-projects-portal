@@ -1,0 +1,8 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+{% block form_top %}
+<p>{% translate "Enter the user's email address and name." %}</p>
+<p>
+  {% translate "The password and GitHub username fields are optional. If you do not set either of them, an activation email will be sent to the user with a link for them to set their own password." %}
+</p>
+{% endblock %}

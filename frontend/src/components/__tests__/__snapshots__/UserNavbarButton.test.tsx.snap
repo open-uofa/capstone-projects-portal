@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot for regular user 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-5nwj3y"
+  >
+    <button
+      aria-label="Logged in as Guy User"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-137ul40-MuiButtonBase-root-MuiIconButton-root"
+      data-mui-internal-clone-element="true"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
+      >
+        <img
+          alt="Guy User"
+          class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+          src="https://example.com/image.jpg"
+        />
+      </div>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+  <div>
+    Logged in as Guy User
+  </div>
+</div>
+`;
+
+exports[`matches snapshot for superuser 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-5nwj3y"
+  >
+    <button
+      aria-label="Logged in as Super User"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-137ul40-MuiButtonBase-root-MuiIconButton-root"
+      data-mui-internal-clone-element="true"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
+      >
+        <img
+          alt="Super User"
+          class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+          src="https://example.com/image.jpg"
+        />
+      </div>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+  <div>
+    Logged in as Super User
+  </div>
+</div>
+`;
+
+exports[`matches snapshot for user without image 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-5nwj3y"
+  >
+    <button
+      aria-label="Logged in as Jeff User"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-137ul40-MuiButtonBase-root-MuiIconButton-root"
+      data-mui-internal-clone-element="true"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2s90m6-MuiAvatar-root"
+      >
+        J
+      </div>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+  <div>
+    Logged in as Jeff User
+  </div>
+</div>
+`;
