@@ -63,6 +63,21 @@ To start both servers concurrently, run the following command:
 npm run-script start-servers
 ```
 
+## Authors
+
+Developers:
+
+* Alisha Crasta
+* Andrews Essilfie
+* Ayo Akindele
+* Kyle McLean
+* Natasha Osmani
+* Will Fenton
+
+Instructors:
+* Mohayeminul Islam (TA)
+* Ildar Akhmetov
+
 ## License
 
 This project is licensed under the MIT license.
