@@ -1,6 +1,6 @@
 # Deployment
 
-This guide covers how to deploy the CMPUT 401 project portal. It is based on
+This guide covers how to deploy the Capstone Projects Portal. It is based on
 [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-20-04)
 from DigitalOcean, so if you are running into issues it may be a good resource.
 
@@ -27,9 +27,10 @@ sudo apt update && sudo apt upgrade && sudo apt autoremove
 2. Install dependencies
 
 ```shell
-sudo apt install python3-dev python3-pip pipenv libpq-dev postgresql postgresql-contrib nginx curl npm
+sudo apt install python3-dev python3-pip libpq-dev postgresql postgresql-contrib nginx curl npm
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.9
+sudo apt install python3.11
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 ## Initial Deploy
@@ -48,7 +49,7 @@ git clone git@github.com:UAlberta-CMPUT401/cmput401-portal.git ~/cmput401-portal
 cd ~/cmput401-portal/
 
 # install python dependencies
-pipenv install
+uv sync
 
 # install root node packages
 npm install
@@ -79,7 +80,7 @@ sudo service postgresql restart
 5. Generate a Django secret key
 
 ```shell
-pipenv run python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+uv run python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 ```
 
 6. Create the file `~/cmput401-portal/backend/.env` with the following contents
@@ -100,17 +101,12 @@ PORTAL_DB_USER=portaluser
 PORTAL_DB_PASSWORD=<new password>
 
 DJANGO_SECRET_KEY=<secret key you generated earlier>
-
-# URL template for account activations (used for account activation emails)
-ACTIVATION_URL_TEMPLATE=http://cmput401.ca/activate/{activation_key}
-# URL template for password resets (used for password reset emails)
-RESET_PASSWORD_URL_TEMPLATE=http://cmput401.ca/reset-password/{reset_key}
 ```
 
 7. Setup the postgres DB
 
 ```shell
-pipenv run python backend/scripts/setup_db.py --reset
+uv run backend/scripts/setup_db.py --reset
 ```
 
 8. Setup Django
@@ -119,13 +115,13 @@ pipenv run python backend/scripts/setup_db.py --reset
 cd ~/cmput401-portal/backend/
 
 # apply migrations
-pipenv run python manage.py migrate
+uv run manage.py migrate
 
 # create admin account
-pipenv run python manage.py createsuperuser
+uv run manage.py createsuperuser
 
 # collect static files
-pipenv run python manage.py collectstatic
+uv run manage.py collectstatic
 ```
 
 9. Build the website (takes a while)
@@ -229,9 +225,9 @@ To allow users to log in to their portal accounts with GitHub, you must create a
 2. Copy the client ID of the application.
 3. Click the **Generate a client secret** button and copy the client secret.
 4. In `backend/.env`, set the `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` variables to the appropriate values.
-5. In `frontend/.env`, set the `REACT_APP_GITHUB_CLIENT_ID` variable to the client ID.
+5. In `frontend/.env`, set the `VITE_GITHUB_CLIENT_ID` variable to the client ID.
 
-You must redeploy the frontend as it needs to rebuild so that it uses the new `REACT_APP_GITHUB_CLIENT_ID` value.
+You must redeploy the frontend as it needs to rebuild so that it uses the new `VITE_GITHUB_CLIENT_ID` value.
 
 ## Redeploy
 

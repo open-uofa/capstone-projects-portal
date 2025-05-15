@@ -1,0 +1,100 @@
+services:
+  # This is the PostgreSQL database. It stores the data for the backend.
+  db:
+    image: postgres:17
+    container_name: portal-db
+    volumes:
+      - db-data:/var/lib/postgresql/data/
+    env_file:
+      - ./.deploy.env
+    environment:
+      # See docs/environment-variables.md for more information
+      - POSTGRES_DB=${PG_CONNECT_DATABASE:-postgres}
+      - POSTGRES_USER=${PG_CONNECT_USER:-postgres}
+      - POSTGRES_PASSWORD=${PG_CONNECT_PASSWORD:-postgres}
+    # Ensure that this container is not accessible to the public!
+    # Uncomment below to expose database to host
+    #ports:
+    #  - 5432:5432
+    restart: unless-stopped
+
+  # This is the Django backend. It is hosted on port 8000 and runs the backend with Gunicorn.
+  # It connects to the PostgreSQL database to provide data over the API.
+  # Additionally, it stores user-uploaded media in the backend-user-media volume.
+  # Finally, it serves the Django admin panel and some static assets needed by the backend.
+  #
+  # Important: to run database migrations, run `docker compose exec backend uv run backend/manage.py migrate`.
+  # You can also add that command before the gunicorn command to run migrations before the backend starts.
+  backend:
+    build:
+      context: ./
+      dockerfile: ./backend/Dockerfile
+      secrets:
+        - django-secret-key
+    container_name: portal-backend
+    volumes:
+      - backend-user-media:/app/backend/build/media
+      - backend-static:/app/backend/djangostatic
+    # Uncomment below to expose backend to host
+    #ports:
+    #  - "8000:8000"
+    env_file:
+      - ./.deploy.env
+    environment:
+      # See docs/environment-variables.md for more information
+      - FRONTEND_BASE_URL=${FRONTEND_BASE_URL:?error} # Set this to the base URL of the frontend
+      - DJANGO_DEBUG=${DJANGO_DEBUG:-False}
+      - PORTAL_DB_HOST=${PORTAL_DB_HOST:-db} # Default is the service name of the PostgreSQL container
+      - PORTAL_DB_PORT=${PORTAL_DB_PORT:-5432}
+      - PORTAL_DB_DATABASE=${PORTAL_DB_DATABASE:-portal}
+      - PORTAL_DB_USER=${PORTAL_DB_USER:-portal}
+      - PORTAL_DB_PASSWORD=${PORTAL_DB_PASSWORD:-portal}
+      # The PG_CONNECT variables are used to run the setup_db script
+      - PG_CONNECT_DATABASE=${PG_CONNECT_DATABASE:-postgres}
+      - PG_CONNECT_USER=${PG_CONNECT_USER:-postgres}
+      - PG_CONNECT_PASSWORD=${PG_CONNECT_PASSWORD:-postgres}
+    depends_on:
+      - db
+    restart: unless-stopped
+    secrets:
+      - django-secret-key
+
+  # The user-facing Caddy proxy server.
+  # It routes API requests from users to the backend, or serves static frontend or backend assets.
+  # It also serves the user-uploaded media files for the backend.
+  caddy:
+    build:
+      context: ./
+      dockerfile: ./frontend/Dockerfile
+      args:
+        - VITE_API_BASE_URL=${VITE_API_BASE_URL:-/api}
+        - VITE_ADMIN_URL=${VITE_ADMIN_URL:-/admin}
+    container_name: portal-caddy
+    ports:
+      - "80:80"   # For HTTP
+      - "443:443" # For HTTPS (Caddy will use this if serving a domain)
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - backend-user-media:/app/backend/build/media:ro
+      - backend-static:/app/backend/djangostatic:ro
+      - caddy-data:/data                    # Persistent storage for Caddy's state (certs, etc.)
+      - caddy-config:/config                # Persistent storage for Caddy's config (if auto-managed)
+    env_file:
+      - ./.deploy.env
+    environment:
+      - FRONTEND_BASE_URL=${FRONTEND_BASE_URL:?error}
+    depends_on:
+      backend:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  db-data:
+  backend-user-media:
+  backend-static:
+  caddy-data:
+  caddy-config:
+
+secrets:
+  django-secret-key:
+    environment: DJANGO_SECRET_KEY

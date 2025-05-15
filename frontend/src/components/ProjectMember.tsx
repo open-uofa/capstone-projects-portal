@@ -1,11 +1,10 @@
-import * as React from "react"
-import { Stack, Avatar, Box, useTheme } from "@mui/material"
-import Link from "@mui/material/Link"
-import { Link as RouterLink } from "react-router-dom"
-import Typography from "@mui/material/Typography"
 import PersonIcon from "@mui/icons-material/Person"
-import UserShort from "../models/user-short"
-import ClientOrgShort from "../models/client-org-short"
+import { Avatar, Box, Stack, useTheme } from "@mui/material"
+import Link from "@mui/material/Link"
+import Typography from "@mui/material/Typography"
+import { Link as RouterLink } from "react-router-dom"
+import type ClientOrgShort from "../models/client-org-short"
+import type UserShort from "../models/user-short"
 
 export default function ProjectMember(props: {
     isClient: boolean

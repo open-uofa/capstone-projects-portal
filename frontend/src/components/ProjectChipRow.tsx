@@ -1,14 +1,14 @@
-import * as React from "react"
 import { Stack } from "@mui/material"
+import type * as React from "react"
 import { useHistory } from "react-router-dom"
-import Project from "../models/project"
+import type Project from "../models/project"
 import ProjectChip from "./ProjectChip"
 
 export default function ProjectChipRow(props: {
     project: Project
     clickable?: boolean
 }): JSX.Element {
-    const { project, clickable } = props
+    const { project, clickable = false } = props
 
     const ifClickable = (
         x: React.MouseEventHandler<HTMLDivElement> | undefined
@@ -60,7 +60,4 @@ export default function ProjectChipRow(props: {
             ))}
         </Stack>
     )
-}
-ProjectChipRow.defaultProps = {
-    clickable: false,
 }

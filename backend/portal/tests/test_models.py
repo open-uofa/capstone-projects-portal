@@ -22,7 +22,7 @@ class ProjectModelTest(TestCase):
         # Anonymous users should see only published projects
         with self.subTest("Anonymous user"):
             user = AnonymousUser()
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 Project.objects.visible_to(user),
                 published_projects,
                 transform,
@@ -32,7 +32,7 @@ class ProjectModelTest(TestCase):
         # Authenticated users with no project relationships should see only published projects
         with self.subTest("Authenticated user with no project relationships"):
             user = User.objects.get(id="98669b94-088b-4a86-bc48-bab46d3199db")
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 Project.objects.visible_to(user),
                 published_projects,
                 transform,
@@ -46,7 +46,7 @@ class ProjectModelTest(TestCase):
                 "818ca049-0e2c-4051-8c20-7793469e1298",
                 "67f1a493-c4f1-4def-81d2-08bceb1e7347",
             ]
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 Project.objects.visible_to(user),
                 published_projects + unpublished_projects_user_is_a_student_of,
                 transform,
@@ -60,7 +60,7 @@ class ProjectModelTest(TestCase):
                 "818ca049-0e2c-4051-8c20-7793469e1298",
                 "3606e866-2614-4383-b031-69f70a737603",
             ]
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 Project.objects.visible_to(user),
                 published_projects + unpublished_projects_user_is_a_ta_of,
                 transform,
@@ -74,7 +74,7 @@ class ProjectModelTest(TestCase):
                 "67f1a493-c4f1-4def-81d2-08bceb1e7347",
                 "3606e866-2614-4383-b031-69f70a737603",
             ]
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 Project.objects.visible_to(user),
                 published_projects + unpublished_projects_user_is_a_client_rep_of,
                 transform,
@@ -90,7 +90,7 @@ class ProjectModelTest(TestCase):
                 "818ca049-0e2c-4051-8c20-7793469e1298",
                 "3606e866-2614-4383-b031-69f70a737603",
             ]
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 Project.objects.visible_to(user),
                 published_projects
                 + unpublished_projects_user_is_a_student_or_ta_or_client_rep_of,
@@ -101,7 +101,7 @@ class ProjectModelTest(TestCase):
         # Admins should see all projects (published and unpublished)
         with self.subTest("Admin"):
             user = User.objects.get(id="de3f8966-05e0-4928-85d2-44481e80f664")
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 Project.objects.visible_to(user), Project.objects.all(), ordered=False
             )
 
@@ -114,10 +114,8 @@ class UserModelTest(TestCase):
         # Keep track of the number of emails sent before each test
         self.num_sent_emails_before = len(mail.outbox)
 
-        # Set the ACTIVATION_URL_TEMPLATE to a known value
-        settings.ACTIVATION_URL_TEMPLATE = (
-            "http://example.com/activate/{activation_key}"
-        )
+        # Set the FRONTEND_BASE_URL to a known value
+        settings.FRONTEND_BASE_URL = "http://example.com"
 
     def test_creating_user_with_password(self):
         # Try to create a user with a password

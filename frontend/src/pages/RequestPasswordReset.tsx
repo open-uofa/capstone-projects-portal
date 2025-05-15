@@ -1,25 +1,23 @@
-/* eslint-disable react/jsx-props-no-spreading */
-import * as React from "react"
-import * as yup from "yup"
+import { yupResolver } from "@hookform/resolvers/yup"
+import { LoadingButton } from "@mui/lab"
 import {
-    Box,
-    Paper,
-    Container,
-    Typography,
-    useTheme,
-    TextField,
     Alert,
     AlertTitle,
+    Box,
+    Container,
+    Paper,
+    TextField,
+    Typography,
+    useTheme,
 } from "@mui/material"
+import { useState } from "react"
 import {
     Controller,
-    SubmitHandler,
+    type SubmitHandler,
     useForm,
     useFormState,
 } from "react-hook-form"
-import { LoadingButton } from "@mui/lab"
-import { useState } from "react"
-import { yupResolver } from "@hookform/resolvers/yup"
+import * as yup from "yup"
 import { portalApiInstance } from "../api/portal-api"
 import PageTitle from "../components/PageTitle"
 

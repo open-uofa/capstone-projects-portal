@@ -1,13 +1,12 @@
-import { IconButton, Box } from "@mui/material"
 import PublicIcon from "@mui/icons-material/Public"
+import { Box, IconButton } from "@mui/material"
 import Typography from "@mui/material/Typography"
-import * as React from "react"
-import { SyntheticEvent } from "react"
-import ClientOrg from "../models/client-org"
-import ProjectShortCard from "./ProjectShortCard"
-import EditButton from "./EditButton"
+import type { SyntheticEvent } from "react"
 import { useCurrentUser } from "../hooks"
+import type ClientOrg from "../models/client-org"
 import { canEditClientOrg } from "../models/current-user-info"
+import EditButton from "./EditButton"
+import ProjectShortCard from "./ProjectShortCard"
 
 // 1x1 transparent image
 const FALLBACK_IMAGE_URL =
@@ -89,4 +88,3 @@ export default function ClientProfile(props: {
         </Box>
     )
 }
-export {}

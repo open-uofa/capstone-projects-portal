@@ -1,12 +1,12 @@
-import * as React from "react"
-import { Chip, ChipTypeMap, useTheme } from "@mui/material"
+import { Chip, type ChipTypeMap, useTheme } from "@mui/material"
+import type * as React from "react"
 
 export default function ProjectChip(props: {
     color: ChipTypeMap["props"]["color"]
     value: string
     onClick?: React.MouseEventHandler<HTMLDivElement>
 }): JSX.Element {
-    const { color, value, onClick } = props
+    const { color, value, onClick = undefined } = props
 
     const theme = useTheme()
 
@@ -23,7 +23,4 @@ export default function ProjectChip(props: {
             onClick={onClick}
         />
     )
-}
-ProjectChip.defaultProps = {
-    onClick: undefined,
 }

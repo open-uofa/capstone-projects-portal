@@ -6,11 +6,10 @@ import {
     useMediaQuery,
     useTheme,
 } from "@mui/material"
-import { Link as RouterLink } from "react-router-dom"
 import Typography from "@mui/material/Typography"
-import * as React from "react"
-import { SyntheticEvent } from "react"
-import Project from "../models/project"
+import type { SyntheticEvent } from "react"
+import { Link as RouterLink } from "react-router-dom"
+import type Project from "../models/project"
 import ProjectChipRow from "./ProjectChipRow"
 
 const FALLBACK_IMAGE_URL = "/placeholder.png"

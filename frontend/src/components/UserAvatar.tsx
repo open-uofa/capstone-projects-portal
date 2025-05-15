@@ -1,6 +1,5 @@
 import { Avatar } from "@mui/material"
-import * as React from "react"
-import UserShort from "../models/user-short"
+import type UserShort from "../models/user-short"
 
 export default function UserAvatar(props: {
     user: UserShort | null

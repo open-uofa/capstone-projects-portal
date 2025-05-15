@@ -1,4 +1,4 @@
-import CurrentUserInfo from "./current-user-info"
+import type CurrentUserInfo from "./current-user-info"
 
 export interface LoginWithEmailAndPasswordRequest {
     email: string

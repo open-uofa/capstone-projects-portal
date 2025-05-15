@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-import React from "react"
 import {
     fireEvent,
     render,
@@ -7,16 +5,17 @@ import {
     waitFor,
     within,
 } from "@testing-library/react"
-import "@testing-library/jest-dom/extend-expect"
-import { Route, MemoryRouter, useParams } from "react-router-dom"
+import { createMemoryHistory, type History } from "history"
+import { http } from "msw"
 import { setupServer } from "msw/node"
-import { ResponseComposition, rest } from "msw"
-import Project, { ProjectType, Term } from "../../models/project"
-import ClientOrgType from "../../models/client-org-type"
-import ClientOrgShort from "../../models/client-org-short"
+import { Route, Router, useParams } from "react-router-dom"
+import { axiosConfig } from "../../api/config"
 import GlobalStateProvider from "../../global-state/provider"
+import type ClientOrgShort from "../../models/client-org-short"
+import ClientOrgType from "../../models/client-org-type"
+import type Project from "../../models/project"
+import { ProjectType, Term } from "../../models/project"
 import ViewProjects from "../ViewProjects"
-import requestConfig from "../../api/config"
 
 const MockViewProjectPage = (): JSX.Element => {
     const { id } = useParams<{ id: string }>()
@@ -113,13 +112,22 @@ const toProjectCardIdList = (projects: Project[]): string[] =>
     projects.map((project) => `project-card-${project.id}`)
 
 /**
+ * @returns A history with the path set to `/projects`
+ */
+const viewProjectsHistory = () => {
+    const history = createMemoryHistory()
+    history.push("/projects")
+    return history
+}
+
+/**
  * Renders the `ViewProjects` page inside of a mock router with a `GlobalStateProvider`.
  * @returns the return value of the render function
  */
-const renderViewProjectsPage = (): ReturnType<typeof render> =>
+const renderViewProjectsPage = (history: History): ReturnType<typeof render> =>
     render(
         <GlobalStateProvider>
-            <MemoryRouter initialEntries={["/projects"]}>
+            <Router history={history}>
                 <Route path="/projects" exact>
                     <ViewProjects />
                 </Route>
@@ -128,7 +136,7 @@ const renderViewProjectsPage = (): ReturnType<typeof render> =>
                     exact
                     component={MockViewProjectPage}
                 />
-            </MemoryRouter>
+            </Router>
         </GlobalStateProvider>
     )
 
@@ -136,23 +144,21 @@ const renderViewProjectsPage = (): ReturnType<typeof render> =>
  * Waits for the projects on the page to be finished loading.
  */
 const waitForProjectsToFinishLoading = async (): Promise<void> =>
-    waitFor(() => {
+    await waitFor(() => {
         screen.getByText(`${allProjects.length} matching projects`)
     })
 
 const getSearchControls = () => {
     const searchInput = screen.getByPlaceholderText("Search")
-    const typeSelectButton = screen.getByRole("button", { name: "Type" })
-    const termSelectButton = screen.getByRole("button", { name: "Term" })
-    const yearSelectButton = screen.getByRole("button", { name: "Year" })
+    const typeSelectButton = screen.getByRole("combobox", { name: "Type" })
+    const termSelectButton = screen.getByRole("combobox", { name: "Term" })
+    const yearSelectButton = screen.getByRole("combobox", { name: "Year" })
     return { searchInput, typeSelectButton, termSelectButton, yearSelectButton }
 }
 
 const server = setupServer(
-    rest.get(
-        `${requestConfig.baseURL}/projects/`,
-        (req, res: ResponseComposition<Project[]>, ctx) =>
-            res(ctx.json(allProjects))
+    http.get(`${axiosConfig.baseURL}/projects/`, () =>
+        Response.json(allProjects)
     )
 )
 
@@ -160,7 +166,8 @@ beforeAll(() => server.listen())
 afterEach(() => server.resetHandlers())
 
 it("has working links to project pages", async () => {
-    const { container } = renderViewProjectsPage()
+    const history = viewProjectsHistory()
+    const { container } = renderViewProjectsPage(history)
     await waitForProjectsToFinishLoading()
     const aProjectCard = getReturnedProjectCards(container)[0]
     const id = aProjectCard.id.split("-").pop()!
@@ -171,7 +178,8 @@ it("has working links to project pages", async () => {
 })
 
 it("can search project names", async () => {
-    const { container } = renderViewProjectsPage()
+    const history = viewProjectsHistory()
+    const { container } = renderViewProjectsPage(history)
     await waitForProjectsToFinishLoading()
     const { searchInput } = getSearchControls()
     const searchValue = "cool"
@@ -191,7 +199,8 @@ it("can search project names", async () => {
 })
 
 it("can search project tags", async () => {
-    const { container } = renderViewProjectsPage()
+    const history = viewProjectsHistory()
+    const { container } = renderViewProjectsPage(history)
     await waitForProjectsToFinishLoading()
     const { searchInput } = getSearchControls()
     const searchValue = "react"
@@ -213,12 +222,13 @@ it("can search project tags", async () => {
 })
 
 it("can filter by project type", async () => {
-    const { container } = renderViewProjectsPage()
+    const history = viewProjectsHistory()
+    const { container } = renderViewProjectsPage(history)
     await waitForProjectsToFinishLoading()
     const { typeSelectButton } = getSearchControls()
 
     // Name of type for no filtering
-    const noFilterTypeName = "Type"
+    const noFilterTypeName = "Any"
 
     const testFilteringByType = async (type: ProjectType | null) => {
         // Open type filter menu
@@ -239,10 +249,10 @@ it("can filter by project type", async () => {
         )
 
         // Assert that the query parameter for the project type is set
-        waitFor(() => {
-            const text = `type=${type}`
-            if (type !== null) screen.getByText(text)
-            else expect(screen.queryByText(text)).toBeNull()
+        await waitFor(() => {
+            expect(
+                new URLSearchParams(history.location.search).get("type")
+            ).toBe(type)
         })
     }
 
@@ -259,12 +269,13 @@ it("can filter by project type", async () => {
 })
 
 it("can filter by project term", async () => {
-    const { container } = renderViewProjectsPage()
+    const history = viewProjectsHistory()
+    const { container } = renderViewProjectsPage(history)
     await waitForProjectsToFinishLoading()
     const { termSelectButton } = getSearchControls()
 
     // Name of type for no filtering
-    const noFilterTermName = "Term"
+    const noFilterTermName = "Any"
 
     const testFilteringByType = async (term: Term | null) => {
         // Open type filter menu
@@ -285,10 +296,10 @@ it("can filter by project term", async () => {
         )
 
         // Assert that the query parameter for the project term is set
-        waitFor(() => {
-            const text = `term=${term}`
-            if (term !== null) screen.getByText(text)
-            else expect(screen.queryByText(text)).toBeNull()
+        await waitFor(() => {
+            expect(
+                new URLSearchParams(history.location.search).get("term")
+            ).toBe(term)
         })
     }
 

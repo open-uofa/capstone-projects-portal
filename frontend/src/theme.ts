@@ -16,8 +16,8 @@ const UAlbertaTheme = createTheme({
         success: { main: "#198754" },
         text: {
             primary: "#333",
-            secondary: "#FFF",
-            disabled: "#333",
+            secondary: "#555",
+            disabled: "#777",
         },
     },
     typography: {

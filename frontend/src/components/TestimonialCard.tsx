@@ -1,16 +1,15 @@
-import * as React from "react"
 import {
-    Card,
-    Typography,
-    CardMedia,
-    CardActionArea,
     Box,
+    Card,
+    CardActionArea,
+    CardMedia,
     Link,
+    Typography,
 } from "@mui/material"
-import { SyntheticEvent } from "react"
+import type { SyntheticEvent } from "react"
 import { Link as RouterLink } from "react-router-dom"
-import ClientTestimonial from "../models/client-testimonial"
 import ClientOrgType from "../models/client-org-type"
+import type ClientTestimonial from "../models/client-testimonial"
 
 const FALLBACK_IMAGE_URL = "/placeholder.png"
 

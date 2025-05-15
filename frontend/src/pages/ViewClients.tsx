@@ -1,24 +1,23 @@
-import * as React from "react"
-import { useEffect, useState } from "react"
+import { ArrowDownward, ArrowUpward } from "@mui/icons-material"
 import {
     Box,
     Button,
     Container,
     Grid,
     MenuItem,
-    Select,
+    TextField,
     ToggleButton,
 } from "@mui/material"
 import Typography from "@mui/material/Typography"
+import { useEffect, useState } from "react"
 import { Link as RouterLink, useHistory, useLocation } from "react-router-dom"
-import { ArrowDownward, ArrowUpward } from "@mui/icons-material"
-import PageTitle from "../components/PageTitle"
 import { portalApiInstance } from "../api/portal-api"
-import ClientOrg from "../models/client-org"
 import ClientCard from "../components/ClientCard"
-import ClientOrgType from "../models/client-org-type"
-import SearchBar from "../components/SearchBar"
 import HelmetMetaData from "../components/HelmetMetaData"
+import PageTitle from "../components/PageTitle"
+import SearchBar from "../components/SearchBar"
+import type ClientOrg from "../models/client-org"
+import ClientOrgType from "../models/client-org-type"
 
 // ESLint wants you to include functions in useEffect dependencies
 // but it can cause infinite render loops
@@ -145,12 +144,12 @@ export default function ViewClients(): JSX.Element {
     return (
         <>
             <HelmetMetaData
-                title="Browse Clients | CMPUT 401 Projects Portal"
+                title="Browse Clients | Capstone Projects Portal"
                 noindex
             />
             <Container maxWidth="sm">
                 <Box sx={{ my: 4 }}>
-                    <PageTitle title="CMPUT 401 Clients" />
+                    <PageTitle title="Capstone Clients" />
                     <Grid container spacing={1}>
                         <Grid item xs={12} md>
                             <SearchBar
@@ -162,7 +161,7 @@ export default function ViewClients(): JSX.Element {
                         </Grid>
                         {/* Client type select */}
                         <Grid item xs="auto">
-                            <Select
+                            <TextField
                                 value={clientType}
                                 onChange={(event) =>
                                     setClientType(
@@ -170,18 +169,18 @@ export default function ViewClients(): JSX.Element {
                                     )
                                 }
                                 sx={{ backgroundColor: "#ffffff" }}
-                                autoWidth
-                                aria-label="Type"
+                                select
+                                label="Type"
                             >
                                 <MenuItem value={ANY}>
-                                    <em>Type</em>
+                                    <em>Any</em>
                                 </MenuItem>
                                 {Object.values(ClientOrgType).map((value) => (
                                     <MenuItem key={value} value={value}>
                                         {value}
                                     </MenuItem>
                                 ))}
-                            </Select>
+                            </TextField>
                         </Grid>
                         {/* Reverse sort order button */}
                         <Grid item xs="auto">

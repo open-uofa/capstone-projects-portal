@@ -1,6 +1,5 @@
-import * as React from "react"
-import { useLocation, useParams } from "react-router-dom"
 import { screen, waitFor } from "@testing-library/react"
+import { useLocation, useParams } from "react-router-dom"
 import { useCurrentUser } from "./hooks"
 
 /**

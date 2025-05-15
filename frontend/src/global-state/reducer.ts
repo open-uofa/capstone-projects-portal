@@ -1,5 +1,5 @@
-import Action from "./action"
-import State from "./state"
+import type Action from "./action"
+import type State from "./state"
 
 const Reducer = (state: State, action: Action): State => {
     switch (action.type) {

@@ -1,13 +1,12 @@
-import * as React from "react"
 import {
-    Typography,
     Box,
-    useTheme,
-    Divider,
-    ThemeProvider,
-    Grid,
     Button,
     Container,
+    Divider,
+    Grid,
+    ThemeProvider,
+    Typography,
+    useTheme,
 } from "@mui/material"
 import { Link as RouterLink, useParams } from "react-router-dom"
 import errors from "../constants/errors"

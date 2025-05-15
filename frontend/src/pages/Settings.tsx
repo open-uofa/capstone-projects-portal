@@ -1,23 +1,25 @@
+import { Box, Button, Container, Paper, Typography } from "@mui/material"
 import * as React from "react"
 import { useContext, useState } from "react"
-import { Box, Button, Container, Paper, Typography } from "@mui/material"
 import { Link as RouterLink } from "react-router-dom"
-import PageTitle from "../components/PageTitle"
 import { portalApiInstance } from "../api/portal-api"
-import GlobalContext from "../global-state/context"
-import { LoginResult } from "../models/login"
-import SnackbarAlert from "../components/SnackbarAlert"
+import PageTitle from "../components/PageTitle"
 import RequireLoggedIn from "../components/RequireLoggedIn"
+import SnackbarAlert from "../components/SnackbarAlert"
+import GlobalContext from "../global-state/context"
+import type { LoginResult } from "../models/login"
+
+interface SettingsCategoryProps {
+    title: string
+    children: React.ReactNode
+    depth?: number
+}
 
 function SettingsCategory({
     title,
     children,
     depth = 0,
-}: {
-    title: string
-    children: React.ReactNode
-    depth?: number
-}): JSX.Element {
+}: SettingsCategoryProps): JSX.Element {
     // Calculate the variant of header based on depth of this node
     const headerVariant = `h${Math.max(1, Math.min(6, 4 + depth))}` as
         | "h1"
@@ -29,7 +31,10 @@ function SettingsCategory({
 
     // Add depth property to children
     const childrenWithDepth = React.Children.map(children, (child) => {
-        if (React.isValidElement(child)) {
+        if (
+            React.isValidElement<SettingsCategoryProps>(child) &&
+            child.type === SettingsCategory
+        ) {
             return React.cloneElement(child, { depth: depth + 1 })
         }
         return child
@@ -41,9 +46,6 @@ function SettingsCategory({
             {childrenWithDepth}
         </Box>
     )
-}
-SettingsCategory.defaultProps = {
-    depth: 0,
 }
 
 type InvalidateOtherSessionsState = LoginResult | undefined | "Pending"

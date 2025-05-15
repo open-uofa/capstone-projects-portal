@@ -1,6 +1,7 @@
-import { Context, createContext, Dispatch } from "react"
-import Action from "./action"
-import State, { initialState } from "./state"
+import { type Context, createContext, type Dispatch } from "react"
+import type Action from "./action"
+import type State from "./state"
+import { initialState } from "./state"
 
 const GlobalContext: Context<{
     globalState: State

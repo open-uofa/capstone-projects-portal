@@ -1,6 +1,6 @@
-import UserShort from "./user-short"
-import ProjectShort from "./project-short"
-import ClientOrgShort from "./client-org-short"
+import type ClientOrgShort from "./client-org-short"
+import type ProjectShort from "./project-short"
+import type UserShort from "./user-short"
 
 type ClientOrg = ClientOrgShort & {
     about: string

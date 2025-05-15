@@ -1,9 +1,9 @@
-import * as React from "react"
-import { Alert, AlertColor, Snackbar } from "@mui/material"
+import { Alert, type AlertColor, Snackbar } from "@mui/material"
+import type * as React from "react"
 
 export default function SnackbarAlert(props: {
     open: boolean
-    onClose: (event?: React.SyntheticEvent, reason?: string) => void
+    onClose: (event?: React.SyntheticEvent | Event, reason?: string) => void
     severity: AlertColor
     message: string
 }): JSX.Element {

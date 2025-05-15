@@ -1,5 +1,5 @@
 /* eslint-disable react/require-default-props */
-import * as React from "react"
+import type * as React from "react"
 import { Redirect } from "react-router-dom"
 import { useCurrentUser } from "../hooks"
 

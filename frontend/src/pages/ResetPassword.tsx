@@ -1,14 +1,13 @@
-import * as React from "react"
-import { useContext, useState } from "react"
 import { Box, Container, Paper, Typography } from "@mui/material"
-import { SubmitHandler } from "react-hook-form"
-import { useHistory, useParams, useLocation, Redirect } from "react-router-dom"
-import PageTitle from "../components/PageTitle"
+import { useContext, useState } from "react"
+import type { SubmitHandler } from "react-hook-form"
+import { Redirect, useHistory, useLocation, useParams } from "react-router-dom"
 import { portalApiInstance } from "../api/portal-api"
-import GlobalContext from "../global-state/context"
+import PageTitle from "../components/PageTitle"
 import ResetPasswordForm, {
-    ResetPasswordFormInputs,
+    type ResetPasswordFormInputs,
 } from "../components/ResetPasswordForm"
+import GlobalContext from "../global-state/context"
 
 export default function ResetPassword(): JSX.Element {
     const { globalState, dispatch } = useContext(GlobalContext)

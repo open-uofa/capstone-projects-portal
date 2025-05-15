@@ -1,4 +1,4 @@
-import ClientOrgType from "./client-org-type"
+import type ClientOrgType from "./client-org-type"
 
 export default interface ClientOrgShort {
     id: string

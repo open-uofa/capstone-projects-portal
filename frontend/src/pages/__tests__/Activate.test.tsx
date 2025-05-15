@@ -1,15 +1,14 @@
-import * as React from "react"
-import { render, waitFor, screen, fireEvent } from "@testing-library/react"
+import { fireEvent, render, screen, waitFor } from "@testing-library/react"
 import "@testing-library/jest-dom"
-import { MemoryRouter, Route } from "react-router-dom"
-import { ResponseComposition, rest, RestRequest } from "msw"
+import { http } from "msw"
 import { setupServer } from "msw/node"
+import { MemoryRouter, Route } from "react-router-dom"
+import { axiosConfig } from "../../api/config"
 import GlobalStateProvider from "../../global-state/provider"
-import ActivatePage from "../Activate"
-import State from "../../global-state/state"
+import type State from "../../global-state/state"
+import type { ActivateRequest, LoginResult } from "../../models/login"
 import { MockHomePage } from "../../test-utils"
-import { ActivateRequest, LoginResult } from "../../models/login"
-import requestConfig from "../../api/config"
+import ActivatePage from "../Activate"
 
 /**
  * Renders the Activate page in a router with a GlobalStateProvider.
@@ -66,30 +65,20 @@ const invalidNewPasswordResponse: LoginResult = {
 
 const server = setupServer(
     // Mock /api/activate endpoint
-    rest.post(
-        `${requestConfig.baseURL}/activate/`,
-        (
-            req: RestRequest<ActivateRequest>,
-            res: ResponseComposition<LoginResult>,
-            ctx
-        ) => {
-            const { activationKey, newPassword } = req.body as ActivateRequest
-            if (activationKey !== VALID_KEY)
-                return res(
-                    ctx.status(400),
-                    ctx.json(invalidActivationKeyResponse)
-                )
-            if (newPassword === INVALID_PASSWORD)
-                return res(
-                    ctx.status(400),
-                    ctx.json(invalidNewPasswordResponse)
-                )
-            return res(ctx.json(successResponse))
-        }
-    )
+    http.post(`${axiosConfig.baseURL}/activate/`, async ({ request }) => {
+        const { activationKey, newPassword } =
+            (await request.json()) as ActivateRequest
+
+        if (activationKey !== VALID_KEY)
+            return Response.json(invalidActivationKeyResponse, { status: 400 })
+        if (newPassword === INVALID_PASSWORD)
+            return Response.json(invalidNewPasswordResponse, { status: 400 })
+
+        return Response.json(successResponse)
+    })
 )
 
-beforeAll(() => server.listen())
+beforeAll(() => server.listen({ onUnhandledRequest: "error" }))
 afterEach(() => server.resetHandlers())
 
 it("matches snapshot", async () => {

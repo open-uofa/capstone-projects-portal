@@ -1,15 +1,14 @@
-import * as React from "react"
-import { Container, Stack, Button, Grid, Box } from "@mui/material"
-import { useEffect, useState } from "react"
+import { Box, Button, Container, Grid, Stack } from "@mui/material"
 import Typography from "@mui/material/Typography"
+import { useEffect, useState } from "react"
 import { Link as RouterLink } from "react-router-dom"
 import "react-multi-carousel/lib/styles.css"
 import { portalApiInstance } from "../api/portal-api"
-import Project from "../models/project"
-import ProjectGrid from "../components/ProjectGrid"
 import HelmetMetaData from "../components/HelmetMetaData"
-import ViewAllButton from "../components/ViewAllButton"
 import ProjectCarousel from "../components/ProjectCarousel"
+import ProjectGrid from "../components/ProjectGrid"
+import ViewAllButton from "../components/ViewAllButton"
+import type Project from "../models/project"
 
 export default function Home(): JSX.Element {
     const [allProjects, setAllProjects] = useState<Project[]>([])
@@ -21,7 +20,7 @@ export default function Home(): JSX.Element {
 
     return (
         <>
-            <HelmetMetaData title="Home | CMPUT 401 Projects Portal" />
+            <HelmetMetaData title="Home | Capstone Projects Portal" />
             <Container sx={{ my: 4 }}>
                 <Grid container paddingBottom={1} spacing={4}>
                     <Grid item md width="100%">

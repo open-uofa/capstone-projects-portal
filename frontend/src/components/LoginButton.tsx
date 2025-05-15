@@ -1,4 +1,3 @@
-import * as React from "react"
 import { Button, Typography, useTheme } from "@mui/material"
 import { Link as RouterLink } from "react-router-dom"
 
@@ -19,7 +18,7 @@ export default function LoginButton(): JSX.Element {
                         filter: "brightness(98%)",
                         backgroundColor: `${theme.palette.secondary.main}`,
                         "& .loginText": {
-                            color: `${theme.palette.text.secondary}`,
+                            color: "white",
                             transition: "0.1s",
                         },
                     },

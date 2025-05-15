@@ -1,19 +1,18 @@
-import * as React from "react"
-import { Box, Container, IconButton, Avatar } from "@mui/material"
-import PublicIcon from "@mui/icons-material/Public"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import PersonIcon from "@mui/icons-material/Person"
+import PublicIcon from "@mui/icons-material/Public"
+import { Avatar, Box, Container, IconButton } from "@mui/material"
 import Typography from "@mui/material/Typography"
-import { Redirect, useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
+import { Redirect, useParams } from "react-router-dom"
 import { portalApiInstance } from "../api/portal-api"
-import User from "../models/user"
-import ProjectShortCard from "../components/ProjectShortCard"
 import EditButton from "../components/EditButton"
 import HelmetMetaData from "../components/HelmetMetaData"
+import ProjectShortCard from "../components/ProjectShortCard"
 import { useCurrentUser } from "../hooks"
 import { canEditUser } from "../models/current-user-info"
+import type User from "../models/user"
 
 export default function Profile(): JSX.Element {
     const currentlyLoggedInUser = useCurrentUser()
@@ -49,7 +48,7 @@ export default function Profile(): JSX.Element {
                 <HelmetMetaData
                     title={
                         user?.name
-                            ? `${user?.name} | CMPUT 401 Projects Portal`
+                            ? `${user?.name} | Capstone Projects Portal`
                             : undefined
                     }
                 />

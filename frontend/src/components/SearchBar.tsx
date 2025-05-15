@@ -1,7 +1,6 @@
-import * as React from "react"
-import { ChangeEvent } from "react"
-import { InputAdornment, TextField } from "@mui/material"
 import SearchIcon from "@mui/icons-material/Search"
+import { InputAdornment, TextField } from "@mui/material"
+import type { ChangeEvent } from "react"
 
 export default function SearchBar(props: {
     value: string

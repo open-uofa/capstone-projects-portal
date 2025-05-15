@@ -1,4 +1,4 @@
-import { ProjectType, Tag, Term } from "./project"
+import type { ProjectType, Tag, Term } from "./project"
 
 export default interface ProjectShort {
     id: string

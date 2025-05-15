@@ -1,4 +1,4 @@
-import CurrentUserInfo from "../models/current-user-info"
+import type CurrentUserInfo from "../models/current-user-info"
 
 export default interface State {
     currentUser: CurrentUserInfo

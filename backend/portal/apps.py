@@ -9,6 +9,6 @@ class PortalConfig(AppConfig):
 
     def ready(self):
         if "runserver" in sys.argv:
-            from portal.models import PasswordResetRequest
+            from . import jobs
 
-            PasswordResetRequest.prune_unusable_requests()
+            jobs.start_jobs()

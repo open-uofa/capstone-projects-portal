@@ -1,0 +1,47 @@
+{$FRONTEND_BASE_URL} {
+	# Enable compression
+	encode zstd gzip
+
+	# Log to stdout to be captured by Docker logs
+	log {
+		output stdout
+		format console # Or json
+	}
+
+	# Route API requests to the backend
+	handle /api/* {
+		reverse_proxy backend:8000 # 'backend' is the service name from docker-compose
+	}
+
+	# Route admin requests to the backend
+	redir /admin /admin/
+	handle /admin/* {
+		reverse_proxy backend:8000
+	}
+
+	# Serve Django static files
+	# (collected by 'manage.py collectstatic')
+	handle_path /djangostatic/* {
+		# root * <path> specifies the document root for this handler
+		# The path is relative to Caddy's working directory in the container,
+		# or an absolute path. We'll use absolute paths matching volume mounts.
+		root * /app/backend/djangostatic
+		file_server
+	}
+
+	# Serve user-uploaded media files
+	handle_path /media/* {
+		root * /app/backend/build/media
+		file_server
+	}
+
+	# Serve the frontend SPA for all other requests
+	# This 'handle' block without a matcher acts as a catch-all if placed after
+	# more specific 'handle_path' or 'route' directives, or if ordered correctly.
+	handle {
+		root * /app/frontend/build # Path where Caddy finds SPA files
+		# try_files is crucial for SPA routing
+		try_files {path} {path}/ /index.html
+		file_server
+	}
+}

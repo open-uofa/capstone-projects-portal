@@ -1,16 +1,14 @@
-import * as React from "react"
-import { render, waitFor, screen, fireEvent } from "@testing-library/react"
+import { fireEvent, render, screen, waitFor } from "@testing-library/react"
 import "@testing-library/jest-dom"
-import { MemoryRouter, Route } from "react-router-dom"
+import { http } from "msw"
 import { setupServer } from "msw/node"
-import { ResponseComposition, rest } from "msw"
+import { MemoryRouter, Route } from "react-router-dom"
+import { axiosConfig } from "../../api/config"
 import GlobalStateProvider from "../../global-state/provider"
-import State from "../../global-state/state"
-import SettingsPage from "../Settings"
-import CurrentUserInfo from "../../models/current-user-info"
-import { LoginResult } from "../../models/login"
-import requestConfig from "../../api/config"
+import type State from "../../global-state/state"
+import type CurrentUserInfo from "../../models/current-user-info"
 import { MockLoginPage } from "../../test-utils"
+import SettingsPage from "../Settings"
 
 /**
  * Renders the Settings page in a router with a GlobalStateProvider.
@@ -58,16 +56,12 @@ const userReturnedAfterLoggingOutOtherSessions: CurrentUserInfo = {
 }
 
 const server = setupServer(
-    rest.post(
-        `${requestConfig.baseURL}/logout-all/`,
-        (req, res: ResponseComposition<LoginResult>, ctx) =>
-            res(
-                ctx.json({
-                    success: true,
-                    token: "HEREISYOURNEWTOKEN",
-                    user: userReturnedAfterLoggingOutOtherSessions,
-                })
-            )
+    http.post(`${axiosConfig.baseURL}/logout-all/`, () =>
+        Response.json({
+            success: true,
+            token: "HEREISYOURNEWTOKEN",
+            user: userReturnedAfterLoggingOutOtherSessions,
+        })
     )
 )
 

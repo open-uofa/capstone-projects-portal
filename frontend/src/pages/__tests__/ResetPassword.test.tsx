@@ -1,17 +1,15 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-import React from "react"
 import "@testing-library/jest-dom"
 import { fireEvent, render, screen, waitFor } from "@testing-library/react"
-import { MemoryRouter, Route } from "react-router-dom"
-import { ResponseComposition, rest, RestRequest } from "msw"
+import { http } from "msw"
 import { setupServer } from "msw/node"
+import { MemoryRouter, Route } from "react-router-dom"
+import { axiosConfig } from "../../api/config"
 import GlobalStateProvider from "../../global-state/provider"
-import State from "../../global-state/state"
-import requestConfig from "../../api/config"
-import ResetPasswordPage from "../ResetPassword"
-import { ResetPasswordRequest, ResetPasswordResult } from "../../models/login"
-import CurrentUserInfo from "../../models/current-user-info"
+import type State from "../../global-state/state"
+import type CurrentUserInfo from "../../models/current-user-info"
+import type { ResetPasswordRequest } from "../../models/login"
 import { LoginStatus, MockLoginPage } from "../../test-utils"
+import ResetPasswordPage from "../ResetPassword"
 
 const renderResetPasswordPage = ({
     initialState,
@@ -67,54 +65,46 @@ const NEW_TOKEN = "newToken"
 const INVALID_NEW_PASSWORD_ERROR_MESSAGE = "That is a bad password"
 
 const server = setupServer(
-    rest.post(
-        `${requestConfig.baseURL}/reset-password/`,
-        (
-            req: RestRequest<ResetPasswordRequest>,
-            res: ResponseComposition<ResetPasswordResult>,
-            ctx
-        ) => {
-            if (req.body.newPassword === INVALID_NEW_PASSWORD) {
-                return res(
-                    ctx.status(400),
-                    ctx.json({
-                        success: false,
-                        error: INVALID_NEW_PASSWORD_ERROR_MESSAGE,
-                    })
-                )
-            }
-
-            if ("resetKey" in req.body) {
-                if (req.body.resetKey !== CORRECT_RESET_KEY) {
-                    return res(
-                        ctx.status(400),
-                        ctx.json({
-                            success: false,
-                            error: "Invalid reset key",
-                        })
-                    )
-                }
-            } else if ("currentPassword" in req.body) {
-                if (req.body.currentPassword !== CORRECT_CURRENT_PASSWORD) {
-                    return res(
-                        ctx.status(400),
-                        ctx.json({
-                            success: false,
-                            error: "Incorrect current password",
-                        })
-                    )
-                }
-            }
-
-            return res(
-                ctx.json({
-                    success: true,
-                    token: NEW_TOKEN,
-                    user: { ...CURRENT_USER_INFO, has_password: true },
-                })
+    http.post(`${axiosConfig.baseURL}/reset-password/`, async ({ request }) => {
+        const reqBody = (await request.json()) as ResetPasswordRequest
+        if (reqBody.newPassword === INVALID_NEW_PASSWORD) {
+            return Response.json(
+                {
+                    success: false,
+                    error: INVALID_NEW_PASSWORD_ERROR_MESSAGE,
+                },
+                { status: 400 }
             )
         }
-    )
+
+        if ("resetKey" in reqBody) {
+            if (reqBody.resetKey !== CORRECT_RESET_KEY) {
+                return Response.json(
+                    {
+                        success: false,
+                        error: "Invalid reset key",
+                    },
+                    { status: 400 }
+                )
+            }
+        } else if ("currentPassword" in reqBody) {
+            if (reqBody.currentPassword !== CORRECT_CURRENT_PASSWORD) {
+                Response.json(
+                    {
+                        success: false,
+                        error: "Incorrect current password",
+                    },
+                    { status: 400 }
+                )
+            }
+        }
+
+        return Response.json({
+            success: true,
+            token: NEW_TOKEN,
+            user: { ...CURRENT_USER_INFO, has_password: true },
+        })
+    })
 )
 
 beforeAll(() => server.listen())

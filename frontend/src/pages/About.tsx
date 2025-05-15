@@ -1,14 +1,12 @@
-/* eslint-disable react/jsx-props-no-spreading */
-import * as React from "react"
-import { Box, Container, Typography, Link, Grid } from "@mui/material"
+import { Box, Container, Grid, Link, Typography } from "@mui/material"
+import { useEffect, useState } from "react"
 import { Link as RouterLink } from "react-router-dom"
-import { useState, useEffect } from "react"
-import { ABOUT_TITLE, CLIENT_TEST } from "../constants/about-us"
+import { portalApiInstance } from "../api/portal-api"
+import HelmetMetaData from "../components/HelmetMetaData"
 import PageTitle from "../components/PageTitle"
 import TestimonialCard from "../components/TestimonialCard"
-import { portalApiInstance } from "../api/portal-api"
-import ClientTestimonial from "../models/client-testimonial"
-import HelmetMetaData from "../components/HelmetMetaData"
+import { ABOUT_TITLE, CLIENT_TEST } from "../constants/about-us"
+import type ClientTestimonial from "../models/client-testimonial"
 
 export default function About(): JSX.Element {
     // list of clients with testimonials
@@ -24,7 +22,7 @@ export default function About(): JSX.Element {
 
     return (
         <>
-            <HelmetMetaData title="About | CMPUT 401 Projects Portal" />
+            <HelmetMetaData title="About | Capstone Projects Portal" />
             <Container maxWidth="md">
                 <Box sx={{ my: 4 }}>
                     <PageTitle title={ABOUT_TITLE} />
@@ -36,10 +34,10 @@ export default function About(): JSX.Element {
                         about software engineering.
                     </Typography>
                     <Typography paragraph>
-                        The CMPUT 401 Projects Portal serves as a showcase of
-                        the projects that the students have completed, and a
-                        place to connect with potential clients who may be
-                        interested in working with the students.
+                        The Capstone Projects Portal serves as a showcase of the
+                        projects that the students have completed, and a place
+                        to connect with potential clients who may be interested
+                        in working with the students.
                     </Typography>
                     <Typography paragraph>
                         If you are a client interested in working with us,{" "}

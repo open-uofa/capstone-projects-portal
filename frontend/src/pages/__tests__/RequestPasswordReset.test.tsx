@@ -1,14 +1,13 @@
-import React from "react"
 import "@testing-library/jest-dom"
 import { fireEvent, render, screen, waitFor } from "@testing-library/react"
-import { MemoryRouter, Route } from "react-router-dom"
-import { rest, RestRequest } from "msw"
+import { http } from "msw"
 import { setupServer } from "msw/node"
+import { MemoryRouter, Route } from "react-router-dom"
+import { axiosConfig } from "../../api/config"
 import GlobalStateProvider from "../../global-state/provider"
-import State from "../../global-state/state"
+import type State from "../../global-state/state"
+import type { RequestPasswordResetRequest } from "../../models/login"
 import RequestPasswordReset from "../RequestPasswordReset"
-import requestConfig from "../../api/config"
-import { RequestPasswordResetRequest } from "../../models/login"
 
 const renderRequestPasswordResetPage = (initialState?: State) =>
     render(
@@ -33,11 +32,13 @@ const getFormControls = () => ({
 let lastReceivedRequestEmail: string | undefined
 
 const server = setupServer(
-    rest.post(
-        `${requestConfig.baseURL}/request-password-reset/`,
-        (req: RestRequest<RequestPasswordResetRequest>, res, ctx) => {
-            lastReceivedRequestEmail = req.body.email
-            return res(ctx.json({ success: true }))
+    http.post(
+        `${axiosConfig.baseURL}/request-password-reset/`,
+        async ({ request }) => {
+            lastReceivedRequestEmail = (
+                (await request.json()) as RequestPasswordResetRequest
+            ).email
+            return Response.json({ success: true })
         }
     )
 )

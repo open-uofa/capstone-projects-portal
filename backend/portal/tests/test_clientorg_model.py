@@ -23,7 +23,7 @@ class ClientOrgModelTest(TestCase):
         # Anonymous users should see only orgs with at least one published project
         with self.subTest("Anonymous user"):
             user = AnonymousUser()
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 ClientOrg.objects.visible_to(user),
                 published_orgs,
                 transform,
@@ -33,7 +33,7 @@ class ClientOrgModelTest(TestCase):
         # Authenticated users with no project relationships should see only orgs with at least one published project
         with self.subTest("Authenticated user with no org relationships"):
             user = User.objects.get(id="6e7577db-978f-4e5f-8e00-c0124e4383d2")
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 ClientOrg.objects.visible_to(user),
                 published_orgs,
                 transform,
@@ -48,7 +48,7 @@ class ClientOrgModelTest(TestCase):
                 "372b2e02-957b-4952-844d-ea9d8f06164f"
             ]
 
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 ClientOrg.objects.visible_to(user),
                 published_orgs + unpublished_orgs_user_is_a_student_of,
                 transform,
@@ -59,7 +59,7 @@ class ClientOrgModelTest(TestCase):
         with self.subTest("TA with unpublished orgs"):
             user = User.objects.get(id="a8e3ea40-6569-4f37-8221-9cca7e26ea7e")
             unpublished_orgs_user_is_a_ta_of = ["372b2e02-957b-4952-844d-ea9d8f06164f"]
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 ClientOrg.objects.visible_to(user),
                 published_orgs + unpublished_orgs_user_is_a_ta_of,
                 transform,
@@ -72,7 +72,7 @@ class ClientOrgModelTest(TestCase):
             unpublished_orgs_user_is_a_client_rep_of = [
                 "372b2e02-957b-4952-844d-ea9d8f06164f"
             ]
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 ClientOrg.objects.visible_to(user),
                 published_orgs + unpublished_orgs_user_is_a_client_rep_of,
                 transform,
@@ -90,7 +90,7 @@ class ClientOrgModelTest(TestCase):
                 "e7b164bd-f702-48ef-97d3-47eea858f40d",
             ]
 
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 ClientOrg.objects.visible_to(user),
                 published_orgs
                 + unpublished_orgs_user_is_a_student_or_ta_or_client_rep_of,
@@ -101,7 +101,7 @@ class ClientOrgModelTest(TestCase):
         # Admins should see all orgs (published and unpublished)
         with self.subTest("Admin"):
             user = User.objects.get(id="b7a0b0df-078c-4866-ac17-577b5432c353")
-            self.assertQuerysetEqual(
+            self.assertQuerySetEqual(
                 ClientOrg.objects.visible_to(user),
                 ClientOrg.objects.all(),
                 ordered=False,

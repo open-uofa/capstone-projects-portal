@@ -1,22 +1,20 @@
-/* eslint-disable react/jsx-props-no-spreading */
-import * as React from "react"
-import { useTheme, TextField } from "@mui/material"
-import Typography from "@mui/material/Typography"
-import { useHistory } from "react-router-dom"
-import {
-    SubmitHandler,
-    useForm,
-    Controller,
-    useFormState,
-} from "react-hook-form"
-import * as yup from "yup"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { LoadingButton } from "@mui/lab"
-import PageTitle from "../components/PageTitle"
+import { TextField, useTheme } from "@mui/material"
+import Typography from "@mui/material/Typography"
+import {
+    Controller,
+    type SubmitHandler,
+    useForm,
+    useFormState,
+} from "react-hook-form"
+import { useHistory } from "react-router-dom"
+import * as yup from "yup"
 import { portalApiInstance } from "../api/portal-api"
-import IFormInputs from "../models/proposal-form"
-import MediumContainer from "../components/MediumContainer"
 import HelmetMetaData from "../components/HelmetMetaData"
+import MediumContainer from "../components/MediumContainer"
+import PageTitle from "../components/PageTitle"
+import type IFormInputs from "../models/proposal-form"
 
 // schema that defines the types of values that the form should have
 const schema = yup.object().shape({
@@ -135,7 +133,7 @@ export default function SubmitProposal(): JSX.Element {
 
     return (
         <>
-            <HelmetMetaData title="Project Proposal | CMPUT 401 Projects Portal" />
+            <HelmetMetaData title="Project Proposal | Capstone Projects Portal" />
             <MediumContainer>
                 <PageTitle title="Want us to build you an app or web app?" />
                 <Typography

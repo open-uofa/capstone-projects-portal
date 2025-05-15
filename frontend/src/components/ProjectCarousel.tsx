@@ -1,7 +1,6 @@
-import * as React from "react"
 import { Box } from "@mui/material"
-import Carousel, { ResponsiveType } from "react-multi-carousel"
-import ProjectShort from "../models/project-short"
+import Carousel, { type ResponsiveType } from "react-multi-carousel"
+import type ProjectShort from "../models/project-short"
 import ProjectShortCard from "./ProjectShortCard"
 
 const responsive: ResponsiveType = {

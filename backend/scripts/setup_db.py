@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-
 import argparse
+import sys
 from pathlib import Path
 
-import psycopg2
+import psycopg
 from environ import Env
-from psycopg2 import sql
+from psycopg import sql
 
 
 def main():
@@ -24,23 +24,28 @@ def main():
     env.read_env(env_file=BASE_DIR / ".env")
 
     # Read the host address and port from .env
-    # If none is specified, localhost:5432 or UNIX domain sockets are used
-    HOST = env("PORTAL_DB_HOST", default=None)
-    PORT = env("PORTAL_DB_PORT", default=None)
+    # If none is specified, localhost:5432 is used
+    HOST = env("PORTAL_DB_HOST", default="localhost")
+    PORT = env("PORTAL_DB_PORT", default="5432")
 
     # Read name of database, user, and password to connect to the PostgreSQL server with
     PG_CONNECT_DB_NAME = env("PG_CONNECT_DATABASE", default="postgres")
     PG_CONNECT_USER = env("PG_CONNECT_USER", default="postgres")
-    PG_CONNECT_PASSWORD = env("PG_CONNECT_PASSWORD", default="")
+    PG_CONNECT_PASSWORD = env("PG_CONNECT_PASSWORD", default="postgres")
 
     # Read name of database, user, and password to create from .env
-    DB_NAME = env("PORTAL_DB_DATABASE")
-    USER = env("PORTAL_DB_USER")
-    PASSWORD = env("PORTAL_DB_PASSWORD")
+    DB_NAME = env("PORTAL_DB_DATABASE", default="portal")
+    USER = env("PORTAL_DB_USER", default="portal")
+    PASSWORD = env("PORTAL_DB_PASSWORD", default="portal")
+
+    print(
+        f'Connecting to Postgres server {HOST}:{PORT} with database "{PG_CONNECT_DB_NAME}" and user "{PG_CONNECT_USER}"'
+    )
+    print(f'Will create database "{DB_NAME}" and user "{USER}"')
 
     # Connect to database named 'postgres'
-    conn = psycopg2.connect(
-        database=PG_CONNECT_DB_NAME,
+    conn = psycopg.connect(
+        dbname=PG_CONNECT_DB_NAME,
         host=HOST,
         port=PORT,
         user=PG_CONNECT_USER,
@@ -64,6 +69,14 @@ def main():
         )
     else:
         if database_already_exists:
+            response = input(
+                f'Database "{DB_NAME}" already exists. Delete all data? [y/N] '
+            )
+            if response.lower() != "y":
+                print("Aborting")
+                sys.exit(1)
+                return
+
             # Drop the database
             cursor.execute(
                 sql.SQL(
@@ -104,9 +117,14 @@ def main():
             cursor.execute(
                 sql.SQL(
                     """
+            REASSIGN OWNED BY {user} TO {pg_connect_user};
+            DROP OWNED BY {user};
             DROP USER {user};
             """
-                ).format(user=sql.Identifier(USER))
+                ).format(
+                    pg_connect_user=sql.Identifier(PG_CONNECT_USER),
+                    user=sql.Identifier(USER),
+                )
             )
             print(f'Successfully dropped user "{USER}"')
 
@@ -133,6 +151,27 @@ def main():
         )
         print(f'Successfully created user "{USER}"')
 
+    cursor.close()
+    conn.close()
+
+    # On PostgreSQL 15 and later,
+    # the user must have the CREATE privilege on the public schema
+    conn = psycopg.connect(
+        dbname=DB_NAME,
+        host=HOST,
+        port=PORT,
+        user=PG_CONNECT_USER,
+        password=PG_CONNECT_PASSWORD,
+    )
+    conn.autocommit = True
+    cursor = conn.cursor()
+    cursor.execute(
+        sql.SQL(
+            """
+            GRANT CREATE ON SCHEMA public TO {user};
+            """
+        ).format(user=sql.Identifier(USER))
+    )
     cursor.close()
     conn.close()
 

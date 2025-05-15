@@ -1,16 +1,15 @@
 import axios, {
-    AxiosError,
-    AxiosInstance,
-    AxiosRequestConfig,
-    AxiosResponse,
+    type AxiosError,
+    type AxiosInstance,
+    type AxiosRequestConfig,
+    type AxiosResponse,
 } from "axios"
-import { Dispatch } from "react"
-import ClientOrg from "../models/client-org"
-import User from "../models/user"
-import config from "./config"
-import Project from "../models/project"
-import ProposalForm from "../models/proposal-form"
-import {
+import type { Dispatch } from "react"
+import type Action from "../global-state/action"
+import type ClientOrg from "../models/client-org"
+import type CurrentUserInfo from "../models/current-user-info"
+import type ImportCsvResponse from "../models/import"
+import type {
     ActivateRequest,
     ActivateResult,
     LoginResult,
@@ -20,9 +19,10 @@ import {
     ResetPasswordRequest,
     ResetPasswordResult,
 } from "../models/login"
-import CurrentUserInfo from "../models/current-user-info"
-import Action from "../global-state/action"
-import ImportCsvResponse from "../models/import"
+import type Project from "../models/project"
+import type ProposalForm from "../models/proposal-form"
+import type User from "../models/user"
+import { axiosConfig } from "./config"
 
 /**
  * Returns an appropriate error message for a given error object.
@@ -71,41 +71,36 @@ export default class PortalApi {
         // Interceptor to include token in all requests if it is set
         this.axiosInstance.interceptors.request.use((requestConfig) => {
             const token = localStorage.getItem("token")
-            if (token !== null) {
-                /* eslint-disable no-param-reassign */
-                requestConfig.headers = config.headers ?? {}
+            if (token !== null)
                 requestConfig.headers.Authorization = `Token ${token}`
-                /* eslint-enable no-param-reassign */
-            }
+
             return requestConfig
         })
 
-        // log all errors
-        if (logResponses) {
-            this.axiosInstance.interceptors.response.use(
-                (response) =>
-                    // Any status code that lie within the range of 2xx cause this function to trigger
-                    // console.log(response)
-                    response,
-                (error) => {
-                    // Any status codes that falls outside the range of 2xx cause this function to trigger
-                    console.error(error)
+        this.axiosInstance.interceptors.response.use(
+            (response) =>
+                // Any status code that lie within the range of 2xx cause this function to trigger
+                // console.log(response)
+                response,
+            (error) => {
+                // Any status codes that falls outside the range of 2xx cause this function to trigger
 
-                    // Invalidate token if it results in HTTP 401
-                    if (
-                        error.request?.status === 401 &&
-                        localStorage.getItem("token") !== null
-                    ) {
-                        localStorage.removeItem("token")
-                        // Reload page to remove stale information
-                        window.location.reload()
-                        return
-                    }
+                if (logResponses) console.error(error)
 
-                    throw error
+                // Invalidate token if it results in HTTP 401
+                if (
+                    error.request?.status === 401 &&
+                    localStorage.getItem("token") !== null
+                ) {
+                    localStorage.removeItem("token")
+                    // Reload page to remove stale information
+                    window.location.reload()
+                    return
                 }
-            )
-        }
+
+                throw error
+            }
+        )
     }
 
     getClientOrgs = async (): Promise<ClientOrg[]> =>
@@ -270,5 +265,5 @@ export default class PortalApi {
     }
 }
 
-const logResponses = process.env.NODE_ENV === "development"
-export const portalApiInstance = new PortalApi(config, logResponses)
+const logResponses = false
+export const portalApiInstance = new PortalApi(axiosConfig, logResponses)

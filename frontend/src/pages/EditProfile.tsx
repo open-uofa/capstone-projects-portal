@@ -1,27 +1,25 @@
-/* eslint-disable react/jsx-props-no-spreading */
-import * as React from "react"
-import { useState, useEffect } from "react"
-import {
-    Button,
-    useTheme,
-    TextField,
-    Typography,
-    Box,
-    Avatar,
-} from "@mui/material"
+import { yupResolver } from "@hookform/resolvers/yup"
 import DeleteIcon from "@mui/icons-material/Delete"
 import PersonIcon from "@mui/icons-material/Person"
+import {
+    Avatar,
+    Box,
+    Button,
+    TextField,
+    Typography,
+    useTheme,
+} from "@mui/material"
+import { useEffect, useState } from "react"
+import { Controller, type SubmitHandler, useForm } from "react-hook-form"
 import { Redirect, useHistory, useParams } from "react-router-dom"
-import { SubmitHandler, useForm, Controller } from "react-hook-form"
 import * as yup from "yup"
-import { yupResolver } from "@hookform/resolvers/yup"
 import { portalApiInstance } from "../api/portal-api"
-import IFormInputs from "../models/user-form"
-import PageTitle from "../components/PageTitle"
-import MediumContainer from "../components/MediumContainer"
 import HelmetMetaData from "../components/HelmetMetaData"
+import MediumContainer from "../components/MediumContainer"
+import PageTitle from "../components/PageTitle"
 import RequireLoggedIn from "../components/RequireLoggedIn"
 import { canEditUser } from "../models/current-user-info"
+import type IFormInputs from "../models/user-form"
 
 // schema that defines the types of values that the form should have
 const schema = yup.object().shape({
@@ -87,6 +85,8 @@ export default function EditProfile(): JSX.Element {
                     linkedin_link: userData.linkedin_link,
                 }
 
+                reset(userDataObject)
+
                 // nullify the image if the image link is broken
                 portalApiInstance
                     .getImage(userData.image as BlobPart)
@@ -110,12 +110,6 @@ export default function EditProfile(): JSX.Element {
                 }
             })
     }, [userId, user?.image])
-
-    /* populate the form with the initial user data
-       when the user data is loaded from the backend */
-    useEffect(() => {
-        reset(user)
-    }, [reset, user])
 
     // handle form submission (after the form data has been validated)
     const submitHandler: SubmitHandler<IFormInputs> = (data) => {
@@ -211,7 +205,7 @@ export default function EditProfile(): JSX.Element {
             validate={(currentUser) => canEditUser(currentUser, userId)}
         >
             <HelmetMetaData
-                title="Edit Profile | CMPUT 401 Projects Portal"
+                title="Edit Profile | Capstone Projects Portal"
                 noindex
             />
             <MediumContainer>

@@ -1,7 +1,6 @@
-import * as React from "react"
 import { Stack } from "@mui/material"
 import Typography from "@mui/material/Typography"
-import Project from "../models/project"
+import type Project from "../models/project"
 import ProjectShort from "./ProjectShortCard"
 import ViewAllButton from "./ViewAllButton"
 

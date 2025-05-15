@@ -1,26 +1,20 @@
-import * as React from "react"
-
+// import react-testing methods
+import { fireEvent, render, screen, waitFor } from "@testing-library/react"
 // import API mocking utilities from Mock Service Worker
-import { rest } from "msw"
+import { http } from "msw"
 import { setupServer } from "msw/node"
 
-// import react-testing methods
-import { render, fireEvent, waitFor, screen } from "@testing-library/react"
-
-// add custom jest matchers from jest-dom
-import "@testing-library/jest-dom"
 // the component to test
 import { MemoryRouter, Route } from "react-router-dom"
-import LoginPage from "../Login"
-
-import {
+import { axiosConfig } from "../../api/config"
+import GlobalStateProvider from "../../global-state/provider"
+import type State from "../../global-state/state"
+import type {
     LoginResult,
     LoginWithEmailAndPasswordRequest,
 } from "../../models/login"
-import GlobalStateProvider from "../../global-state/provider"
-import State from "../../global-state/state"
 import { LoginStatus, MockHomePage } from "../../test-utils"
-import requestConfig from "../../api/config"
+import LoginPage from "../Login"
 
 // Test user data
 const userEmail = "user@example.com"
@@ -61,11 +55,14 @@ const MockSomeOtherPage = () => (
 
 const server = setupServer(
     // Mock /api/login/email response
-    rest.post(`${requestConfig.baseURL}/login/email/`, (req, res, ctx) => {
-        const { email, password } = req.body as LoginWithEmailAndPasswordRequest
+    http.post(`${axiosConfig.baseURL}/login/email/`, async ({ request }) => {
+        const { email, password } =
+            (await request.json()) as LoginWithEmailAndPasswordRequest
+
         if (email === userEmail && password === userPassword)
-            return res(ctx.json(successfulEmailLoginResponse))
-        return res(ctx.json(unsuccessfulEmailLoginResponse))
+            return Response.json(successfulEmailLoginResponse)
+
+        return Response.json(unsuccessfulEmailLoginResponse)
     })
 )
 

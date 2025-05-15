@@ -1,22 +1,22 @@
-import * as React from "react"
+import { ArrowDownward, ArrowUpward } from "@mui/icons-material"
 import {
     Container,
     Grid,
     MenuItem,
-    Select,
     Stack,
+    TextField,
     ToggleButton,
 } from "@mui/material"
-import { useEffect, useState } from "react"
 import Typography from "@mui/material/Typography"
-import { ArrowUpward, ArrowDownward } from "@mui/icons-material"
+import { useEffect, useState } from "react"
 import { useHistory, useLocation } from "react-router-dom"
 import { portalApiInstance } from "../api/portal-api"
-import Project, { ProjectType, Term } from "../models/project"
-import ProjectCard from "../components/ProjectCard"
-import ClientOrgType from "../models/client-org-type"
-import SearchBar from "../components/SearchBar"
 import HelmetMetaData from "../components/HelmetMetaData"
+import ProjectCard from "../components/ProjectCard"
+import SearchBar from "../components/SearchBar"
+import ClientOrgType from "../models/client-org-type"
+import type Project from "../models/project"
+import { ProjectType, Term } from "../models/project"
 
 // ESLint wants you to include functions in useEffect dependencies
 // but it can cause infinite render loops
@@ -226,7 +226,7 @@ export default function ViewProjects(): JSX.Element {
     return (
         <>
             <HelmetMetaData
-                title="Browse Projects | CMPUT 401 Projects Portal"
+                title="Browse Projects | Capstone Projects Portal"
                 noindex
             />
             <Container sx={{ my: 4 }} maxWidth="md">
@@ -236,7 +236,7 @@ export default function ViewProjects(): JSX.Element {
                     align="center"
                     gutterBottom
                 >
-                    CMPUT 401 Projects
+                    Capstone Projects
                 </Typography>
                 <Grid container spacing={1}>
                     <Grid item xs={12} md>
@@ -249,7 +249,7 @@ export default function ViewProjects(): JSX.Element {
                     </Grid>
                     {/* Client type select */}
                     <Grid item xs="auto">
-                        <Select
+                        <TextField
                             value={clientType}
                             onChange={(event) =>
                                 setClientType(
@@ -257,21 +257,22 @@ export default function ViewProjects(): JSX.Element {
                                 )
                             }
                             sx={{ backgroundColor: "#ffffff" }}
-                            autoWidth
+                            select
+                            label="Client"
                         >
                             <MenuItem value={ANY}>
-                                <em>Client</em>
+                                <em>Any</em>
                             </MenuItem>
                             {Object.values(ClientOrgType).map((value) => (
                                 <MenuItem key={value} value={value}>
                                     {value}
                                 </MenuItem>
                             ))}
-                        </Select>
+                        </TextField>
                     </Grid>
                     {/* Project type select */}
                     <Grid item xs="auto">
-                        <Select
+                        <TextField
                             value={projectType}
                             onChange={(event) =>
                                 setProjectType(
@@ -279,50 +280,53 @@ export default function ViewProjects(): JSX.Element {
                                 )
                             }
                             sx={{ backgroundColor: "#ffffff" }}
-                            autoWidth
+                            select
+                            label="Type"
                         >
                             <MenuItem value={ANY}>
-                                <em>Type</em>
+                                <em>Any</em>
                             </MenuItem>
                             {Object.values(ProjectType).map((value) => (
                                 <MenuItem key={value} value={value}>
                                     {value}
                                 </MenuItem>
                             ))}
-                        </Select>
+                        </TextField>
                     </Grid>
                     {/* Project term select */}
                     <Grid item xs="auto">
-                        <Select
+                        <TextField
                             value={projectTerm}
                             onChange={(event) =>
                                 setProjectTerm(event.target.value as TermFilter)
                             }
                             sx={{ backgroundColor: "#ffffff" }}
-                            autoWidth
+                            select
+                            label="Term"
                         >
                             <MenuItem value={ANY}>
-                                <em>Term</em>
+                                <em>Any</em>
                             </MenuItem>
                             {Object.values(Term).map((value) => (
                                 <MenuItem key={value} value={value}>
                                     {value}
                                 </MenuItem>
                             ))}
-                        </Select>
+                        </TextField>
                     </Grid>
                     {/* Project year select */}
                     <Grid item xs="auto">
-                        <Select
+                        <TextField
                             value={projectYear}
                             onChange={(event) =>
                                 setProjectYear(event.target.value as YearFilter)
                             }
                             sx={{ backgroundColor: "#ffffff" }}
-                            autoWidth
+                            select
+                            label="Year"
                         >
                             <MenuItem value={ANY}>
-                                <em>Year</em>
+                                <em>Any</em>
                             </MenuItem>
                             {allProjects
                                 ?.map((project) => project.year)
@@ -338,7 +342,7 @@ export default function ViewProjects(): JSX.Element {
                                         {year}
                                     </MenuItem>
                                 ))}
-                        </Select>
+                        </TextField>
                     </Grid>
                     {/* Reverse sort order button */}
                     <Grid item xs="auto">

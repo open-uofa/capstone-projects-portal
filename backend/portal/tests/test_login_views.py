@@ -587,10 +587,8 @@ class RequestPasswordResetViewTest(APITestCase):
         # Keep track of the number of emails sent before each test
         self.num_sent_emails_before = len(mail.outbox)
 
-        # Set the R to a known value
-        settings.RESET_PASSWORD_URL_TEMPLATE = (
-            "http://example.com/reset-password/{reset_key}"
-        )
+        # Set the FRONTEND_BASE_URL to a known value
+        settings.FRONTEND_BASE_URL = "http://example.com"
 
     def assert_successful_response(self, response: HttpResponse):
         """

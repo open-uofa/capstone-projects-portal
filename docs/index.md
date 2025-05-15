@@ -2,6 +2,6 @@
 title: Home
 ---
 
-# CMPUT 401 Projects Portal Documentation
+# Capstone Projects Portal Documentation
 
 [User Guide](user-guide.md)

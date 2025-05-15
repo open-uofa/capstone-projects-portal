@@ -12,7 +12,7 @@ from rest_framework.authtoken.models import TokenProxy
 
 from . import models
 
-admin.site.site_header = "CMPUT 401 Projects Portal Admin"
+admin.site.site_header = "Capstone Projects Portal Admin"
 
 """
 Custom list filter to filter users based on their project roles

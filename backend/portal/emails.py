@@ -19,15 +19,14 @@ def send_activation_email(user: "User"):
     if user.is_activated:
         raise ValueError("User is already activated")
 
-    subject = "CMPUT 401 Projects Portal Account Activation"
-    activation_url = settings.ACTIVATION_URL_TEMPLATE.format(
-        activation_key=user.activation_key
-    )
+    subject = "Capstone Projects Portal Account Activation"
+    activation_url = f"{settings.FRONTEND_BASE_URL}/activate/{user.activation_key}"
+
     message = dedent(
         f"""
         Hello {user.name},
 
-        Your account on the CMPUT 401 Projects Portal has been created.
+        Your account on the Capstone Projects Portal has been created.
 
         To start using the portal, you must activate your account by clicking on the following link:
 
@@ -47,15 +46,16 @@ def send_password_reset_email(user: "User", reset_request: "PasswordResetRequest
     # Ensure that the user the reset request is for the correct user
     assert reset_request.user == user
 
-    subject = "Reset your password for the CMPUT 401 Projects Portal"
-    reset_password_url = settings.RESET_PASSWORD_URL_TEMPLATE.format(
-        reset_key=reset_request.key
+    subject = "Reset your password for the Capstone Projects Portal"
+    reset_password_url = (
+        f"{settings.FRONTEND_BASE_URL}/reset-password/{reset_request.key}"
     )
+
     message = dedent(
         f"""
         Hello {user.name},
 
-        A password reset request was received for your CMPUT 401 Projects Portal Account.
+        A password reset request was received for your Capstone Projects Portal Account.
 
         To reset your password, click the link below:
         {reset_password_url}
@@ -71,7 +71,7 @@ def send_proposal_email(proposal: "Proposal", recipients: list[str]):
     Sends an email to the user with a link to view the proposal.
     """
 
-    subject = f"New CMPUT 401 project proposal from {proposal.rep_name}"
+    subject = f"New Capstone Projects Portal proposal from {proposal.rep_name}"
 
     message = f"NAME: {proposal.rep_name}\nEMAIL: {proposal.email}\nDATE: {proposal.date}\nPROJECT INFO: {proposal.project_info}\n"
     message += "--" * 20

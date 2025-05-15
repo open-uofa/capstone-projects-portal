@@ -1,20 +1,19 @@
-import * as React from "react"
 import { Logout } from "@mui/icons-material"
 import {
     Box,
-    Tooltip,
-    ListItemIcon,
+    Divider,
     IconButton,
+    Link,
+    ListItemIcon,
     Menu,
     MenuItem,
-    Divider,
-    Link,
+    Tooltip,
 } from "@mui/material"
-import { useContext, useState, MouseEventHandler } from "react"
+import { type MouseEventHandler, useContext, useState } from "react"
 import { Link as RouterLink } from "react-router-dom"
+import { portalApiInstance } from "../api/portal-api"
 import GlobalContext from "../global-state/context"
 import UserAvatar from "./UserAvatar"
-import { portalApiInstance } from "../api/portal-api"
 
 export default function UserNavbarButton(): JSX.Element | null {
     const { globalState, dispatch } = useContext(GlobalContext)
@@ -99,7 +98,7 @@ export default function UserNavbarButton(): JSX.Element | null {
                     <MenuItem
                         key="admin"
                         component={Link}
-                        href={process.env.REACT_APP_ADMIN_URL ?? "/admin/"}
+                        href={import.meta.env.VITE_ADMIN_URL ?? "/admin/"}
                     >
                         Admin
                     </MenuItem>,

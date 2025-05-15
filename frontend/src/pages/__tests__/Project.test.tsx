@@ -1,15 +1,15 @@
-import React from "react"
 import { fireEvent, render, screen, waitFor } from "@testing-library/react"
-import "@testing-library/jest-dom/extend-expect"
-import { Route, MemoryRouter, useParams } from "react-router-dom"
+import { http } from "msw"
 import { setupServer } from "msw/node"
-import { ResponseComposition, rest } from "msw"
-import ProjectPage from "../Project"
-import Project, { ProjectType, Term } from "../../models/project"
-import ClientOrgType from "../../models/client-org-type"
-import ClientOrgShort from "../../models/client-org-short"
+import { MemoryRouter, Route, useParams } from "react-router-dom"
+import { vi } from "vitest"
+import { axiosConfig } from "../../api/config"
 import GlobalStateProvider from "../../global-state/provider"
-import requestConfig from "../../api/config"
+import type ClientOrgShort from "../../models/client-org-short"
+import ClientOrgType from "../../models/client-org-type"
+import type Project from "../../models/project"
+import { ProjectType, Term } from "../../models/project"
+import ProjectPage from "../Project"
 
 const MockViewClientPage = (): JSX.Element => {
     const { id } = useParams<{ id: string }>()
@@ -73,10 +73,8 @@ const renderProjectsPage = (): ReturnType<typeof render> =>
     )
 
 const server = setupServer(
-    rest.get(
-        `${requestConfig.baseURL}/projects/:id`,
-        (req, res: ResponseComposition<Project>, ctx) =>
-            res(ctx.json(mockProject))
+    http.get(`${axiosConfig.baseURL}/projects/:id`, () =>
+        Response.json(mockProject)
     )
 )
 
@@ -87,7 +85,7 @@ it("has a working link to project website", async () => {
     renderProjectsPage()
 
     const websiteButton = await screen.findByRole("button", { name: "Website" })
-    window.open = jest.fn()
+    window.open = vi.fn()
     fireEvent.click(websiteButton)
     expect(window.open).toBeCalledWith(`https://www.google.com/`, "_blank")
 })
@@ -98,7 +96,7 @@ it("has a working link to project source code page", async () => {
     const sourceCodeButton = await screen.findByRole("button", {
         name: "Source Code",
     })
-    window.open = jest.fn()
+    window.open = vi.fn()
     fireEvent.click(sourceCodeButton)
     expect(window.open).toBeCalledWith(`https://github.com`, "_blank")
 })

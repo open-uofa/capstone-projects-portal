@@ -1,23 +1,21 @@
-/* eslint-disable react/jsx-props-no-spreading */
-import * as React from "react"
-import { useState, useEffect, useMemo } from "react"
-import { WithContext as ReactTags } from "react-tag-input"
-import { Button, useTheme, TextField, Box, Typography } from "@mui/material"
-import { Redirect, useHistory, useParams } from "react-router-dom"
-import { SubmitHandler, useForm, Controller } from "react-hook-form"
-import * as yup from "yup"
 import { yupResolver } from "@hookform/resolvers/yup"
-import ImageNotSupportedIcon from "@mui/icons-material/ImageNotSupported"
 import DeleteIcon from "@mui/icons-material/Delete"
+import ImageNotSupportedIcon from "@mui/icons-material/ImageNotSupported"
+import { Box, Button, TextField, Typography, useTheme } from "@mui/material"
+import { useEffect, useMemo, useState } from "react"
+import { Controller, type SubmitHandler, useForm } from "react-hook-form"
+import { Redirect, useHistory, useParams } from "react-router-dom"
+import { WithContext as ReactTags } from "react-tag-input"
+import * as yup from "yup"
 import { portalApiInstance } from "../api/portal-api"
-import IFormInputs from "../models/project-form"
-import PageTitle from "../components/PageTitle"
-import MediumContainer from "../components/MediumContainer"
-import Project from "../models/project"
 import HelmetMetaData from "../components/HelmetMetaData"
+import MediumContainer from "../components/MediumContainer"
+import PageTitle from "../components/PageTitle"
 import RequireLoggedIn from "../components/RequireLoggedIn"
-import { canEditProject } from "../models/current-user-info"
 import { useCurrentUser } from "../hooks"
+import { canEditProject } from "../models/current-user-info"
+import type Project from "../models/project"
+import type IFormInputs from "../models/project-form"
 
 // schema that defines the types of values that the form should have
 const schema = yup.object().shape({
@@ -214,6 +212,7 @@ export default function EditProject(): JSX.Element {
         {
             name: "review",
             label: "Client Review",
+            type: "multi_line",
         },
         {
             name: "website_url",
@@ -270,7 +269,7 @@ export default function EditProject(): JSX.Element {
             validate={(user) => !project || canEditProject(user, project)}
         >
             <HelmetMetaData
-                title="Edit Project | CMPUT 401 Projects Portal"
+                title="Edit Project | Capstone Projects Portal"
                 noindex
             />
             {project && (
@@ -408,12 +407,12 @@ export default function EditProject(): JSX.Element {
                             handleTagClick={handleTagClick}
                             minQueryLength={2}
                             maxLength={25}
-                            autofocus={false}
+                            autoFocus={false}
                             allowDeleteFromEmptyInput
                             autocomplete
                             allowUnique
                             allowDragDrop
-                            inline
+                            inputFieldPosition="inline"
                             allowAdditionFromPaste
                             tags={tags}
                         />

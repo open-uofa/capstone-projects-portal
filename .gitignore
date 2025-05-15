@@ -1,6 +1,5 @@
 # Editor config
 .idea
-.vscode
 
 # Python (from https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore)
 # Byte-compiled / optimized / DLL files
@@ -112,6 +111,7 @@ celerybeat.pid
 # Environments
 .env
 .env.*
+.deploy.env
 .venv
 env/
 venv/

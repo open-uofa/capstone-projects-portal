@@ -1,35 +1,34 @@
-import * as React from "react"
+import { useContext, useEffect, useState } from "react"
 import {
-    BrowserRouter as Router,
     Redirect,
     Route,
+    BrowserRouter as Router,
     Switch,
 } from "react-router-dom"
-import { useContext, useEffect, useState } from "react"
-import HomePage from "./pages/Home"
+import { portalApiInstance } from "./api/portal-api"
+import Navbar from "./components/Navbar"
+import GlobalContext from "./global-state/context"
+import GlobalStateProvider from "./global-state/provider"
 import AboutPage from "./pages/About"
 import ActivatePage from "./pages/Activate"
-import RequestPasswordResetPage from "./pages/RequestPasswordReset"
-import ResetPasswordPage from "./pages/ResetPassword"
-import LoginPage from "./pages/Login"
-import SettingsPage from "./pages/Settings"
-import ProfilePage from "./pages/ViewProfile"
-import LoginCallbackPage from "./pages/LoginCallback"
-import ProjectPage from "./pages/Project"
+import EditClient from "./pages/EditClient"
 import EditProfilePage from "./pages/EditProfile"
 import EditProjectPage from "./pages/EditProject"
-import EditClient from "./pages/EditClient"
+import ErrorPage from "./pages/Error"
+import HomePage from "./pages/Home"
+import ImportPage from "./pages/ImportPage"
+import LoginPage from "./pages/Login"
+import LoginCallbackPage from "./pages/LoginCallback"
+import ProjectPage from "./pages/Project"
 import ProposalPage from "./pages/Proposal"
+import RequestPasswordResetPage from "./pages/RequestPasswordReset"
+import ResetPasswordPage from "./pages/ResetPassword"
+import SettingsPage from "./pages/Settings"
 import ThankYouPage from "./pages/ThankYou"
 import ClientOrgPage from "./pages/ViewClientOrg"
 import ViewClientsPage from "./pages/ViewClients"
+import ProfilePage from "./pages/ViewProfile"
 import ViewProjectsPage from "./pages/ViewProjects"
-import GlobalStateProvider from "./global-state/provider"
-import Navbar from "./components/Navbar"
-import ImportPage from "./pages/ImportPage"
-import { portalApiInstance } from "./api/portal-api"
-import GlobalContext from "./global-state/context"
-import ErrorPage from "./pages/Error"
 
 function AppRouter(): JSX.Element | null {
     const { dispatch } = useContext(GlobalContext)

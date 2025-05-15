@@ -1,29 +1,30 @@
 /* eslint-disable no-nested-ternary */
-import * as React from "react"
-import { useState } from "react"
-import Box from "@mui/material/Box"
-import { Button, Container, Stack } from "@mui/material"
+
 import ErrorIcon from "@mui/icons-material/Error"
 import WarningIcon from "@mui/icons-material/Warning"
+import { Button, Container, Stack } from "@mui/material"
+import Box from "@mui/material/Box"
+import Paper from "@mui/material/Paper"
 import Table from "@mui/material/Table"
 import TableBody from "@mui/material/TableBody"
 import TableCell from "@mui/material/TableCell"
 import TableContainer from "@mui/material/TableContainer"
 import TableHead from "@mui/material/TableHead"
 import TableRow from "@mui/material/TableRow"
-import Paper from "@mui/material/Paper"
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import Typography from "@mui/material/Typography"
+import * as React from "react"
+import { useState } from "react"
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs"
 import { portalApiInstance } from "../api/portal-api"
-import User from "../models/user"
-import ClientOrg from "../models/client-org"
-import Project from "../models/project"
-import ImportCsvResponse from "../models/import"
-import SnackbarAlert from "../components/SnackbarAlert"
 import HelmetMetaData from "../components/HelmetMetaData"
+import SnackbarAlert from "../components/SnackbarAlert"
+import type ClientOrg from "../models/client-org"
+import type ImportCsvResponse from "../models/import"
+import type Project from "../models/project"
+import type User from "../models/user"
 import "react-tabs/style/react-tabs.css"
-import ProjectShort from "../models/project-short"
 import RequireLoggedIn from "../components/RequireLoggedIn"
+import type ProjectShort from "../models/project-short"
 
 function toLogUser(user: User, isNew: boolean) {
     return {
@@ -376,7 +377,7 @@ export default function ImportPage(): JSX.Element | null {
 
     return (
         <RequireLoggedIn validate={(currentUser) => currentUser.is_superuser}>
-            <HelmetMetaData title="Import Data | CMPUT 401 Projects Portal" />
+            <HelmetMetaData title="Import Data | Capstone Projects Portal" />
             <Container sx={{ my: 4 }} maxWidth="sm">
                 <Typography
                     variant="h4"
@@ -427,8 +428,8 @@ export default function ImportPage(): JSX.Element | null {
                             highlighted
                                 ? "#C6FFC6"
                                 : csvFile !== undefined
-                                ? "#DDFFDD"
-                                : "#FCFCFC"
+                                  ? "#DDFFDD"
+                                  : "#FCFCFC"
                         }`,
                         border: `1px solid #007C41`,
                         borderRadius: "5px",
@@ -575,10 +576,7 @@ export default function ImportPage(): JSX.Element | null {
                 </Stack>
                 <SnackbarAlert
                     open={successAlert}
-                    onClose={(
-                        event?: React.SyntheticEvent,
-                        reason?: string
-                    ) => {
+                    onClose={(event, reason) => {
                         if (reason === "clickaway") {
                             return
                         }
@@ -589,10 +587,7 @@ export default function ImportPage(): JSX.Element | null {
                 />
                 <SnackbarAlert
                     open={warningAlert}
-                    onClose={(
-                        event?: React.SyntheticEvent,
-                        reason?: string
-                    ) => {
+                    onClose={(event, reason) => {
                         if (reason === "clickaway") {
                             return
                         }
@@ -603,10 +598,7 @@ export default function ImportPage(): JSX.Element | null {
                 />
                 <SnackbarAlert
                     open={errorAlert}
-                    onClose={(
-                        event?: React.SyntheticEvent,
-                        reason?: string
-                    ) => {
+                    onClose={(event, reason) => {
                         if (reason === "clickaway") {
                             return
                         }

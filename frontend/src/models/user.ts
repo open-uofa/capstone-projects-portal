@@ -1,4 +1,4 @@
-import ProjectShort from "./project-short"
+import type ProjectShort from "./project-short"
 
 export default interface User {
     id?: string

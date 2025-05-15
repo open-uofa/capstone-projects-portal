@@ -1,5 +1,5 @@
-import UserShort from "./user-short"
-import ClientOrgShort from "./client-org-short"
+import type ClientOrgShort from "./client-org-short"
+import type UserShort from "./user-short"
 
 export interface Tag {
     value: string

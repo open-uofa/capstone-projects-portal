@@ -1,6 +1,6 @@
-import User from "./user"
-import ClientOrg from "./client-org"
-import Project from "./project"
+import type ClientOrg from "./client-org"
+import type Project from "./project"
+import type User from "./user"
 
 export default interface ImportCsvResponse {
     errors: string[]

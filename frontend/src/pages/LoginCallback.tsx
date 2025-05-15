@@ -1,4 +1,3 @@
-import * as React from "react"
 import {
     Box,
     CircularProgress,
@@ -11,8 +10,8 @@ import { useContext, useEffect, useState } from "react"
 import { Redirect, useLocation } from "react-router-dom"
 import { portalApiInstance } from "../api/portal-api"
 import GlobalContext from "../global-state/context"
-import { LoginResult, OAuth2Provider } from "../models/login"
-import { OAuth2State } from "./Login"
+import type { LoginResult, OAuth2Provider } from "../models/login"
+import type { OAuth2State } from "./Login"
 
 export default function LoginCallback(): JSX.Element {
     const location = useLocation()

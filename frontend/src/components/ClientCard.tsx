@@ -1,10 +1,9 @@
 import { Card, CardActionArea, CardContent, CardMedia } from "@mui/material"
-import { Link as RouterLink } from "react-router-dom"
 import Typography from "@mui/material/Typography"
-import * as React from "react"
-import { SyntheticEvent } from "react"
-import ClientOrgShort from "../models/client-org-short"
-import ClientOrg from "../models/client-org"
+import type { SyntheticEvent } from "react"
+import { Link as RouterLink } from "react-router-dom"
+import type ClientOrg from "../models/client-org"
+import type ClientOrgShort from "../models/client-org-short"
 
 const FALLBACK_IMAGE_URL = "/placeholder.png"
 

@@ -4,7 +4,7 @@
 
 ## Access Home Page
 
-1. Click on _'401 Projects Portal'_ logo in the top right corner
+1. Click on _'Capstone Projects Portal'_ logo in the top right corner
 
 ## Browse Projects
 

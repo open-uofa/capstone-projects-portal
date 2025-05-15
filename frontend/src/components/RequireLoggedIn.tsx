@@ -1,9 +1,9 @@
 /* eslint-disable react/require-default-props */
 import { Alert, Container } from "@mui/material"
-import * as React from "react"
+import type * as React from "react"
 import { Redirect, useLocation } from "react-router-dom"
 import { useCurrentUser } from "../hooks"
-import CurrentUserInfo from "../models/current-user-info"
+import type CurrentUserInfo from "../models/current-user-info"
 
 /**
  * Will render its children if the user is logged in, and redirect to the login page if not.

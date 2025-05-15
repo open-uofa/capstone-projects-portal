@@ -1,4 +1,3 @@
-import * as React from "react"
 import { Button, Typography, useTheme } from "@mui/material"
 import { Link as RouterLink } from "react-router-dom"
 

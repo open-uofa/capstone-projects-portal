@@ -1,28 +1,26 @@
-/* eslint-disable react/jsx-props-no-spreading */
-import * as React from "react"
-import { useState, useEffect } from "react"
-import {
-    Button,
-    Box,
-    Paper,
-    Container,
-    useTheme,
-    TextField,
-    Typography,
-} from "@mui/material"
+import { yupResolver } from "@hookform/resolvers/yup"
 import DeleteIcon from "@mui/icons-material/Delete"
 import ImageNotSupported from "@mui/icons-material/ImageNotSupported"
+import {
+    Box,
+    Button,
+    Container,
+    Paper,
+    TextField,
+    Typography,
+    useTheme,
+} from "@mui/material"
 import Avatar from "@mui/material/Avatar"
+import { useEffect, useState } from "react"
+import { Controller, type SubmitHandler, useForm } from "react-hook-form"
 import { Redirect, useHistory, useParams } from "react-router-dom"
-import { SubmitHandler, useForm, Controller } from "react-hook-form"
 import * as yup from "yup"
-import { yupResolver } from "@hookform/resolvers/yup"
 import { portalApiInstance } from "../api/portal-api"
-import IFormInputs from "../models/client-form"
-import PageTitle from "../components/PageTitle"
 import HelmetMetaData from "../components/HelmetMetaData"
+import PageTitle from "../components/PageTitle"
 import RequireLoggedIn from "../components/RequireLoggedIn"
-import ClientOrg from "../models/client-org"
+import type IFormInputs from "../models/client-form"
+import type ClientOrg from "../models/client-org"
 import { canEditClientOrg } from "../models/current-user-info"
 
 // schema that defines the types of values that the form should have
@@ -222,7 +220,7 @@ export default function EditClient(): JSX.Element {
             }
         >
             <HelmetMetaData
-                title="Edit Organization | CMPUT 401 Projects Portal"
+                title="Edit Organization | Capstone Projects Portal"
                 noindex
             />
             <Container maxWidth="md">

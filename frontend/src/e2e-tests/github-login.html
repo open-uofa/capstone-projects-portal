@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -8,28 +8,14 @@
             const baseRedirectUri = params.get("redirect_uri")
             const state = params.get("state")
 
-            function validLogin() {
+            function loginWithGoodState() {
                 const redirectUri = new URL(baseRedirectUri)
                 redirectUri.searchParams.append("code", "1")
                 redirectUri.searchParams.append("state", state)
                 window.location.href = redirectUri.href
             }
 
-            function invalidLoginDueToUnknownUser() {
-                const redirectUri = new URL(baseRedirectUri)
-                redirectUri.searchParams.append("code", "2")
-                redirectUri.searchParams.append("state", state)
-                window.location.href = redirectUri.href
-            }
-
-            function invalidLoginDueToBadCode() {
-                const redirectUri = new URL(baseRedirectUri)
-                redirectUri.searchParams.append("code", "0")
-                redirectUri.searchParams.append("state", state)
-                window.location.href = redirectUri.href
-            }
-
-            function invalidLoginDueToBadState() {
+            function loginWithBadState() {
                 const redirectUri = new URL(baseRedirectUri)
                 redirectUri.searchParams.append("code", "1")
                 redirectUri.searchParams.append("state", "wrongstate")
@@ -39,24 +25,7 @@
     </head>
     <body>
         <h1>GitHub Login</h1>
-        <button id="valid-login" onclick="validLogin()">Valid Login</button>
-        <button
-            id="invalid-login-due-to-unknown-user"
-            onclick="invalidLoginDueToUnknownUser()"
-        >
-            Invalid Login Due to Unknown User
-        </button>
-        <button
-            id="invalid-login-due-to-bad-code"
-            onclick="invalidLoginDueToBadCode()"
-        >
-            Invalid Login Due to Bad Code
-        </button>
-        <button
-            id="invalid-login-due-to-bad-state"
-            onclick="invalidLoginDueToBadState()"
-        >
-            Invalid Login Due to Bad State
-        </button>
+        <button id="login-with-good-state" onclick="loginWithGoodState()">Login with Good State</button>
+        <button id="login-with-bad-state" onclick="loginWithBadState()">Login with Bad State</button>
     </body>
 </html>

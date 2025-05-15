@@ -1,4 +1,4 @@
-import { Tag } from "./project"
+import type { Tag } from "./project"
 
 export default interface ProjectForm {
     name: string

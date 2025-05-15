@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`matches snapshot 1`] = `
 <div>
@@ -17,13 +17,13 @@ exports[`matches snapshot 1`] = `
           Log in
         </h1>
         <button
-          class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-fullWidth MuiButtonBase-root css-1vm8rfj-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-1vm8rfj-MuiButtonBase-root-MuiButton-root"
           id="continue-with-github-button"
           tabindex="0"
           type="button"
         >
           <span
-            class="MuiButton-startIcon MuiButton-iconSizeLarge css-htszrh-MuiButton-startIcon"
+            class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeLarge css-htszrh-MuiButton-startIcon"
           >
             <svg
               aria-hidden="true"
@@ -43,11 +43,11 @@ exports[`matches snapshot 1`] = `
           />
         </button>
         <div
-          class="MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren css-11vmsk3-MuiDivider-root"
+          class="MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren css-kjton7-MuiDivider-root"
           role="separator"
         >
           <span
-            class="MuiDivider-wrapper css-e34q8v-MuiDivider-wrapper"
+            class="MuiDivider-wrapper css-qywfm8-MuiDivider-wrapper"
           >
             or
           </span>
@@ -59,7 +59,7 @@ exports[`matches snapshot 1`] = `
             class="MuiFormControl-root MuiFormControl-marginDense MuiFormControl-fullWidth MuiTextField-root css-1ldlpx-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-focused css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
               for="email"
               id="email-label"
@@ -67,11 +67,11 @@ exports[`matches snapshot 1`] = `
               Email
             </label>
             <div
-              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth Mui-focused MuiInputBase-formControl css-md26zr-MuiInputBase-root-MuiOutlinedInput-root"
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth Mui-focused MuiInputBase-formControl css-md26zr-MuiInputBase-root-MuiOutlinedInput-root"
             >
               <input
                 aria-invalid="false"
-                class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
                 id="email"
                 name="email"
                 type="email"
@@ -82,7 +82,7 @@ exports[`matches snapshot 1`] = `
                 class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-186xcr5"
+                  class="css-14lo706"
                 >
                   <span>
                     Email
@@ -90,13 +90,12 @@ exports[`matches snapshot 1`] = `
                 </legend>
               </fieldset>
             </div>
-            
           </div>
           <div
             class="MuiFormControl-root MuiFormControl-marginDense MuiFormControl-fullWidth MuiTextField-root css-1ldlpx-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
               for="password"
               id="password-label"
@@ -104,11 +103,11 @@ exports[`matches snapshot 1`] = `
               Password
             </label>
             <div
-              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-md26zr-MuiInputBase-root-MuiOutlinedInput-root"
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-md26zr-MuiInputBase-root-MuiOutlinedInput-root"
             >
               <input
                 aria-invalid="false"
-                class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
                 id="password"
                 name="password"
                 type="password"
@@ -119,7 +118,7 @@ exports[`matches snapshot 1`] = `
                 class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-dhh0px"
+                  class="css-yjsfm1"
                 >
                   <span>
                     Password
@@ -127,10 +126,10 @@ exports[`matches snapshot 1`] = `
                 </legend>
               </fieldset>
             </div>
-            
           </div>
           <button
-            class="MuiLoadingButton-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-fullWidth MuiButtonBase-root css-1nelln8-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiLoadingButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-1nelln8-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root"
+            id=":r2:"
             tabindex="0"
             type="submit"
           >
@@ -141,7 +140,7 @@ exports[`matches snapshot 1`] = `
           </button>
         </form>
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-3k7i95-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-zb2xmp-MuiTypography-root-MuiLink-root"
           href="/request-password-reset"
         >
           Reset password

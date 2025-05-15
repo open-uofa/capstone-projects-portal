@@ -1,41 +1,46 @@
-import * as React from "react"
 import {
+    Box,
+    Button,
     CardContent,
     Container,
-    Paper,
-    Box,
-    Stack,
     Grid,
     IconButton,
-    Button,
-    useTheme,
     Link,
+    Paper,
+    Stack,
+    useTheme,
 } from "@mui/material"
+import type * as React from "react"
 import {
-    FacebookShareButton,
     FacebookIcon,
-    LinkedinShareButton,
+    FacebookShareButton,
     LinkedinIcon,
-    TwitterShareButton,
+    LinkedinShareButton,
     TwitterIcon,
+    TwitterShareButton,
 } from "react-share"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from "react-responsive-carousel"
-import PublicIcon from "@mui/icons-material/Public"
-import GitHubIcon from "@mui/icons-material/GitHub"
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos"
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew"
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos"
+import GitHubIcon from "@mui/icons-material/GitHub"
+import PublicIcon from "@mui/icons-material/Public"
 import Typography from "@mui/material/Typography"
-import { CSSProperties, SyntheticEvent, useEffect, useState } from "react"
-import { Redirect, useParams, Link as RouterLink } from "react-router-dom"
+import {
+    type CSSProperties,
+    type SyntheticEvent,
+    useEffect,
+    useState,
+} from "react"
+import { Carousel } from "react-responsive-carousel"
+import { Redirect, Link as RouterLink, useParams } from "react-router-dom"
 import { portalApiInstance } from "../api/portal-api"
-import Project from "../models/project"
-import ProjectMember from "../components/ProjectMember"
 import EditButton from "../components/EditButton"
 import HelmetMetaData from "../components/HelmetMetaData"
 import ProjectChipRow from "../components/ProjectChipRow"
-import { canEditProject } from "../models/current-user-info"
+import ProjectMember from "../components/ProjectMember"
 import { useCurrentUser } from "../hooks"
+import { canEditProject } from "../models/current-user-info"
+import type Project from "../models/project"
 
 const FALLBACK_IMAGE_URL = "/placeholder.png"
 
@@ -296,7 +301,7 @@ export default function ViewProject(): JSX.Element {
     const { id }: { id: string } = useParams()
     const [project, setProject] = useState<Project | undefined>(undefined)
     const theme = useTheme()
-    const shareURL = `cmput401.ca/projects/${id}`
+    const shareUrl = `${window.location.origin}/projects/${id}`
 
     // get the page's id and store it in a variable called pageId
     const { id: pageId }: { id: string } = useParams()
@@ -338,7 +343,7 @@ export default function ViewProject(): JSX.Element {
                 <HelmetMetaData
                     title={
                         project?.name
-                            ? `${project?.name} | CMPUT 401 Projects Portal`
+                            ? `${project?.name} | Capstone Projects Portal`
                             : undefined
                     }
                 />
@@ -739,13 +744,13 @@ export default function ViewProject(): JSX.Element {
                                     spacing={2}
                                     sx={{ paddingTop: "5px" }}
                                 >
-                                    <LinkedinShareButton url={shareURL}>
+                                    <LinkedinShareButton url={shareUrl}>
                                         <LinkedinIcon size={25} />
                                     </LinkedinShareButton>
-                                    <FacebookShareButton url={shareURL}>
+                                    <FacebookShareButton url={shareUrl}>
                                         <FacebookIcon size={25} />
                                     </FacebookShareButton>
-                                    <TwitterShareButton url={shareURL}>
+                                    <TwitterShareButton url={shareUrl}>
                                         <TwitterIcon size={25} />
                                     </TwitterShareButton>
                                 </Stack>

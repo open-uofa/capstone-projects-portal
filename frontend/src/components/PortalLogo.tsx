@@ -1,4 +1,3 @@
-import * as React from "react"
 import { Link } from "@mui/material"
 import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
@@ -36,6 +35,7 @@ export default function PortalLogo(colorObj: { color: string }): JSX.Element {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 216 274.63"
                     >
+                        <title>Capstone Projects Portal Logo</title>
                         <g id="Layer_2" data-name="Layer 2" fill={color}>
                             <g id="Layer_1-2" data-name="Layer 1">
                                 <path d="M144,32.53l-2.25-.91a47.82,47.82,0,0,0-17.52-3.1A48.41,48.41,0,0,0,108,31.17a48.41,48.41,0,0,0-16.18-2.65,47.82,47.82,0,0,0-17.52,3.1l-2.25.91v5H66.42v39h83.16v-39H144ZM104.4,67.37a53.5,53.5,0,0,0-25.16,0V37.5a46.35,46.35,0,0,1,25.16,0Zm32.36,0a53.5,53.5,0,0,0-25.16,0V37.5a46.35,46.35,0,0,1,25.16,0Z" />
@@ -66,7 +66,7 @@ export default function PortalLogo(colorObj: { color: string }): JSX.Element {
                                 fontSize="1.15em"
                                 lineHeight="normal"
                             >
-                                CMPUT 401
+                                CAPSTONE
                             </Typography>
                         </Grid>
                         <Grid

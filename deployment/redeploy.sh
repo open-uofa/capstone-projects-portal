@@ -10,16 +10,16 @@ source $SCRIPT_DIR/config.sh
 # Install any new Python depenencies
 echo "Installing Python dependencies..."
 cd $PROJECT_DIR
-pipenv install
+uv sync
 
 # Apply any new migrations to database
 echo "Applying migrations..."
 cd $PROJECT_DIR/backend
-pipenv run python manage.py migrate
+uv run manage.py migrate
 
 # Collect static backend files
 echo "Collecting static backend files..."
-yes yes | pipenv run python manage.py collectstatic
+yes yes | uv run manage.py collectstatic
 
 # Install any new frontend dependencies
 echo "Installing frontend dependencies..."

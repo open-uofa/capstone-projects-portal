@@ -7,7 +7,7 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/cmput401-portal/backend
-ExecStart=pipenv run python -m gunicorn \
+ExecStart=uv run gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \

@@ -4,18 +4,17 @@ import {
     CardActionArea,
     CardContent,
     CardMedia,
+    type CardTypeMap,
     Stack,
     useMediaQuery,
     useTheme,
-    CardTypeMap,
 } from "@mui/material"
-import { Link as RouterLink } from "react-router-dom"
 import Typography from "@mui/material/Typography"
-import * as React from "react"
-import { SyntheticEvent, useState, useEffect } from "react"
-import ProjectShort from "../models/project-short"
-import Project from "../models/project"
+import { type SyntheticEvent, useEffect, useState } from "react"
+import { Link as RouterLink } from "react-router-dom"
 import { portalApiInstance } from "../api/portal-api"
+import type Project from "../models/project"
+import type ProjectShort from "../models/project-short"
 
 const FALLBACK_IMAGE_URL = "/placeholder.png"
 

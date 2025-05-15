@@ -1,23 +1,21 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-import * as React from "react"
 import {
-    render,
     fireEvent,
+    render,
     screen,
-    within,
     waitFor,
+    within,
 } from "@testing-library/react"
-import { MemoryRouter, Route, useParams } from "react-router-dom"
+import { http } from "msw"
 import { setupServer } from "msw/node"
-import { ResponseComposition, rest } from "msw"
+import { MemoryRouter, Route, useParams } from "react-router-dom"
+import { axiosConfig } from "../../api/config"
 import GlobalStateProvider from "../../global-state/provider"
-import ViewClientsPage from "../ViewClients"
-import ClientOrg from "../../models/client-org"
+import type ClientOrg from "../../models/client-org"
 import ClientOrgType from "../../models/client-org-type"
-import ProjectShort from "../../models/project-short"
 import { ProjectType, Term } from "../../models/project"
+import type ProjectShort from "../../models/project-short"
 import { QueryParamsDisplay, waitForQueryParam } from "../../test-utils"
-import requestConfig from "../../api/config"
+import ViewClientsPage from "../ViewClients"
 
 const MockViewClientPage = (): JSX.Element => {
     const { id } = useParams<{ id: string }>()
@@ -177,7 +175,7 @@ const waitForClientsToFinishLoading = async (): Promise<void> =>
 
 const getSearchControls = () => {
     const searchInput = screen.getByPlaceholderText("Search")
-    const typeSelectButton = screen.getByRole("button", { name: "Type" })
+    const typeSelectButton = screen.getByRole("combobox", { name: "Type" })
     const reverseSortButton = screen.getByRole("switch", {
         name: "Sort in Ascending Order",
     })
@@ -185,11 +183,7 @@ const getSearchControls = () => {
 }
 
 const server = setupServer(
-    rest.get(
-        `${requestConfig.baseURL}/orgs/`,
-        (req, res: ResponseComposition<ClientOrg[]>, ctx) =>
-            res(ctx.json(allClients))
-    )
+    http.get(`${axiosConfig.baseURL}/orgs/`, () => Response.json(allClients))
 )
 
 beforeAll(() => server.listen())
@@ -305,7 +299,7 @@ it("can filter by client type", async () => {
     const { typeSelectButton } = getSearchControls()
 
     // Name of type for no filtering
-    const noFilterTypeName = "Type"
+    const noFilterTypeName = "Any"
 
     const testFilteringByType = async (type: ClientOrgType | null) => {
         // Open type filter menu

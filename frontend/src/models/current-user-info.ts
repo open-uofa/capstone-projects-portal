@@ -1,6 +1,6 @@
-import ClientOrg from "./client-org"
-import Project from "./project"
-import UserShort from "./user-short"
+import type ClientOrg from "./client-org"
+import type Project from "./project"
+import type UserShort from "./user-short"
 
 type CurrentUserInfo =
     | {
